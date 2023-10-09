@@ -1,5 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
+import image from "../../../public/images/photo.jpg";
 
 // SEO
 export const metadata: Metadata = {
@@ -20,53 +22,91 @@ export const metadata: Metadata = {
 const posts = [
   {
     id: 1,
-    Image: "http://",
+    photo: image,
     title: "Wonderful Blog",
     nikname: "Fox",
     avatar: "http://",
   },
   {
     id: 2,
-    Image: "http://",
+    photo: image,
     title: "Wonderful Blog",
     nikname: "Fox",
     avatar: "http://",
   },
   {
     id: 3,
-    Image: "http://",
+    photo: image,
     title: "Wonderful Blog",
     nikname: "Fox",
     avatar: "http://",
   },
   {
     id: 4,
-    Image: "http://",
+    photo: image,
     title: "Wonderful Blog",
     nikname: "Fox",
     avatar: "http://",
   },
   {
     id: 5,
-    Image: "http://",
+    photo: image,
+    title: "Wonderful Blog",
+    nikname: "Fox",
+    avatar: "http://",
+  },
+  {
+    id: 6,
+    photo: image,
+    title: "Wonderful Blog",
+    nikname: "Fox",
+    avatar: "http://",
+  },
+  {
+    id: 7,
+    photo: image,
+    title: "Wonderful Blog",
+    nikname: "Fox",
+    avatar: "http://",
+  },
+  {
+    id: 8,
+    photo: image,
     title: "Wonderful Blog",
     nikname: "Fox",
     avatar: "http://",
   },
 ];
 
-export default function Blog() {
+interface BlogProps {
+  params: {
+    id: string;
+    photo: string;
+    title: string;
+    nikname: string;
+    avatar: string;
+  };
+}
+
+export default function Blog({
+  params: { id, photo, title, nikname, avatar },
+}: BlogProps) {
   return (
-    <div>
-      <h1>Blog & Tips</h1>
-      <ul>
-        {posts.map((post) => (
-          <li key={post.id}>
-            <Link href={`/blog/post/${post.id}`}>{post.title}</Link>
-            <p>{post.nikname}</p>
-          </li>
-        ))}
-      </ul>
+    <div className="mr-auto ml-auto">
+      <h1 className="text-[30px] mt-1 mb-1 text-center">Blog & Tips</h1>
+      <div className="mt-6 flex justify-center">
+        <ul className="flex flex-wrap justify-between gap-10 p-10">
+          {posts.map((post) => (
+            <li key={post.id}>
+              <Image src={post.photo} alt="..." width={300}></Image>
+              <div>
+                <Link href={`/blog/post/${post.id}`}>{post.title}</Link>
+                <p>{post.nikname}</p>
+              </div>
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 }

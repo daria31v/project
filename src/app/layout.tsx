@@ -1,12 +1,9 @@
 import { Metadata } from "next";
 import Footer from "./components/Footer/footer";
 import Header from "./components/Header/header";
-// add global.css
+import "./globals.css";
 // add fonts
-import { Inter } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
-// SEO
 export const metadata: Metadata = {
   title: "A World in My Lens",
   description:
@@ -21,9 +18,9 @@ export default function RootLayout({
   return (
     <>
       <html lang="en">
-        <body className={inter.className}>
+        <body className="flex flex-col min-h-screen">
           <Header />
-          <main className="container">{children}</main>
+          <main className="container flex-grow mr-auto ml-auto">{children}</main>
           <Footer />
         </body>
       </html>

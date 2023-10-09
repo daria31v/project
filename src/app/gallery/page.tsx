@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function Gallery (){
     return (
         <div>
-            <h1>Gallery</h1>
+            <h1 className="text-[30px] mt-1 mb-1 text-center">Gallery</h1>
         </div>
         
     )
