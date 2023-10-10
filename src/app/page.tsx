@@ -2,10 +2,14 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <h1>Hello, Next.js!</h1>
-      </div>
-    </main>
+    <section className="flex justify-evenly p-8">
+      <div className="w-auto">
+        <h1 className="text-[30px] bold ">Welcome to us!</h1>
+        <h2 className="bold text-xl">The world is wonderful if you notice it!</h2>
+        <p className="text-[25px]">This platform is where you can share the beautiful things you saw today.</p>
+      </div>        
+        <Image src={"/images/photo.jpg"} alt="me" width={300} height={600} />
+      </section>
+    
   );
 }
