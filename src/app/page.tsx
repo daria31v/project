@@ -6,7 +6,7 @@ import RandomPhotoRender from "./components/RandomPhotoRender/randomPhotoRender"
 export default function Home() {
   return (
     <>
-      <section className="xl:max-w-[1280px] flex pt-[72px] pb-[72px] pr-[95px] pl-[100px] gap-[49px]">
+      <section className="xl:max-w-[1280px] flex pt-[72px] pb-[72px] pr-[95px] pl-[100px] gap-[49px] justify-around">
         <div className="max-w-[430px]">
           <h1 className="text-center font-bold text-xl mb-[18px] uppercase tracking-[-0.8px]">
             {" "}
