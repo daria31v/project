@@ -34,7 +34,7 @@ const config: Config = {
     extend: {
       fontFamily: {
       sans: ['Mulish', 'sans'],
-      mono: ['News Cycle', 'mono'],
+      news: ['News Cycle', 'sans'],
     },
     },
   },
