@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../../../public/images/photo.jpg";
+import logo from "../../../../public/images/logo.png";
 
 import Image from "next/image";
 
@@ -14,8 +14,8 @@ interface LogoProps {
 const Logo: React.FC<LogoProps> = ({
   src,
   alt,
-  width = 60,
-  height = 60,
+  width = 70,
+  height = 32,
  
 }: LogoProps) => {
   return <Image src={logo} alt={alt} width={width} height={height} />;
