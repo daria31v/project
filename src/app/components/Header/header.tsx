@@ -7,7 +7,10 @@ import { UserMenu } from "../Registrate/userMenu";
 const Header = () => {
   return (
     <header className="container flex justify-around gap-4 pr-[100px] pl-[100px] pt-7 pb-7 items-center mr-auto ml-auto h-[88px] ">
-      <Logo src={""} alt={""} />
+      <Link href="/">
+        <Logo src={""} alt={""} />
+      </Link>
+      
       <nav className="flex gap-8 justify-evenly font-semibold text-base">
         <Link href="/">Welcome</Link>
         <Link href="/gallery">Gallery</Link>
