@@ -16,8 +16,8 @@ export default function Home() {
             The world is wonderful if you notice it!
           </h2>
           <h2 className="text-base font-semibold mb-[60px] text-center">
-            Share your experience with photos Let’s discover your next journey
-            from others
+            Share your experience with photos.
+            Let’s discover your next journey from others!
           </h2>
           <p className="text-medium font-normal text-justify">
             This platform is where you can share the beautiful things you saw

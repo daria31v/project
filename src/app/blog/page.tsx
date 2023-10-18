@@ -61,21 +61,7 @@ const posts = [
     title: "Wonderful Blog",
     nikname: "Fox",
     avatar: "http://",
-  },
-  {
-    id: 7,
-    photo: image,
-    title: "Wonderful Blog",
-    nikname: "Fox",
-    avatar: "http://",
-  },
-  {
-    id: 8,
-    photo: image,
-    title: "Wonderful Blog",
-    nikname: "Fox",
-    avatar: "http://",
-  },
+  }
 ];
 
 interface BlogProps {
@@ -98,11 +84,13 @@ export default function Blog({
         <ul className="flex flex-wrap justify-between gap-10 p-10">
           {posts.map((post) => (
             <li key={post.id}>
-              <Image src={post.photo} alt="..." width={300}></Image>
+              <div>
+                <Image src={post.photo} alt="..." width={300}></Image>
               <div>
                 <Link href={`/blog/post/${post.id}`}>{post.title}</Link>
                 <p>{post.nikname}</p>
               </div>
+              </div>              
             </li>
           ))}
         </ul>

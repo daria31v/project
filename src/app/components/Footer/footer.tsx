@@ -1,16 +1,15 @@
 import React from "react";
-import facebook from '../../../../public/icon/facebook.svg';
-import linkedin from '../../../../public/icon/linkedin.svg';
-import twitter from '../../../../public/icon/twitter.svg';
-import instagram from '../../../../public/icon/instagram.svg';
+import facebook from "../../../../public/icon/facebook.svg";
+import linkedin from "../../../../public/icon/linkedin.svg";
+import twitter from "../../../../public/icon/twitter.svg";
+import instagram from "../../../../public/icon/instagram.svg";
 import Image from "next/image";
 
 const Footer = () => {
   return (
     <footer className="container flex mr-auto ml-auto h-[130px] pr-[100px] pl-[100px] pt-7 pb-7 gap-8 justify-between">
       <div className=" font-bold w-[424px] ">
-        Create by Gallia est omnis divisa in partes tres, quarum. Fabio vel
-        iudice vincam, sunt in culpa qui officia.
+        The world is wonderful if you notice it! 
       </div>
       {/* <!-- joining --> */}
       <div>
@@ -18,22 +17,37 @@ const Footer = () => {
         <ul className="flex gap-3">
           <li>
             <a href="/instagram" aria-label="instagram">
-              <Image src={instagram} alt="instagram Icon" width={20} height={20} />              
+              <Image
+                src={instagram}
+                alt="instagram Icon"
+                width={20}
+                height={20}
+              />
             </a>
           </li>
           <li>
             <a href="" aria-label="twitter">
-            <Image src={twitter} alt="twitter Icon" width={20} height={20} />
+              <Image src={twitter} alt="twitter Icon" width={20} height={20} />
             </a>
           </li>
           <li>
             <a href="" aria-label="facebook">
-            <Image src={facebook} alt="facebook Icon" width={20} height={20} />
+              <Image
+                src={facebook}
+                alt="facebook Icon"
+                width={20}
+                height={20}
+              />
             </a>
           </li>
           <li>
             <a href="" aria-label="linkedin">
-            <Image src={linkedin} alt="linkedin Icon" width={20} height={20} />
+              <Image
+                src={linkedin}
+                alt="linkedin Icon"
+                width={20}
+                height={20}
+              />
             </a>
           </li>
         </ul>
