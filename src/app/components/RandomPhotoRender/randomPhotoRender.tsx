@@ -25,12 +25,12 @@ interface PhotoProps {
 
 export default function RandomPhotoRender() {
   return (
-    <section className="xl:max-w-[1280px]">
-      <h1 className="text-[30px] pr-[100px] pl-[100px] pt-[27px] text-start uppercase font-bold">
+    <div className="mb-20">
+      <h1 className="text-[30px] text-start uppercase font-bold">
         Share your journey
       </h1>
-      <div className="mt-[46px] flex justify-center ">
-        <ul className="flex flex-wrap justify-between gap-[63px]">
+      <div className="mt-[46px] flex ">
+        <ul className="flex justify-between gap-16">
           {posts.map((post) => (
             <li key={post.id}>
               <div className="max-h-[400px] overflow-hidden rounded-3xl">
@@ -44,6 +44,6 @@ export default function RandomPhotoRender() {
           ))}
         </ul>
       </div>
-    </section>
+    </div>
   );
 }

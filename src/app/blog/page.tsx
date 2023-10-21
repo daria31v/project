@@ -61,7 +61,7 @@ const posts = [
     title: "Wonderful Blog",
     nikname: "Fox",
     avatar: "http://",
-  }
+  },
 ];
 
 interface BlogProps {
@@ -78,19 +78,21 @@ export default function Blog({
   params: { id, photo, title, nikname, avatar },
 }: BlogProps) {
   return (
-    <div className="mr-auto ml-auto">
+    <div className="mx-auto">
       <h1 className="text-[30px] mt-1 mb-1 text-center">Blog & Tips</h1>
       <div className="mt-6 flex justify-center">
         <ul className="flex flex-wrap justify-between gap-10 p-10">
           {posts.map((post) => (
             <li key={post.id}>
-              <div>
-                <Image src={post.photo} alt="..." width={300}></Image>
-              <div>
-                <Link href={`/blog/post/${post.id}`}>{post.title}</Link>
-                <p>{post.nikname}</p>
-              </div>
-              </div>              
+              <Link href={`/blog/post/${post.id}`}>
+                <div>
+                  <Image src={post.photo} alt="..." width={300}></Image>
+                  <div>
+                    <h2>{post.title}</h2>
+                    <p>{post.nikname}</p>
+                  </div>
+                </div>
+              </Link>
             </li>
           ))}
         </ul>

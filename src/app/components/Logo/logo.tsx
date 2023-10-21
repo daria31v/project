@@ -14,11 +14,11 @@ interface LogoProps {
 const Logo: React.FC<LogoProps> = ({
   src,
   alt,
-  width = 70,
-  height = 32,
+  width ,
+  height
  
 }: LogoProps) => {
-  return <Image src={logo} alt={alt} width={width} height={height} />;
+  return <Image src={logo} alt={alt} width={200} height={height} />;
 };
 
 export default Logo;

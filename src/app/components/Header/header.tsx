@@ -6,12 +6,13 @@ import { UserMenu } from "../Registrate/userMenu";
 
 const Header = () => {
   return (
-    <header className="container flex justify-around gap-4 pr-[100px] pl-[100px] pt-7 pb-7 items-center mr-auto ml-auto h-[88px] ">
+    <header className="container flex py-8 items-center h-20 ">
+      
       <Link href="/">
-        <Logo src={""} alt={""} />
+        <Logo src="" alt="logo" />
       </Link>
       
-      <nav className="flex gap-8 justify-evenly font-semibold text-base">
+      <nav className="flex gap-8 justify-evenly font-semibold text-base mx-40">
         <Link href="/">Welcome</Link>
         <Link href="/gallery">Gallery</Link>
         <Link href="/blog">Blog & Tips</Link>

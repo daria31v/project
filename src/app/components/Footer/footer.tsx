@@ -1,17 +1,25 @@
 import React from "react";
-import facebook from "../../../../public/icon/facebook.svg";
-import linkedin from "../../../../public/icon/linkedin.svg";
-import twitter from "../../../../public/icon/twitter.svg";
-import instagram from "../../../../public/icon/instagram.svg";
-import Image from "next/image";
+import Logo from "../Logo/logo";
+import Link from "next/link";
+
+// import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className="container flex mr-auto ml-auto h-[130px] pr-[100px] pl-[100px] pt-7 pb-7 gap-8 justify-between">
-      <div className=" font-bold w-[424px] ">
-        The world is wonderful if you notice it! 
+    <footer className="container py-6 grid grid-flow-col gap-96 justify-center items-center">
+      <div className="grid gap-2 font-text font-semibold">
+        <Link href='/about' className="hover:text-secondary">About us</Link>
+        <Link href='/partners' className="hover:text-secondary">Our parners</Link>
       </div>
+      <div className="font-bold w-80">
+        <div className="flex justify-end">
+         <Logo src="" alt="logo" />
+         </div>
+        <p className="text-end">The world is wonderful if you notice it! </p>
       
+
+       
+      </div>
     </footer>
   );
 };
