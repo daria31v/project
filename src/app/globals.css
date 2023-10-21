@@ -19,20 +19,15 @@
 body {
   padding: 0;
   margin: 0;
-  
+  font-family: 'Mulish', sans-serif; 
 }
 ul {
   list-style: none;
   
 }
 
-a {
-  color: #0d6510;
-  font-weight: 700;
-}
-p img {
-  margin: auto;
-}
+
+
 /* @media screen and (min-width: 768px) {};
 
 @media screen and (min-width: 1280px) {}; */

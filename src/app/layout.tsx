@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Footer from "./components/Footer/footer";
 import Header from "./components/Header/header";
 import "./globals.css";
-// add fonts
+
 
 export const metadata: Metadata = {
   title: "A World in My Lens",
@@ -18,9 +18,9 @@ export default function RootLayout({
   return (
     <>
       <html lang="en">
-        <body className="flex flex-col min-h-screen">
+        <body className="flex flex-col min-h-screen text-black">
           <Header />
-          <main className="container flex-grow mr-auto ml-auto">{children}</main>
+          <main className="container flex-grow ">{children}</main>
           <Footer />
         </body>
       </html>
