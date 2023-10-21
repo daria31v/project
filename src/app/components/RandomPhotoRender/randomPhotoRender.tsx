@@ -26,18 +26,18 @@ interface PhotoProps {
 export default function RandomPhotoRender() {
   return (
     <div className="mb-20">
-      <h1 className="text-[30px] text-start uppercase font-bold">
+      <h1 className="text-[30px] xl:text-start uppercase font-bold">
         Share your journey
       </h1>
-      <div className="mt-[46px] flex ">
-        <ul className="flex justify-between gap-16">
+      <div className="mt-12 xl:flex sm:block sm:text-center">
+        <ul className="xl:flex md:block justify-between xl:gap-16 ">
           {posts.map((post) => (
             <li key={post.id}>
-              <div className="max-h-[400px] overflow-hidden rounded-3xl">
+              <div className="rounded-3xl xl:max-h-96 overflow-hidden sm:mb-16 sm:text-center">
                 <Image
                   src={post.photo}
                   alt="..."
-                  width={320}                  
+                  width={320} className="rounded-2xl"               
                 ></Image>
               </div>
             </li>

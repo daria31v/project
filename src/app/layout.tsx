@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <>
       <html lang="en">
-        <body className="text-primary mx-28">
+        <body className="text-primary md:mx-28 sm:mx-6">
           <Header />
           <main className="font-general">{children}</main>
           <Footer />

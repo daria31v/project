@@ -18,7 +18,7 @@ const Logo: React.FC<LogoProps> = ({
   height
  
 }: LogoProps) => {
-  return <Image src={logo} alt={alt} width={200} height={height} />;
+  return <Image src={logo} alt={alt} width={width} height={height} />;
 };
 
 export default Logo;

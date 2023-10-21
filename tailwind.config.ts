@@ -41,12 +41,12 @@ module.exports = {
     // }),
     section: {
     },
-    // screens: {
-    //   sm: '320px',
-    //   md: '768px',
-    //   xl: '1280px',
+    screens: {
+      sm: '320px',
+      md: '768px',
+      xl: '1280px',
     
-    // },
+    },
     extend: {
       fontFamily: {
         general: ['Mulish', 'sans-serif'],

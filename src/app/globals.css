@@ -24,6 +24,9 @@ body {
 ul {
   list-style: none;  
 }
+.container {
+  max-width: 320px;
+}
 @media (min-width: 640px) {
   .container {
       max-width: 640px;
