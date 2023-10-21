@@ -43,9 +43,9 @@ module.exports = {
     section: {
     },
     screens: {
-      'sm': '320px',
-      'md': '768px',
-      'xl': '1280px',
+      'mobile': '320px',
+      'tablet': '768px',
+      'decktop': '1280px',
     
     },
     extend: {
