@@ -50,8 +50,8 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        'general': ['Mulish', 'sans-serif'],
-        'text': ['Noto_Sans', 'sans-serif']
+        'main': ['Mulish', 'sans-serif'],
+        'extra': ['Noto_Sans', 'sans-serif']
       },
     },
   },

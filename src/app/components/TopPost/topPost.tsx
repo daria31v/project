@@ -26,13 +26,13 @@ export default function TopPost() {
         <Image
           src={post.photo}
           alt="..."
-          width={600}
-          height={600}
+          width={400}
+          height={400}
           className="rounded-3xl "
         ></Image>
         <div className="mt-4 md:mt-0">
-          <h3 className="mb-4 text-medium font-semibold">{post.title}</h3>
-          <p className="text-justify font-text">{post.post}</p>
+          <h3 className="mb-4 text-medium font-bold">{post.title}</h3>
+          <p className="text-justify font-extra">{post.post}</p>
         </div>
       </div>
     </div>
