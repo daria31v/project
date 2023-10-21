@@ -14,14 +14,15 @@ const Footer = () => {
         <Link href="/partners" className="hover:text-secondary">
           Our parners
         </Link>
-      </div>
-      <div className="font-bold md:ml-auto">
-        {/* <div className="flex md:justify-end sm:justify-center w-60 h-20">
-          <Logo src="" alt="logo" />
-        </div> */}
-        <p className="md:text-start sm:text-center">
+        <p className="text-secondary mt-4">
         The World is Wonderful: Catch the Moment!
         </p>
+      </div>
+      <div className="font-bold md:ml-auto">
+        <div className="justify-center w-56 h-20">
+          <Logo src="" alt="logo" />
+        </div>
+        
       </div>
     </footer>
   );

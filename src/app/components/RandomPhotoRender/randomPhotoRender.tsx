@@ -26,7 +26,7 @@ interface PhotoProps {
 export default function RandomPhotoRender() {
   return (
     <div className="mb-20">
-      <h1 className="text-ml xl:text-start text-center uppercase font-bold">
+      <h1 className="text-ml md:text-start text-center uppercase font-bold">
         Share your journey
       </h1>
       <div className="mt-12 xl:flex sm:block sm:text-center">

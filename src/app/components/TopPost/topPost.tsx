@@ -30,7 +30,7 @@ export default function TopPost() {
           height={400}
           className="rounded-3xl "
         ></Image>
-        <div className="mt-4 md:mt-0">
+        <div className="mt-4 xl:mt-0">
           <h3 className="mb-4 text-medium font-bold">{post.title}</h3>
           <p className="text-justify font-extra">{post.post}</p>
         </div>

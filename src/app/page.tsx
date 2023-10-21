@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <section className="container xl:flex md:block py-20 xl:gap-12 ">
-        <div className="xl:max-w-[430px]">
+        <div className="xl:max-w-[430px] mr-auto">
           <h1 className="text-center font-bold text-xl mb-4 uppercase tracking-[-0.8px]">
             {" "}
             A world in my lens
@@ -40,6 +40,7 @@ export default function Home() {
             className="rounded-3xl"
           />
         </div>
+        
       </section>
       <section className="container mb-20">
         <RandomPhotoRender />

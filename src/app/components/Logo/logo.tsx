@@ -15,7 +15,7 @@ const Logo: React.FC<LogoProps> = ({
   src,
   alt,
   width ,
-  height
+  height=80,
  
 }: LogoProps) => {
   return <Image src={logo} alt={alt} width={width} height={height} />;
