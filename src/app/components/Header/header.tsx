@@ -9,7 +9,7 @@ import Image from "next/image";
 const Header = () => {
   return (
     <header className="container flex py-12 items-center h-20 ">
-      <div className="w-60 h-20">
+      <div className="w-48 h-20 mr-auto">
         <Link href="/">
         <Logo src="" alt="logo" />
       </Link>

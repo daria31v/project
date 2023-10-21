@@ -19,7 +19,7 @@ export default function TopPost() {
 
   return (
     <div className="font-normal text-medium">
-      <h2 className="text-ml xl:text-center sm:text-left uppercase font-bold">
+      <h2 className="text-ml text-center md:text-left  uppercase font-bold">
         people love to visit
       </h2>
       <div className="xl:flex md:block xl:gap-[38px] font-normal text-medium mt-12 ">
@@ -30,7 +30,7 @@ export default function TopPost() {
           height={600}
           className="rounded-3xl "
         ></Image>
-        <div className="md:mt-10">
+        <div className="mt-4 md:mt-0">
           <h3 className="mb-4 text-medium font-semibold">{post.title}</h3>
           <p className="text-justify font-text">{post.post}</p>
         </div>

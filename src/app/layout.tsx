@@ -3,7 +3,6 @@ import Footer from "./components/Footer/footer";
 import Header from "./components/Header/header";
 import "./globals.css";
 
-
 export const metadata: Metadata = {
   title: "A World in My Lens",
   description:
@@ -17,8 +16,10 @@ export default function RootLayout({
 }) {
   return (
     <>
-      <html lang="en">
-        <body className="text-primary md:mx-28 sm:mx-6">
+      <html lang="en" 
+      // className="dark"
+      >
+        <body className=" text-primary md:mx-28 sm:mx-6 bg-[#fff] dark:bg-secondary">
           <Header />
           <main className="font-general">{children}</main>
           <Footer />
