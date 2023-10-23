@@ -19,7 +19,7 @@ const Footer = () => {
         </p>
       </div>
       <div className="font-bold md:ml-auto">
-        <div className="justify-center w-56 h-20">
+        <div className=" w-56 h-20 flex justify-end">
           <Logo src="" alt="logo" />
         </div>
         
