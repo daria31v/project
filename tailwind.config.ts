@@ -23,6 +23,7 @@ module.exports = {
       'orange_light': "#EFA007",
       'orange': "#F38605",
       'duna': "#C25D05",
+      'white': "#fff"
     },
     fontWeight: {
       'normal': '400',
