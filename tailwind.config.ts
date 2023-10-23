@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src//**/*.{js,ts,jsx,tsx,mdx}"],
-  darkMode: "class",
+  // darkMode: "class",
   theme: {
    
     backgroundSize: {
@@ -43,9 +43,9 @@ module.exports = {
     section: {
     },
     screens: {
-      'mobile': '320px',
-      'tablet': '768px',
-      'decktop': '1280px',
+      'sm': '320px',
+      'md': '768px',
+      'xl': '1280px',
     
     },
     extend: {

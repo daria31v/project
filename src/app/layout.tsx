@@ -16,12 +16,12 @@ export default function RootLayout({
 }) {
   return (
     <>
-      <html lang="en" 
-      // className="dark"
-      >
+      <html lang="en" >
+       {/* className="dark" */}
+      
         <body className=" text-primary md:mx-28 sm:mx-6 bg-[#fff] dark:bg-secondary">
           <Header />
-          <main className="font-main">{children}</main>
+          <main className="w-full font-main">{children}</main>
           <Footer />
         </body>
       </html>

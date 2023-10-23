@@ -2,9 +2,11 @@ import React from "react";
 import Logo from "../Logo/logo";
 import Link from "next/link";
 import { AuthNav } from "../Auth/authNav";
-import { UserMenu } from "../Registrate/userMenu";
+// import { UserMenu } from "../Registrate/userMenu";
 import camera from "../../../../public/icon/camera.svg";
 import Image from "next/image";
+// import MobileMenu from "../MobileMenu/MobileMenu";
+import { Navigation } from "../Navigation/navigation";
 
 const Header = () => {
   return (
@@ -16,12 +18,7 @@ const Header = () => {
       </div>
       
       <div className="hidden xl:flex">
-        <nav className="xl:flex gap-8 justify-evenly font-bold text-base ml-28">
-          <Link href="/">Welcome</Link>
-          <Link href="/gallery">Gallery</Link>
-          <Link href="/blog">Blog & Tips</Link>
-          <Link href="/partners">Our partners</Link>
-        </nav>
+       <Navigation/>
         <AuthNav />
         {/* <UserMenu/> */}
         {/* {isLoggedIn ? <UserMenu /> : <AuthNav />} */}
@@ -33,6 +30,8 @@ const Header = () => {
       >
         <Image src={camera} alt="" />
       </button>
+ 
+      {/* <MobileMenu /> */}
     </header>
   );
 };
