@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="container py-6 md:flex sm:block sm:gap-2  items-center bg-secondary">
+    <footer className="container py-6 md:flex sm:block sm:gap-2  items-center bg-yellow px-4">
       <div className="grid gap-2 font-extra font-semibold sm:items-center">
         <Link href="/about" className="hover:text-secondary">
           About us
@@ -19,7 +19,7 @@ const Footer = () => {
         </p>
       </div>
       <div className="font-bold md:ml-auto">
-        <div className=" w-56 h-20 flex justify-end">
+        <div className=" w-48 h-20 flex justify-end">
           <Logo src="" alt="logo" />
         </div>
         
