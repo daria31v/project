@@ -21,7 +21,7 @@ export default function RootLayout({
       
         <body className=" text-primary md:mx-28 sm:mx-6 bg-[#fff] dark:bg-secondary">
           <Header />
-          <main className="w-full font-main">{children}</main>
+          <main className="container font-main bg-opacity-30 bg-secondary">{children}</main>
           <Footer />
         </body>
       </html>

@@ -6,8 +6,8 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="container py-6 md:flex sm:block sm:gap-2  items-center bg-yellow px-4">
-      <div className="grid gap-2 font-extra font-semibold sm:items-center">
+    <footer className="container py-6 md:flex sm:block sm:gap-2  items-center bg-yellow px-4 mx-auto">
+      <div className="grid gap-2 font-extra font-semibold sm:items-center mt-4">
         <Link href="/about" className="hover:text-secondary">
           About us
         </Link>

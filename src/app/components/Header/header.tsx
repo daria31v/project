@@ -10,7 +10,7 @@ import { Navigation } from "../Navigation/navigation";
 
 const Header = () => {
   return (
-    <header className="container flex py-12 items-center h-20 bg-yellow px-4">
+    <header className="container flex py-12 items-center h-20 bg-yellow px-4 mx-auto">
       <div className="w-48 h-20 mr-auto">
         <Link href="/">
         <Logo src="" alt="logo" />

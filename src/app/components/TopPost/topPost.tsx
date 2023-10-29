@@ -22,12 +22,12 @@ export default function TopPost() {
       <h2 className="text-ml text-center xl:text-left  uppercase font-bold">
         people love to visit
       </h2>
-      <div className="xl:grid xl:grid-cols-2 md:block font-normal text-medium mt-12 ">
+      <div className="xl:grid xl:grid-cols-2 gap-10 md:block font-normal text-medium mt-12 ">
         <div className="flex justify-center xl:block">
              <Image
           src={post.photo}
           alt="..."
-          width={400}
+          width={640}
           height={400}
           className="rounded-3xl object-cover"
         ></Image>

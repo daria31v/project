@@ -6,8 +6,9 @@ import RandomPhotoRender from "./components/RandomPhotoRender/randomPhotoRender"
 export default function Home() {
   return (
     <>
-      <section className="container xl:flex md:block py-20 xl:gap-12 ">
-        <div className="xl:max-w-[430px] mr-auto">
+      <div className="pb-20">
+      <section className=" xl:grid xl:grid-cols-2 sm:block text-center py-20 xl:gap-12 ">
+        <div className="mx-auto">
           <h1 className="text-center font-bold text-xl mb-4 uppercase tracking-[-0.8px]">
             {" "}
             A world in my lens
@@ -19,7 +20,7 @@ export default function Home() {
             Share your experience with photos. Let’s discover your next journey
             from others!
           </h2>
-          <p className="text-medium font-normal text-justify font-extra md:mb-10">
+          <p className="text-medium font-normal text-justify font-extra mb-10 xl:mb-0">
             This platform is where you can share the beautiful things you saw
             today. Gallia est omnis divisa in partes tres, quarum. Fabio vel
             iudice vincam, sunt in culpa qui officia. Salutantibus vitae elit
@@ -42,10 +43,11 @@ export default function Home() {
         </div>
         
       </section>
-      <section className="container mb-20">
+      <section className="">
         <RandomPhotoRender />
         <TopPost />
       </section>
+      </div>
     </>
   );
 }
