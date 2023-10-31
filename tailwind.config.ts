@@ -9,10 +9,6 @@ module.exports = {
       'cover': "cover",
       'contain': "contain",
     },
-    // borderColor: ({ theme }) => ({
-    //   ...theme("colors"),
-    //   DEFAULT: theme("colors.gray.200", "currentColor"),
-    // }),
     container: {
       'width': '100%'
     },  
@@ -23,7 +19,8 @@ module.exports = {
       'orange_light': "#EFA007",
       'orange': "#F38605",
       'duna': "#C25D05",
-      'white': "#fff"
+      'white': "#fff",
+      'bg-white': "#F3F6FA"
     },
     fontWeight: {
       'normal': '400',
@@ -37,10 +34,7 @@ module.exports = {
       'ml': ["30px", { lineHeight: '1.2' }],
       'xl': ["40px", { lineHeight: '0.8' }],
     },
-    // margin: ({ theme }) => ({
-    //   auto: 'auto',
-    //   ...theme('spacing'),
-    // }),
+
     section: {
     },
     screens: {

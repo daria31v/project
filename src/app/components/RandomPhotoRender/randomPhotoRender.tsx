@@ -25,12 +25,12 @@ interface PhotoProps {
 
 export default function RandomPhotoRender() {
   return (
-    <div className="mb-20">
+    <div className="md:mb-20 mb-6">
       <h1 className="text-ml xl:text-start text-center uppercase font-bold">
         Share your journey
       </h1>
       <div className="mt-12 sm:text-center md:text-justify max-w-auto mx-auto py-10">
-        <ul className="grid gap-4 grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 xl:gap-16 md:gap-10">
+        <ul className="grid gap-4 grid-cols-1 sm:grid-cols-1  md:grid-cols-2 xl:grid-cols-3 xl:gap-16 md:gap-10">
           {posts.map((post) => (
             <li key={post.id}>
               <div className="rounded-3xl sm:mb-16 md:mb-0">

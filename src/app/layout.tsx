@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Footer from "./components/Footer/footer";
 import Header from "./components/Header/header";
 import "./globals.css";
+import ContainerComponent from "./components/ContainerComponent/containerComponent";
 
 export const metadata: Metadata = {
   title: "A World in My Lens",
@@ -16,13 +17,14 @@ export default function RootLayout({
 }) {
   return (
     <>
-      <html lang="en" >
-       {/* className="dark" */}
-      
-        <body className=" text-primary md:mx-28 sm:mx-6 bg-[#fff] dark:bg-secondary">
+      <html lang="en">
+        {/* className="dark" */}
+
+        <body className="container mx-auto my-0 text-primary bg-bg-white dark:bg-secondary">
           <Header />
-          <main className="container font-main bg-opacity-30 bg-secondary">{children}</main>
-          <Footer />
+          <main className="container font-main bg-opacity-30 xl:px-24 md:px-10 px-3">
+            {children}</main>
+         <Footer />
         </body>
       </html>
     </>

@@ -85,7 +85,7 @@ export default function Blog({
   params: { id, photo, title, nikname, avatar, date },
 }: BlogProps) {
   return (
-    <div className="">
+    <div >
       <h1 className="text-[30px] mt-1 mb-1 text-center">Blog & Tips</h1>
       <div className="mt-6 flex justify-center">
         <ul className="grid grid-cols-3 justify-between gap-10 mb-10">
@@ -108,8 +108,7 @@ export default function Blog({
       </div>
       {/* loading more*/}
       <div className="flex justify-center items-center py-4">
-       
-        <button>
+        <button className="cursor-pointer">
           <svg
             width="60"
             height="60"

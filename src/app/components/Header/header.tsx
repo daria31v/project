@@ -10,7 +10,7 @@ import { Navigation } from "../Navigation/navigation";
 
 const Header = () => {
   return (
-    <header className="container flex py-12 items-center h-20 bg-yellow px-4 mx-auto">
+    <header className="container flex items-center h-20 px-24 py-8">
       <div className="w-48 h-20 mr-auto">
         <Link href="/">
         <Logo src="" alt="logo" />
@@ -23,14 +23,6 @@ const Header = () => {
         {/* <UserMenu/> */}
         {/* {isLoggedIn ? <UserMenu /> : <AuthNav />} */}
       </div>
-{/* 
-      <button
-        type="button"
-        className="inline-block xl:hidden ml-auto"
-      >
-        <Image src={camera} alt="" />
-      </button> */}
- 
       <MobileMenu />
     </header>
   );

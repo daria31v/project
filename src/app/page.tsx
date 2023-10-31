@@ -2,13 +2,13 @@ import Image from "next/image";
 import slider from "../../public/images/slider.jpg";
 import TopPost from "./components/TopPost/topPost";
 import RandomPhotoRender from "./components/RandomPhotoRender/randomPhotoRender";
+import ContainerComponent from "./components/ContainerComponent/containerComponent";
 
 export default function Home() {
   return (
     <>
-      <div className="pb-20">
-      <section className=" xl:grid xl:grid-cols-2 sm:block text-center py-20 xl:gap-12 ">
-        <div className="mx-auto">
+      <section className=" xl:grid xl:grid-cols-2 sm:block text-center py-20 xl:gap-12">
+        <div className="">
           <h1 className="text-center font-bold text-xl mb-4 uppercase tracking-[-0.8px]">
             {" "}
             A world in my lens
@@ -32,7 +32,7 @@ export default function Home() {
           </p>
         </div>
         {/* slider */}
-        <div>
+        <div className="flex justify-center items-center">
           <Image
             src={slider}
             alt="slider photo"
@@ -43,11 +43,10 @@ export default function Home() {
         </div>
         
       </section>
-      <section className="">
+      <section className="mb-20">
         <RandomPhotoRender />
         <TopPost />
       </section>
-      </div>
     </>
   );
 }
