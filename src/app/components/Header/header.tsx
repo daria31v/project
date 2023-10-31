@@ -3,8 +3,8 @@ import Logo from "../Logo/logo";
 import Link from "next/link";
 import { AuthNav } from "../Auth/authNav";
 // import { UserMenu } from "../Registrate/userMenu";
-import camera from "../../../../public/icon/camera.svg";
-import Image from "next/image";
+// import camera from "../../../../public/icon/camera.svg";
+// import Image from "next/image";
 import MobileMenu from "../MobileMenu/MobileMenu";
 import { Navigation } from "../Navigation/navigation";
 

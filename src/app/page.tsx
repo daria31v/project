@@ -2,7 +2,6 @@ import Image from "next/image";
 import slider from "../../public/images/slider.jpg";
 import TopPost from "./components/TopPost/topPost";
 import RandomPhotoRender from "./components/RandomPhotoRender/randomPhotoRender";
-import ContainerComponent from "./components/ContainerComponent/containerComponent";
 
 export default function Home() {
   return (

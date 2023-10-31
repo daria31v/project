@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Footer from "./components/Footer/footer";
 import Header from "./components/Header/header";
 import "./globals.css";
-import ContainerComponent from "./components/ContainerComponent/containerComponent";
+
 
 export const metadata: Metadata = {
   title: "A World in My Lens",
