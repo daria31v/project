@@ -20,9 +20,9 @@ export default function RootLayout({
       <html lang="en">
         {/* className="dark" */}
 
-        <body className="container mx-auto my-0 text-primary bg-bg-white">
+        <body className="text-primary bg-bg-white">
           <Header />
-          <main className="container font-main bg-opacity-30 xl:px-24 md:px-10 px-3">
+          <main className="font-main bg-opacity-30 xl:px-24 md:px-10 px-3">
             {children}
           </main>
           <Footer />

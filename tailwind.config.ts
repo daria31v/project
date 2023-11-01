@@ -3,15 +3,6 @@ module.exports = {
   content: ["./src//**/*.{js,ts,jsx,tsx,mdx}"],
   // darkMode: "class",
   theme: {
-   
-    backgroundSize: {
-      'auto': "auto",
-      'cover': "cover",
-      'contain': "contain",
-    },
-    container: {
-      'width': '100%'
-    },  
     colors: {
       'primary': "#373F41",
       'secondary': "#34688F",
@@ -33,15 +24,6 @@ module.exports = {
       'medium': ["16px", { lineHeight: '1.5' }],
       'ml': ["30px", { lineHeight: '1.2' }],
       'xl': ["40px", { lineHeight: '0.8' }],
-    },
-
-    section: {
-    },
-    screens: {
-      'sm': '320px',
-      'md': '768px',
-      'xl': '1280px',
-    
     },
     extend: {
       fontFamily: {
