@@ -2,6 +2,6 @@ type Container = {
     children: React.ReactNode
 }
 
-export const ContainerComponent = ({ children } : Container) => {
+export const Container = ({ children } : Container) => {
   return <div className="container mx-auto">{children}</div>;
 };

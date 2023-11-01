@@ -1,4 +1,4 @@
-import { ContainerComponent } from "@/app/components/ContainerComponent/containerComponent";
+import { Container } from "@/app/components/Container/container";
 import { Metadata } from "next";
 
 // SEO
@@ -9,8 +9,8 @@ export const metadata: Metadata = {
 
 export default async function CreatePost() {
   return (
-    <ContainerComponent>
+    <Container>
       <div>Create New Post</div>
-    </ContainerComponent>
+    </Container>
   );
 }

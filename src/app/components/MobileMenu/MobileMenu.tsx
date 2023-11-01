@@ -6,7 +6,7 @@ import { Navigation } from "../Navigation/navigation";
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import camera from "../../../../public/icon/camera.svg";
-import clsx from "clsx";
+// import clsx from "clsx";
 
 export default function MobileMenu() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -31,8 +31,7 @@ export default function MobileMenu() {
 
   return (
     <div className="py-4 h-auto top-10 right-10">
-      
-        <button
+      <button
           onClick={handleClick}
           type="button"
           className="inline-block xl:hidden ml-auto"
@@ -66,9 +65,9 @@ export default function MobileMenu() {
       
 
       <div
-        className={clsx('xl:hidden fixed w-[50%] h-[60%] right-[10%] md:right-[15%] top-28 z-1 font-extra font-bold uppercase text-xl text-white bg-orange_light shadow-xl rounded-3xl',
-          isOpen ? "block" : "hidden"
-  )}
+        className={`xl:hidden fixed w-[50%] h-[60%] right-[10%] md:right-[15%] top-28 z-1 font-extra font-bold uppercase text-xl text-white bg-orange_light shadow-xl rounded-3xl ${
+          isOpen ? "block" : "hidden"}`
+  }
       >
         <div className="p-10 rounded-3xl" onClick={handleClick}>
           <Navigation />

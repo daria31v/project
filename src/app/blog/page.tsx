@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import image from "../../../public/images/photo.jpg";
-import { ContainerComponent } from "../components/ContainerComponent/containerComponent";
+import { Container } from "../components/Container/container";
 
 // SEO
 export const metadata: Metadata = {
@@ -86,7 +86,7 @@ export default function Blog({
   params: { id, photo, title, nikname, avatar, date },
 }: BlogProps) {
   return (
-    <ContainerComponent>
+    <Container>
       <div>
         <h1 className="text-[30px] mt-1 mb-1 text-center">Blog & Tips</h1>
         <div className="mt-6 flex justify-center">
@@ -153,6 +153,6 @@ export default function Blog({
           </button>
         </div>
       </div>
-    </ContainerComponent>
+    </Container>
   );
 }

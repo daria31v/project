@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { ContainerComponent } from "../components/ContainerComponent/containerComponent";
+import { Container } from "../components/Container/container";
 
 // SEO
 export const metadata: Metadata = {
@@ -9,10 +9,10 @@ export const metadata: Metadata = {
 
 export default function Gallery() {
   return (
-    <ContainerComponent>
+    <Container>
       <div>
         <h1 className="text-[30px] mt-1 mb-1 text-center">Gallery</h1>
       </div>
-    </ContainerComponent>
+    </Container>
   );
 }

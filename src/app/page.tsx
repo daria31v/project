@@ -2,12 +2,12 @@ import Image from "next/image";
 import slider from "../../public/images/slider.jpg";
 import TopPost from "./components/TopPost/topPost";
 import RandomPhotoRender from "./components/RandomPhotoRender/randomPhotoRender";
-import { ContainerComponent } from "./components/ContainerComponent/containerComponent";
+import { Container } from "./components/Container/container";
 
 export default function Home() {
   return (
     <>
-      <ContainerComponent>
+      <Container>
         <section className=" xl:grid xl:grid-cols-2 sm:block text-center py-20 xl:gap-12">
           <div>
             <h1 className="text-center font-bold text-xl mb-4 uppercase tracking-[-0.8px]">
@@ -47,7 +47,7 @@ export default function Home() {
           <RandomPhotoRender />
           <TopPost />
         </section>
-      </ContainerComponent>
+      </Container>
     </>
   );
 }

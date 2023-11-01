@@ -7,20 +7,20 @@ import { AuthNav } from '../Auth/authNav'
 // import Image from "next/image";
 import MobileMenu from '../MobileMenu/MobileMenu'
 import { Navigation } from '../Navigation/navigation'
-import { ContainerComponent } from '../ContainerComponent/containerComponent'
+import { Container } from '../Container/container'
 
 const Header = () => {
   return (
     <header>
-      <ContainerComponent>
+      <Container>
         <div className="flex items-center h-20 md:px-24 md:py-8 px-5 py-5">
-          <div className="w-48 h-20 ">
+          <div className="w-48 h-20 mr-auto">
             <Link href="/">
               <Logo src="" alt="logo" />
             </Link>
           </div>
 
-          <div className="hidden xl:flex">
+          <div className="hidden xl:flex xl:items-center">
             <Navigation />
             <AuthNav />
             {/* <UserMenu/> */}
@@ -28,7 +28,7 @@ const Header = () => {
           </div>
           <MobileMenu />
         </div>
-      </ContainerComponent>
+      </Container>
     </header>
   )
 }
