@@ -1,6 +1,8 @@
-import React from 'react'
+interface BtnProps  { 
+    children: JSX.Element;
+ }
 
-const Button = (props: any) => {
+const Button = (props: BtnProps) => {
   return (
     <button className="hover:bg-orange_light duration-500">
       {props.children}

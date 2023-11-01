@@ -1,6 +1,7 @@
 // import { Metadata } from "next";
 import Image from "next/image";
-import image from '../../../../../public/images/photo.jpg'
+import image from "../../../../../public/images/photo.jpg";
+import { ContainerComponent } from "@/app/components/ContainerComponent/containerComponent";
 
 interface PostProps {
   params: {
@@ -38,13 +39,15 @@ export default async function Post({ params: { id, src, alt } }: PostProps) {
     tips: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua consequ ut labore et dolore magna aliqua",
   };
   return (
-    <section className="p-8 ">
-      <div key={post.id}>
-        <Image src={image} alt="post" width={150} ></Image>
-        <p>user: {post.nikname}</p>
-        <h3>{post.title}</h3>
-        <p>{post.tips}</p>
-      </div>
-    </section>
+    <ContainerComponent>
+      <section className="p-8 ">
+        <div key={post.id}>
+          <Image src={image} alt="post" width={150}></Image>
+          <p>user: {post.nikname}</p>
+          <h3>{post.title}</h3>
+          <p>{post.tips}</p>
+        </div>
+      </section>
+    </ContainerComponent>
   );
 }

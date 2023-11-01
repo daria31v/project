@@ -29,7 +29,7 @@ ul {
 .container {
   width: 100%;
 }
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .container {
     min-width: 768px;
   }
@@ -38,4 +38,4 @@ ul {
   .container {
     min-width: 1280px;
   }
-}
+} */
