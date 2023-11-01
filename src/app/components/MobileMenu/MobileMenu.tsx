@@ -65,7 +65,7 @@ export default function MobileMenu() {
       
 
       <div
-        className={`xl:hidden fixed w-[50%] h-[60%] right-[10%] md:right-[15%] top-28 z-1 font-extra font-bold uppercase text-xl text-white bg-orange_light shadow-xl rounded-3xl ${
+        className={`xl:hidden absolute w-1/2 right-[10%] md:right-[15%] top-28 z-1 font-extra font-bold uppercase text-xl text-white bg-orange_light shadow-xl rounded-3xl ${
           isOpen ? "block" : "hidden"}`
   }
       >

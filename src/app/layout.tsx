@@ -22,7 +22,7 @@ export default function RootLayout({
 
         <body className="text-primary bg-bg-white">
           <Header />
-          <main className="font-main bg-opacity-30 xl:px-24 md:px-10 px-3">
+          <main className="font-main bg-opacity-30 ">
             {children}
           </main>
           <Footer />

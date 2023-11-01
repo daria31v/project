@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <footer>
       <Container>
-        <div className="md:flex block gap-2 items-center py-6 px-24 h-auto">
+        <div className="md:flex block gap-2 items-center py-6 h-auto">
           <div className="grid gap-2 font-extra font-semibold sm:items-center mt-4">
             <Link href="/about" className="hover:text-secondary">
               About us

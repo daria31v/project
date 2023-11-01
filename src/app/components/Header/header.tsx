@@ -13,7 +13,7 @@ const Header = () => {
   return (
     <header>
       <Container>
-        <div className="flex items-center h-20 md:px-24 md:py-8 px-5 py-5">
+        <div className="flex items-center h-20 py-5">
           <div className="w-48 h-20 mr-auto">
             <Link href="/">
               <Logo src="" alt="logo" />
