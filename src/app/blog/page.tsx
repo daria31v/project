@@ -1,14 +1,14 @@
-import { Metadata } from "next";
-import Link from "next/link";
-import Image from "next/image";
-import image from "../../../public/images/photo.jpg";
-import { Container } from "../components/Container/container";
+import { Metadata } from 'next'
+import Link from 'next/link'
+import Image from 'next/image'
+import image from '../../../public/images/photo.jpg'
+import { Container } from '../components/Container/container'
 
 // SEO
 export const metadata: Metadata = {
-  title: "Blog&Tips | A World in My Lens",
-  description: "",
-};
+  title: 'Blog&Tips | A World in My Lens',
+  description: ''
+}
 
 // async function getData() {
 //   const data = await fetch("http://.../post", {
@@ -24,67 +24,65 @@ const posts = [
   {
     id: 1,
     photo: image,
-    title: "Wonderful Blog",
-    nikname: "Fox",
-    avatar: "http://",
-    date: "17.10.2023",
+    title: 'Wonderful Blog',
+    nikname: 'Fox',
+    avatar: 'http://',
+    date: '17.10.2023'
   },
   {
     id: 2,
     photo: image,
-    title: "Wonderful Blog",
-    nikname: "Fox",
-    avatar: "http://",
-    date: "17.10.2023",
+    title: 'Wonderful Blog',
+    nikname: 'Fox',
+    avatar: 'http://',
+    date: '17.10.2023'
   },
   {
     id: 3,
     photo: image,
-    title: "Wonderful Blog",
-    nikname: "Fox",
-    avatar: "http://",
-    date: "17.10.2023",
+    title: 'Wonderful Blog',
+    nikname: 'Fox',
+    avatar: 'http://',
+    date: '17.10.2023'
   },
   {
     id: 4,
     photo: image,
-    title: "Wonderful Blog",
-    nikname: "Fox",
-    avatar: "http://",
-    date: "17.10.2023",
+    title: 'Wonderful Blog',
+    nikname: 'Fox',
+    avatar: 'http://',
+    date: '17.10.2023'
   },
   {
     id: 5,
     photo: image,
-    title: "Wonderful Blog",
-    nikname: "Fox",
-    avatar: "http://",
-    date: "17.10.2023",
+    title: 'Wonderful Blog',
+    nikname: 'Fox',
+    avatar: 'http://',
+    date: '17.10.2023'
   },
   {
     id: 6,
     photo: image,
-    title: "Wonderful Blog",
-    nikname: "Fox",
-    avatar: "http://",
-    date: "17.10.2023",
-  },
-];
+    title: 'Wonderful Blog',
+    nikname: 'Fox',
+    avatar: 'http://',
+    date: '17.10.2023'
+  }
+]
 
 interface BlogProps {
   params: {
-    id: string;
-    photo: string;
-    title: string;
-    nikname: string;
-    avatar: string;
-    date: string;
-  };
+    id: string
+    photo: string
+    title: string
+    nikname: string
+    avatar: string
+    date: string
+  }
 }
 
-export default function Blog({
-  params: { id, photo, title, nikname, avatar, date },
-}: BlogProps) {
+export default function Blog({ params: { id, photo, title, nikname, avatar, date } }: BlogProps) {
   return (
     <Container>
       <div>
@@ -97,9 +95,7 @@ export default function Blog({
                   {/* <div> */}
                   <Image src={post.photo} alt="..."></Image>
                   <div className="py-2 px-5">
-                    <h2 className="text-ml font-bold text-secondary">
-                      {post.title}
-                    </h2>
+                    <h2 className="text-ml font-bold text-secondary">{post.title}</h2>
                     <p>{post.date}</p>
                   </div>
                   {/* </div> */}
@@ -126,11 +122,7 @@ export default function Blog({
                 fill-opacity="0.3"
               />
               <circle cx="30" cy="30" r="24" fill="#3C64B1" />
-              <path
-                d="M23 24L29.8205 36L37 24"
-                stroke="#EBF2FF"
-                stroke-width="3"
-              />
+              <path d="M23 24L29.8205 36L37 24" stroke="#EBF2FF" stroke-width="3" />
               <defs>
                 <radialGradient
                   id="paint0_radial_101_183"
@@ -140,11 +132,7 @@ export default function Blog({
                   gradientUnits="userSpaceOnUse"
                   gradientTransform="translate(30 30) rotate(72.8973) scale(40.8044)"
                 >
-                  <stop
-                    offset="0.0902774"
-                    stop-color="#FAFAFA"
-                    stop-opacity="0"
-                  />
+                  <stop offset="0.0902774" stop-color="#FAFAFA" stop-opacity="0" />
                   <stop offset="0.543402" stop-color="#BAD1FF" />
                   <stop offset="1" stop-color="#275ABD" />
                 </radialGradient>
@@ -154,5 +142,5 @@ export default function Blog({
         </div>
       </div>
     </Container>
-  );
+  )
 }

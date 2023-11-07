@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from 'next/link'
 
 export const AuthNav = () => {
   return (
@@ -6,5 +6,5 @@ export const AuthNav = () => {
       <Link href="/login">Log In</Link>
       <Link href="/registration">Join us</Link>
     </div>
-  );
-};
+  )
+}

@@ -1,5 +1,5 @@
-import { Metadata } from "next";
-import { Container } from "../components/Container/container";
+import { Metadata } from 'next'
+import { Container } from '../components/Container/container'
 
 export default function Registration() {
   return (
@@ -8,5 +8,5 @@ export default function Registration() {
         <h1 className="text-ml mt-1 mb-1 text-center uppercase">Joing Us</h1>
       </div>
     </Container>
-  );
+  )
 }

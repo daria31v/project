@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from 'next/link'
 
 export const UserMenu = () => {
   return (
@@ -12,5 +12,5 @@ export const UserMenu = () => {
 
       <button type="button">LogOut</button>
     </div>
-  );
-};
+  )
+}

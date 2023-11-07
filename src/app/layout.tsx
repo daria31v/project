@@ -19,10 +19,9 @@ export default function RootLayout({
     <>
       <html lang="en">
         {/* className="dark" */}
-
-        <body className="text-primary bg-bg-white">
+        <body>
           <Header />
-          <main className="font-main bg-opacity-30 ">
+          <main className="bg-opacity-30 ">
             {children}
           </main>
           <Footer />
