@@ -6,16 +6,16 @@ import photo from '../../../../public/images/photo.jpg'
 const posts = [
   {
     id: 1,
-    photo: buda
+    photo: buda,
   },
   {
     id: 2,
-    photo: fly
+    photo: fly,
   },
   {
     id: 3,
-    photo: photo
-  }
+    photo: photo,
+  },
 ]
 
 interface PhotoProps {

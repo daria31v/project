@@ -6,7 +6,7 @@ import { Navigation } from '../Navigation/navigation'
 import { useState, useEffect } from 'react'
 import Image from 'next/image'
 import camera from '../../../../public/icon/camera.svg'
-import clsx from "clsx";
+import clsx from 'clsx'
 
 export default function MobileMenu() {
   const [isOpen, setIsOpen] = useState<boolean>(false)
@@ -58,12 +58,17 @@ export default function MobileMenu() {
         )}
       </button>
 
-      <div
+      {/* <div
         className={`xl:hidden absolute w-1/2 right-[10%] md:right-[15%] top-28 z-1 font-extra font-bold uppercase text-xl text-white bg-orange_light shadow-xl rounded-3xl ${
           isOpen ? 'block' : 'hidden'
         }`}
+      > */}
+      <div
+        className={clsx(
+          'xl:hidden absolute w-1/2 right-[10%] md:right-[15%] top-28 z-1 font-extra font-bold uppercase text-xl text-white bg-orange_light shadow-xl rounded-3xl',
+          isOpen ? 'block' : 'hidden',
+        )}
       >
-      {/* <div className={clsx('xl:hidden absolute w-1/2 right-[10%] md:right-[15%] top-28 z-1 font-extra font-bold uppercase text-xl text-white bg-orange_light shadow-xl rounded-3xl', isOpen ? 'block' : 'hidden' )}> */}
         <div className="p-10 rounded-3xl" onClick={handleClick}>
           <Navigation />
           <AuthNav />

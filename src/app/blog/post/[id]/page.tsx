@@ -36,7 +36,7 @@ export default async function Post({ params: { id, src, alt } }: PostProps) {
     title: 'Wonderful Blog',
     nikname: 'Fox',
     avatar: 'http://',
-    tips: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua consequ ut labore et dolore magna aliqua'
+    tips: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua consequ ut labore et dolore magna aliqua',
   }
   return (
     <Container>

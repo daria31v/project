@@ -7,7 +7,7 @@ import { Container } from '../components/Container/container'
 // SEO
 export const metadata: Metadata = {
   title: 'Blog&Tips | A World in My Lens',
-  description: ''
+  description: '',
 }
 
 // async function getData() {
@@ -27,7 +27,7 @@ const posts = [
     title: 'Wonderful Blog',
     nikname: 'Fox',
     avatar: 'http://',
-    date: '17.10.2023'
+    date: '17.10.2023',
   },
   {
     id: 2,
@@ -35,7 +35,7 @@ const posts = [
     title: 'Wonderful Blog',
     nikname: 'Fox',
     avatar: 'http://',
-    date: '17.10.2023'
+    date: '17.10.2023',
   },
   {
     id: 3,
@@ -43,7 +43,7 @@ const posts = [
     title: 'Wonderful Blog',
     nikname: 'Fox',
     avatar: 'http://',
-    date: '17.10.2023'
+    date: '17.10.2023',
   },
   {
     id: 4,
@@ -51,7 +51,7 @@ const posts = [
     title: 'Wonderful Blog',
     nikname: 'Fox',
     avatar: 'http://',
-    date: '17.10.2023'
+    date: '17.10.2023',
   },
   {
     id: 5,
@@ -59,7 +59,7 @@ const posts = [
     title: 'Wonderful Blog',
     nikname: 'Fox',
     avatar: 'http://',
-    date: '17.10.2023'
+    date: '17.10.2023',
   },
   {
     id: 6,
@@ -67,8 +67,8 @@ const posts = [
     title: 'Wonderful Blog',
     nikname: 'Fox',
     avatar: 'http://',
-    date: '17.10.2023'
-  }
+    date: '17.10.2023',
+  },
 ]
 
 interface BlogProps {

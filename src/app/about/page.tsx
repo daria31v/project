@@ -4,7 +4,7 @@ import { Container } from '../components/Container/container'
 // SEO
 export const metadata: Metadata = {
   title: 'About us | A World in My Lens',
-  description: ''
+  description: '',
 }
 
 export default function About() {
