@@ -1,43 +1,36 @@
-
-import type { Config } from 'tailwindcss'
-// module.exports = {
-//   darkMode: '',
-//   // ...
-// }
-const config: Config = {
-  content: [
-    './src//**/*.{js,ts,jsx,tsx,mdx}'   
-  ],
-  
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ['./src//**/*.{js,ts,jsx,tsx,mdx}'],
+  // darkMode: "class",
   theme: {
-    screens: {},
     colors: {
-      blue: '#34688F',
+      primary: '#373F41',
+      secondary: '#34688F',
       yellow: '#F6CA07',
-      ligth_orange: '#EFA007',
+      orange_light: '#EFA007',
       orange: '#F38605',
       duna: '#C25D05',
-      black: '#373F41'
+      white: '#fff',
+      'bg-white': '#F3F6FA'
     },
     fontWeight: {
       normal: '400',
       semibold: '600',
-      bold: '700',      
+      bold: '700'
     },
     fontSize: {
-      sm: ['10px', '12px'],
-      base: ['14px', '18px'],
-      medium: ['16px', '24px'],
-      ml: ['30px', '36px'],
-      xl: ['40px', '32px']      
+      sm: ['10px', { lineHeight: '1.2' }],
+      base: ['14px', { lineHeight: '1.28' }],
+      medium: ['16px', { lineHeight: '1.5' }],
+      ml: ['30px', { lineHeight: '1.2' }],
+      xl: ['40px', { lineHeight: '0.8' }]
+    },
+    fontFamily: {
+      main: ['Mulish', 'sans-serif'],
+      extra: ['Noto_Sans', 'sans-serif']
     },
     extend: {
-      fontFamily: {
-      sans: ['Mulish', 'sans'],
-      news: ['News Cycle', 'sans'],
-    },
-    },
+    }
   },
-  plugins: [],
+  plugins: []
 }
-export default config

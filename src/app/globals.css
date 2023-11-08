@@ -1,33 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&family=Noto+Sans:wght@400;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-} */
-
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Mulish', sans-serif; 
+  font-family: 'Mulish', sans-serif;
+  background-color: rgb(243 246 250 / var(--tw-bg-opacity));
 }
 ul {
   list-style: none;
-  
 }
-
-
-
-/* @media screen and (min-width: 768px) {};
-
-@media screen and (min-width: 1280px) {}; */

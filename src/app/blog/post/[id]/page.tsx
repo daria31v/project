@@ -1,13 +1,14 @@
 // import { Metadata } from "next";
-import Image from "next/image";
+import Image from 'next/image'
 import image from '../../../../../public/images/photo.jpg'
+import { Container } from '@/app/components/Container/container'
 
 interface PostProps {
   params: {
-    id: string;
-    src: string;
-    alt: string;
-  };
+    id: string
+    src: string
+    alt: string
+  }
 }
 
 // export async function generateMetadata({params: {id}, } : PostProps) : Promise<Metadata> {
@@ -32,19 +33,21 @@ export default async function Post({ params: { id, src, alt } }: PostProps) {
   const post = {
     id: 1,
     Image: image,
-    title: "Wonderful Blog",
-    nikname: "Fox",
-    avatar: "http://",
-    tips: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua consequ ut labore et dolore magna aliqua",
-  };
+    title: 'Wonderful Blog',
+    nikname: 'Fox',
+    avatar: 'http://',
+    tips: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua consequ ut labore et dolore magna aliqua',
+  }
   return (
-    <section className="p-8 ">
-      <div key={post.id}>
-        <Image src={image} alt="post" width={150} ></Image>
-        <p>user: {post.nikname}</p>
-        <h3>{post.title}</h3>
-        <p>{post.tips}</p>
-      </div>
-    </section>
-  );
+    <Container>
+      <section className="p-8 ">
+        <div key={post.id}>
+          <Image src={image} alt="post" width={150}></Image>
+          <p>user: {post.nikname}</p>
+          <h3>{post.title}</h3>
+          <p>{post.tips}</p>
+        </div>
+      </section>
+    </Container>
+  )
 }

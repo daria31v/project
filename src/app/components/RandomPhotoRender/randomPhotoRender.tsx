@@ -1,7 +1,7 @@
-import Image from "next/image";
-import buda from "../../../../public/images/buda.jpg";
-import fly from "../../../../public/images/fly.jpg";
-import photo from "../../../../public/images/photo.jpg";
+import Image from 'next/image'
+import buda from '../../../../public/images/buda.jpg'
+import fly from '../../../../public/images/fly.jpg'
+import photo from '../../../../public/images/photo.jpg'
 
 const posts = [
   {
@@ -16,34 +16,32 @@ const posts = [
     id: 3,
     photo: photo,
   },
-];
+]
 
 interface PhotoProps {
-  id: string;
-  photo: string;
+  id: string
+  photo: string
 }
 
 export default function RandomPhotoRender() {
   return (
-    <section className="xl:max-w-[1280px]">
-      <h1 className="text-[30px] pr-[100px] pl-[100px] pt-[27px] text-start uppercase font-bold">
-        Share your journey
-      </h1>
-      <div className="mt-[46px] flex justify-center ">
-        <ul className="flex flex-wrap justify-between gap-[63px]">
+    <div className="md:mb-20 mb-6">
+      <h1 className="text-ml xl:text-start text-center uppercase font-bold">Share your journey</h1>
+      <div className="mt-12 sm:text-center md:text-justify max-w-auto mx-auto py-10">
+        <ul className="grid gap-4 grid-cols-1 sm:grid-cols-1  md:grid-cols-2 xl:grid-cols-3 xl:gap-16 md:gap-10">
           {posts.map((post) => (
             <li key={post.id}>
-              <div className="max-h-[400px] overflow-hidden rounded-3xl">
+              <div className="rounded-3xl sm:mb-16 md:mb-0">
                 <Image
                   src={post.photo}
-                  alt="..."
-                  width={320}                  
+                  alt="random photo"
+                  className="w-full h-full overflow-hidden  object-cover max-h-[350px] rounded-2xl"
                 ></Image>
               </div>
             </li>
           ))}
         </ul>
       </div>
-    </section>
-  );
+    </div>
+  )
 }
