@@ -1,5 +1,4 @@
-import React from 'react'
-import logo from '../../../../public/images/logo.png'
+import logo from '../../../../public/images/logo-old.png'
 
 import Image from 'next/image'
 
@@ -10,7 +9,7 @@ interface LogoProps {
   height?: number
 }
 
-const Logo: React.FC<LogoProps> = ({ src, alt, width, height = 80 }: LogoProps) => {
+const Logo: React.FC<LogoProps> = ({ src, alt, width, height }: LogoProps) => {
   return <Image src={logo} alt={alt} width={width} height={height} />
 }
 

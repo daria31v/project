@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "name": "Lenovo",
+    "logo": "./images/lenovo.png",
+    "web": "https://www.lenovo.com/cz/cs/?orgRef=https%253A%252F%252Fwww.google.com%252F"
+  },
+  {
+    "id": 2,
+    "name": "Cannon",
+    "logo": "./images/lenovo.png",
+    "web": "https://www.lenovo.com/cz/cs/?orgRef=https%253A%252F%252Fwww.google.com%252F"
+  },
+  {
+    "id": 3,
+    "name": "Apple",
+    "logo": "./images/lenovo.png",
+    "web": "https://www.lenovo.com/cz/cs/?orgRef=https%253A%252F%252Fwww.google.com%252F"
+  },
+  {
+    "id": 4,
+    "name": "Samsung",
+    "logo": "./images/lenovo.png",
+    "web": "https://www.lenovo.com/cz/cs/?orgRef=https%253A%252F%252Fwww.google.com%252F"
+  },
+  {
+    "id": 5,
+    "name": "Sony",
+    "logo": "./images/lenovo.png",
+    "web": "https://www.lenovo.com/cz/cs/?orgRef=https%253A%252F%252Fwww.google.com%252F"
+
+  },
+  {
+    "id": 6,
+    "name": "Nikon",
+    "logo": "./images/lenovo.png",
+    "web": "https://www.lenovo.com/cz/cs/?orgRef=https%253A%252F%252Fwww.google.com%252F"
+  },
+  {
+    "id": 7,
+    "name": "Leica",
+    "logo": "./images/lenovo.png",
+    "web": "https://www.lenovo.com/cz/cs/?orgRef=https%253A%252F%252Fwww.google.com%252F"
+  },
+  {
+    "id": 8,
+    "name": "Olympus",
+    "logo": "./public/images/lenovo.png",
+    "web": "https://www.lenovo.com/cz/cs/?orgRef=https%253A%252F%252Fwww.google.com%252F"
+  },
+  {
+    "id": 9,
+    "name": "Fujifilm",
+    "logo": "./images/lenovo.png",
+    "web": "https://www.lenovo.com/cz/cs/?orgRef=https%253A%252F%252Fwww.google.com%252F"
+  }
+]
