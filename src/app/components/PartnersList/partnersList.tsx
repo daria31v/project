@@ -1,62 +1,72 @@
 import Link from 'next/link'
 import Image from 'next/image'
 // import partners from './partnersData.json'
+import lenovo from '../../../../public/images/lenovo.png'
+import canon from '../../../../public/images/canon.png'
+import nikon from '../../../../public/images/nikon.png'
+import leica from '../../../../public/images/leica.png'
+import apple from '../../../../public/images/apple.jpeg'
+import samsung from '../../../../public/images/samsung.webp'
+import sony from '../../../../public/images/sony.jpeg'
+import olympus from '../../../../public/images/olympus.png'
+import fujifilm from '../../../../public/images/fujifilm.png'
+
 
 const partners = [
   {
     "id": 1,
     "name": "Lenovo",
-    "logo": "https://asset.brandfetch.io/iddtMrgJvA/id9L7W04ae.png?updated=1667571544285",
-    "web": "https://www.lenovo.com/cz/cs/?orgRef=https%253A%252F%252Fwww.google.com%252F"
+    "logo": lenovo,
+    "web": "https://www.lenovo.com/cz/cs"
   },
   {
     "id": 2,
-    "name": "Cannon",
-    "logo": "https://asset.brandfetch.io/iddtMrgJvA/id9L7W04ae.png?updated=1667571544285",
-    "web": "https://www.lenovo.com/cz/cs/?orgRef=https%253A%252F%252Fwww.google.com%252F"
+    "name": "Canon",
+    "logo": canon,
+    "web": "https://www.canon.cz/"
   },
   {
     "id": 3,
     "name": "Apple",
-    "logo": "https://asset.brandfetch.io/iddtMrgJvA/id9L7W04ae.png?updated=1667571544285",
-    "web": "https://www.lenovo.com/cz/cs/?orgRef=https%253A%252F%252Fwww.google.com%252F"
+    "logo": apple,
+    "web": "https://www.apple.com/cz/store"
   },
   {
     "id": 4,
     "name": "Samsung",
-    "logo": "https://asset.brandfetch.io/iddtMrgJvA/id9L7W04ae.png?updated=1667571544285",
-    "web": "https://www.lenovo.com/cz/cs/?orgRef=https%253A%252F%252Fwww.google.com%252F"
+    "logo": samsung,
+    "web": "https://www.samsung.com/cz/"
   },
   {
     "id": 5,
     "name": "Sony",
-    "logo": "https://asset.brandfetch.io/iddtMrgJvA/id9L7W04ae.png?updated=1667571544285",
-    "web": "https://www.lenovo.com/cz/cs/?orgRef=https%253A%252F%252Fwww.google.com%252F"
+    "logo": sony,
+    "web": "https://www.sony.cz/"
 
   },
   {
     "id": 6,
     "name": "Nikon",
-    "logo": "https://asset.brandfetch.io/iddtMrgJvA/id9L7W04ae.png?updated=1667571544285",
-    "web": "https://www.lenovo.com/cz/cs/?orgRef=https%253A%252F%252Fwww.google.com%252F"
+    "logo": nikon,
+    "web": "https://www.nikon.cz/cs_CZ"
   },
   {
     "id": 7,
     "name": "Leica",
-    "logo": "https://asset.brandfetch.io/iddtMrgJvA/id9L7W04ae.png?updated=1667571544285",
-    "web": "https://www.lenovo.com/cz/cs/?orgRef=https%253A%252F%252Fwww.google.com%252F"
+    "logo": leica,
+    "web": "https://leica-camera.com/en-int"
   },
   {
     "id": 8,
     "name": "Olympus",
-    "logo": "https://asset.brandfetch.io/iddtMrgJvA/id9L7W04ae.png?updated=1667571544285",
-    "web": "https://www.lenovo.com/cz/cs/?orgRef=https%253A%252F%252Fwww.google.com%252F"
+    "logo": olympus,
+    "web": "https://explore.omsystem.com/cz/cs/"
   },
   {
     "id": 9,
     "name": "Fujifilm",
-    "logo": "https://asset.brandfetch.io/iddtMrgJvA/id9L7W04ae.png?updated=1667571544285",
-    "web": "https://www.lenovo.com/cz/cs/?orgRef=https%253A%252F%252Fwww.google.com%252F"
+    "logo": fujifilm,
+    "web": "https://www.fujifoto.cz/"
   }
 ]
 
@@ -77,8 +87,8 @@ export const PartnersList = () => {
           <li key={partner.id} className="transition transform hover:-translate-y-3 motion-reduce:transition-none">
             <div className="w-72 h-60 bg-blue_light  text-center rounded-md py-5 hover:bg-orange_light hover:text-white ">
               <Link href={partner.web} className="cursor-pointer">
-              <div className="w-40 h-40 rounded-full bg-white mx-auto text-center ">
-                <Image src={partner.logo} alt='name company' width={160} height={160} className="mx-auto pt-4"></Image>
+              <div className="w-44 h-44 rounded-full bg-white mx-auto text-center overflow-hidden ">
+                <Image src={partner.logo} alt='name company' width={176} height={176} className="mx-auto w-full"></Image>
               </div>
                 <p className="mt-4 font-normal text-sm">{partner.name}</p>
               </Link>
