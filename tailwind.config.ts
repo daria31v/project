@@ -11,7 +11,6 @@ module.exports = {
       orange: '#F38605',
       duna: '#C25D05',
       white: '#fff',
-      'bg-white': '#F3F6FA',
       blue_light: 'rgb(219 234 254);'
     },
     fontWeight: {
