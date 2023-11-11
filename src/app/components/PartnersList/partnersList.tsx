@@ -74,7 +74,7 @@ export const PartnersList = () => {
     <div className="mb-20">
       <ul className="grid gap-4 grid-cols-1 sm:grid-cols-1  md:grid-cols-2 xl:grid-cols-3 xl:gap-16 md:gap-10">
         {partners.map((partner) => (
-          <li key={partner.id} className="">
+          <li key={partner.id} className="transition transform hover:-translate-y-3 motion-reduce:transition-none">
             <div className="w-72 h-60 bg-blue_light  text-center rounded-md py-5 hover:bg-orange_light hover:text-white ">
               <Link href={partner.web} className="cursor-pointer">
               <div className="w-40 h-40 rounded-full bg-white mx-auto text-center ">

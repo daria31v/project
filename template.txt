@@ -1,0 +1,2 @@
+effect for cards
+transition transform hover:-translate-y-3 motion-reduce:transition-none
