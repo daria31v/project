@@ -1,12 +1,12 @@
 import Image from 'next/image'
-import buda from '../../../../public/images/buda.jpg'
+import buddha from '../../../../public/images/buddha.jpg'
 import fly from '../../../../public/images/fly.jpg'
 import photo from '../../../../public/images/photo.jpg'
 
 const posts = [
   {
     id: 1,
-    photo: buda,
+    photo: buddha,
   },
   {
     id: 2,

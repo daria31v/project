@@ -28,7 +28,7 @@ export default function MobileMenu() {
   }
 
   return (
-    <div className="py-4 h-auto top-10 right-10">
+    <div className="py-4 h-auto top-10 right-10 z-50">
       <button onClick={handleClick} type="button" className="inline-block xl:hidden ml-auto">
         {isOpen ? (
           <svg

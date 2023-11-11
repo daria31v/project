@@ -2,6 +2,7 @@
 import Image from 'next/image'
 import image from '../../../../../public/images/photo.jpg'
 import { Container } from '@/app/components/Container/container'
+import Link from 'next/link'
 
 interface PostProps {
   params: {
@@ -41,6 +42,7 @@ export default async function Post({ params: { id, src, alt } }: PostProps) {
   return (
     <Container>
       <section className="p-8 ">
+        <Link href={`/blog`} className="bg-white rounded-md text-secondary p-2 flex justify-center w-40 mb-4"> - All blogs - </Link>
         <div key={post.id}>
           <Image src={image} alt="post" width={150}></Image>
           <p>user: {post.nikname}</p>

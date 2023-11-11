@@ -3,7 +3,7 @@ const nextConfig = {}
 
 module.exports = {
   nextConfig,
-  images: {
-    domains: ['asset.brandfetch.io'],
-  },
+  // images: {
+  //   domains: ['asset.brandfetch.io'],
+  // },
 }

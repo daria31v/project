@@ -95,23 +95,33 @@ export default function Blog({ params: { id, photo, title, nikname, avatar, date
         <div className="w-14 h-1 bg-secondary rounded-md mb-4"></div>
         <div className="mb-10">
           <p className="text-medium text-secondary font-semibold mb-3">Choose category</p>
-          <div className="flex gap-3 text-base">
+          <div className="md:flex gap-3 columns-2 text-base">
+            <div>
             <span>All</span>
             <input id="" type="radio"></input>
+            </div>
+            <div>
             <span>Rivers</span>
             <input id="" type="radio"></input>
+            </div>
+            <div>
             <span>Mountains</span>
             <input id="" type="radio"></input>
+            </div>
+            <div>
             <span>Oceans</span>
             <input id="" type="radio"></input>
+            </div>
+            <div>
             <span>Waterfall</span>
             <input id="" type="radio"></input>
+            </div>
           </div>
         </div>
         <div className="mt-6 flex justify-center">
-          <ul className="grid grid-cols-3 justify-between gap-10 mb-10">
+          <ul className="md:grid md:grid-cols-2 xl:grid-cols-3 justify-between md:gap-10 mb-10">
             {posts.map((post) => (
-              <li key={post.id} className="bg-white shadow-lg hover:shadow-orange_light rounded-3xl py-3 px-3 transition transform hover:-translate-y-3 motion-reduce:transition-none">
+              <li key={post.id} className="bg-white shadow-lg hover:shadow-orange_light focus:shadow-orange_light rounded-3xl py-3 px-3 md:mb-0 mb-5 transition transform hover:-translate-y-3 motion-reduce:transition-none">
                 <div className=" h-[200px] overflow-hidden rounded-3xl ">
                   <Image src={post.photo} alt="..."></Image>
                 </div>
@@ -154,7 +164,7 @@ export default function Blog({ params: { id, photo, title, nikname, avatar, date
         </div>
         {/* loading more*/}
         <div className="flex justify-center items-center py-4">
-          <button className="cursor-pointer">
+          <button className="cursor-pointer animate-bounce">
             <svg
               width="60"
               height="60"
