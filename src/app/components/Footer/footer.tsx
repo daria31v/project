@@ -13,11 +13,11 @@ const Footer = () => {
             <div className=" w-48">
               <Logo src="" alt="logo" />
             </div>
-            <p className="mt-4 text-medium font-semibold">
+            <p className="mt-4 text-medium font-semibold ">
               The World is Wonderful: Catch the Moment!
             </p>
           </div>
-          <div className="grid gap-2 text-medium font-extra sm:items-center">
+          <div className="grid gap-2 text-medium font-extra sm:items-center md:mt-0 mt-4">
             <h4 className="text-sm text-secondary">OUR COMPANY</h4>
             <Link href="/about" className="hover:text-orange_light ">
               About us

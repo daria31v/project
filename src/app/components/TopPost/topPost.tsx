@@ -23,7 +23,7 @@ export default function TopPost() {
         people love to visit
       </h2>
       <div className="xl:grid xl:grid-cols-2 gap-10 md:block font-normal text-medium mt-12 ">
-        <div className="flex justify-center w-[600px] h-[500px]">
+        <div className="flex justify-center h-[500px]">
           <Image
             src={post.photo}
             alt="..."
