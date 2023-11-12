@@ -12,7 +12,7 @@ export default function Gallery() {
   return (
     <Container>
       <div>
-        <h1 className="text-ml font-semibold text-start uppercase mb-4 mt-4">Gallery</h1>
+        <h1 className="text-ml font-semibold text-start uppercase mt-16 mb-4">Gallery</h1>
         <div className="w-14 h-1 bg-secondary rounded-md mb-4"></div>
         <div className="mb-10">
           <p className="text-medium text-secondary font-semibold mb-3">Select deviсe</p>

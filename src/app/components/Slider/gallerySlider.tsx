@@ -31,31 +31,31 @@ export const GallerySlider = () => {
             > */}
       <div className="flex-column columns-3xs gap-4 w-full">
         <a href="../../../public/images/fly.jpg">
-          <Image alt="fly" src={fly} className="mb-4 rounded-lg" />
+          <Image alt="fly" src={fly} className="mb-4 rounded-lg transition transform hover:-translate-y-3 motion-reduce:transition-none" />
         </a>
         <a href="../../../public/images/kids.jpg">
-          <Image alt="kids" src={kids} className="mb-4 rounded-lg" />
+          <Image alt="kids" src={kids} className="mb-4 rounded-lg transition transform hover:-translate-y-3 motion-reduce:transition-none" />
         </a>
         <a href="../../../public/images/sky.jpg">
-          <Image alt="sky" src={sky} className="mb-4 rounded-lg" />
+          <Image alt="sky" src={sky} className="mb-4 rounded-lg transition transform hover:-translate-y-3 motion-reduce:transition-none" />
         </a>
         <a href="../../../public/images/photo_4.jpg">
-          <Image alt="flower" src={flower} className="mb-4 rounded-lg" />
+          <Image alt="flower" src={flower} className="mb-4 rounded-lg transition transform hover:-translate-y-3 motion-reduce:transition-none" />
         </a>
         <a href="../../../public/images/photo_5.jpg">
-          <Image alt="lake" src={lake} className="mb-4 rounded-lg" />
+          <Image alt="lake" src={lake} className="mb-4 rounded-lg transition transform hover:-translate-y-3 motion-reduce:transition-none" />
         </a>
         <a href="../../../public/images/photo_2.jpg">
-          <Image alt="stone" src={stone} className="mb-4 rounded-lg" />
+          <Image alt="stone" src={stone} className="mb-4 rounded-lg transition transform hover:-translate-y-3 motion-reduce:transition-none" />
         </a>
         <a href="../../../public/images/sun.jpg">
-          <Image alt="sun" src={sun} className="mb-4 rounded-lg" />
+          <Image alt="sun" src={sun} className="mb-4 rounded-lg transition transform hover:-translate-y-3 motion-reduce:transition-none" />
         </a>
         <a href="../../../public/images/sky.jpg">
-          <Image alt="sunrise" src={sunrise} className="mb-4 rounded-lg" />
+          <Image alt="sunrise" src={sunrise} className="mb-4 rounded-lg transition transform hover:-translate-y-3 motion-reduce:transition-none" />
         </a>
         <a href="../../../public/images/buddha.jpg">
-          <Image alt="buddha" src={buddha} className="mb-4 rounded-lg" />
+          <Image alt="buddha" src={buddha} className="mb-4 rounded-lg transition transform hover:-translate-y-3 motion-reduce:transition-none" />
         </a>
 
         {/* <button

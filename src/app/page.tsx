@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import slider from '../../public/images/slider.jpg'
+import slider from '../../public/images/window.jpeg'
 import TopPost from './components/TopPost/topPost'
 import RandomPhotoRender from './components/RandomPhotoRender/randomPhotoRender'
 import { Container } from './components/Container/container'

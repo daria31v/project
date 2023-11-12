@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import buddha from '../../../../public/images/buddha.jpg'
-import fly from '../../../../public/images/fly.jpg'
-import photo from '../../../../public/images/photo.jpg'
+import fly from '../../../../public/images/sun.jpg'
+import photo from '../../../../public/images/photo_5.jpg'
 
 const posts = [
   {
