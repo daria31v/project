@@ -12,7 +12,7 @@ const Header = () => {
   return (
     <header>
       <Container>
-        <div className="flex items-center h-20 py-5">
+        <div className="flex items-center h-20 py-5 ">
           <div className="w-48 mr-auto">
             <Link href="/">
               <Logo src="" alt="logo" />

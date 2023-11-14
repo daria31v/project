@@ -3,5 +3,5 @@ type Container = {
 }
 
 export const Container = ({ children }: Container) => {
-  return <div className="mx-auto max-w-7xl xl:px-24 px-5">{children}</div>
+  return <div className="mx-[100px] max-w-6xl xl:px-24 px-5">{children}</div>
 }

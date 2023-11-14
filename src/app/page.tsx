@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <Container>
-        <section className=" xl:grid xl:grid-cols-2 sm:block text-center py-20 xl:gap-12">
+        <section className=" xl:grid xl:grid-cols-2 sm:block text-center py-20 xl:gap-8">
           <div>
             <h1 className="text-center font-bold text-xl mb-4 uppercase tracking-[-0.8px]">
               {' '}
