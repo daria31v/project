@@ -1,4 +1,4 @@
-// import { Metadata } from "next";
+import { Metadata } from "next";
 import Image from 'next/image'
 import image from '../../../../../public/images/photo.jpg'
 import { Container } from '@/app/components/Container/container'
