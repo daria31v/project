@@ -9,7 +9,7 @@ import apple from '../../../../public/images/apple.jpeg'
 import samsung from '../../../../public/images/samsung.webp'
 import sony from '../../../../public/images/sony.jpeg'
 import olympus from '../../../../public/images/olympus.png'
-import fujifilm from '../../../../public/images/fujifilm.png'
+import fujifilm from '../../../../public/images/fujifilm.jpeg'
 
 
 const partners = [

@@ -11,7 +11,7 @@ module.exports = {
       orange: '#F38605',
       duna: '#C25D05',
       white: '#fff',
-      blue_light: 'rgb(219 234 254);'
+      blue_light: '#DBEAE7;'
     },
     fontWeight: {
       normal: '400',

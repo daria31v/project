@@ -17,14 +17,10 @@ import lake from '../../../../public/images/photo_5.jpg'
 import sun from '../../../../public/images/sun.jpg'
 
 export const GallerySlider = () => {
-  const onInit = () => {
-    console.log('lightGallery has been initialized')
-  }
 
   return (
     <>
       <LightGallery
-        onInit={onInit}
         speed={500}
         plugins={[lgThumbnail, lgZoom]}
         elementClassNames="relative flex-column columns-3xs gap-4 w-full"
