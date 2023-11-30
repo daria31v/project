@@ -11,7 +11,7 @@ module.exports = {
       orange: '#F38605',
       duna: '#C25D05',
       white: '#fff',
-      'bg-white': '#F3F6FA'
+      blue_light: '#DBEAE7;'
     },
     fontWeight: {
       normal: '400',
@@ -19,10 +19,12 @@ module.exports = {
       bold: '700'
     },
     fontSize: {
-      sm: ['10px', { lineHeight: '1.2' }],
+      xs: ['10px', { lineHeight: '1.2' }],
       base: ['14px', { lineHeight: '1.28' }],
       medium: ['16px', { lineHeight: '1.5' }],
+      sm: ['20px', { lineHeight: '1'}],
       ml: ['30px', { lineHeight: '1.2' }],
+      l: ['36px', { lineHeight: '1.28'}],
       xl: ['40px', { lineHeight: '0.8' }]
     },
     fontFamily: {

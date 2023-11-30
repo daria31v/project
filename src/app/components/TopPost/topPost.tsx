@@ -1,4 +1,4 @@
-import kids from '../../../../public/images/kids.jpg'
+import beards from '../../../../public/images/beards.jpeg'
 import Image from 'next/image'
 
 interface TopPostProps {
@@ -11,7 +11,7 @@ interface TopPostProps {
 export default function TopPost() {
   const post = {
     id: 1,
-    photo: kids,
+    photo: beards,
     title: 'Wonderful Blog',
     nikname: 'Fox',
     post: 'Gallia est omnis divisa in partes tres, quarum. Fabio vel iudice vincam, sunt in culpa qui officia. Salutantibus vitae elit libero, a pharetra augue. Hi omnes lingua, institutis, legibus inter se differunt. Quid securi etiam tamquam eu fugiat nulla pariatur. Cras mattis iudicium purus sit amet fermentum.Gallia est omnis divisa in partes tres, quarum. Fabio vel iudice vincam, sunt in culpa qui officia. Salutantibus vitae elit libero, a pharetra augue. Hi omnes lingua, institutis, legibus inter se differunt. Quid securi etiam tamquam eu fugiat nulla pariatur. Cras mattis iudicium purus sit amet fermentum.',
@@ -23,13 +23,13 @@ export default function TopPost() {
         people love to visit
       </h2>
       <div className="xl:grid xl:grid-cols-2 gap-10 md:block font-normal text-medium mt-12 ">
-        <div className="flex justify-center">
+        <div className="flex justify-center h-[500px]">
           <Image
             src={post.photo}
             alt="..."
             width={640}
             height={400}
-            className="rounded-3xl object-cover"
+            className="rounded-3xl object-cover overflow-hidden"
           ></Image>
         </div>
 

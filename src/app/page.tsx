@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import slider from '../../public/images/slider.jpg'
+// import slider from '../../public/images/window.jpeg'
 import TopPost from './components/TopPost/topPost'
 import RandomPhotoRender from './components/RandomPhotoRender/randomPhotoRender'
 import { Container } from './components/Container/container'
@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <Container>
-        <section className=" xl:grid xl:grid-cols-2 sm:block text-center py-20 xl:gap-12">
+        <section className=" xl:grid xl:grid-cols-2 sm:block text-center py-20 xl:gap-8">
           <div>
             <h1 className="text-center font-bold text-xl mb-4 uppercase tracking-[-0.8px]">
               {' '}
@@ -31,14 +31,14 @@ export default function Home() {
             </p>
           </div>
           {/* slider */}
-          <div className="flex justify-center items-center">
-            <Image
+          <div className="flex justify-center items-center bg-yellow">
+            {/* <Image
               src={slider}
               alt="slider photo"
               width={600}
               height={600}
               className="rounded-3xl"
-            />
+            /> */}
           </div>
         </section>
         <section className="mb-20">
