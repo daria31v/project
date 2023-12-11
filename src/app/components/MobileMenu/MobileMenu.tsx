@@ -1,6 +1,6 @@
 'use client'
 import Link from 'next/link'
-import { AuthNav } from '../Auth/authNav'
+import { AuthNav } from '../AuthNav/authNav'
 import { UserMenu } from '../Registrate/userMenu'
 import { Navigation } from '../Navigation/navigation'
 import { useState, useEffect } from 'react'

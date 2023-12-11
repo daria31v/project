@@ -11,15 +11,22 @@ module.exports = {
       orange: '#F38605',
       duna: '#C25D05',
       white: '#fff',
-      blue_light: '#DBEAE7;'
+      blue: '#3C64B1',
+      blue_light: '#DBEAE7',
+      blue_text: '#87A4DC',
+      grey_text: '#9BADCE',
+      // background: linear-gradient(270.8deg, #3C64B1 0%, #BED3FB 100%);
+
     },
     fontWeight: {
+      small: '300',
       normal: '400',
       semibold: '600',
       bold: '700'
     },
     fontSize: {
       xs: ['10px', { lineHeight: '1.2' }],
+      small: ['11px', { lineHeight: '3.2' }],
       base: ['14px', { lineHeight: '1.28' }],
       medium: ['16px', { lineHeight: '1.5' }],
       sm: ['20px', { lineHeight: '1'}],

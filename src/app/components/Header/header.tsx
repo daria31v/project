@@ -1,6 +1,6 @@
 import Logo from '../Logo/logo'
 import Link from 'next/link'
-import { AuthNav } from '../Auth/authNav'
+import { AuthNav } from '../AuthNav/authNav'
 // import { UserMenu } from "../Registrate/userMenu";
 // import camera from "../../../../public/icon/camera.svg";
 // import Image from "next/image";
