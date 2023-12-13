@@ -4,14 +4,26 @@
 @tailwind utilities;
 
 body {
+  height: 100%;
   padding: 0;
   margin: 0;
   font-family: 'Mulish', sans-serif;
-  background-color: #F3F6FA;
+  background-color: lightskyblue;
 }
 ul {
   list-style: none;
 }
 input {
   background-color: transparent;
+}
+
+@layer utilities {
+
+  .wraper {
+    @apply min-h-full flex flex-col
+  }
+  .fix {
+    @apply flex-auto
+  
+  }
 }

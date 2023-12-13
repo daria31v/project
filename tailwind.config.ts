@@ -7,6 +7,7 @@ module.exports = {
       primary: '#373F41',
       secondary: '#34688F',
       yellow: '#F6CA07',
+      yellow_light: '#F7C86F',
       orange_light: '#EFA007',
       orange: '#F38605',
       duna: '#C25D05',
@@ -15,11 +16,9 @@ module.exports = {
       blue_light: '#DBEAE7',
       blue_text: '#87A4DC',
       grey_text: '#9BADCE',
-      // background: linear-gradient(270.8deg, #3C64B1 0%, #BED3FB 100%);
-
     },
     fontWeight: {
-      small: '300',
+      light: '300',
       normal: '400',
       semibold: '600',
       bold: '700'

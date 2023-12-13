@@ -183,10 +183,10 @@ export default function Blog({ params: { id, photo, title, nikname, avatar, date
                 cy="30"
                 r="30"
                 fill="url(#paint0_radial_101_183)"
-                fill-opacity="0.3"
+                fillOpacity="0.3"
               />
               <circle cx="30" cy="30" r="24" fill="#3C64B1" />
-              <path d="M23 24L29.8205 36L37 24" stroke="#EBF2FF" stroke-width="3" />
+              <path d="M23 24L29.8205 36L37 24" stroke="#EBF2FF" strokeWidth="3" />
               <defs>
                 <radialGradient
                   id="paint0_radial_101_183"

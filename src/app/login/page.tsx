@@ -1,8 +1,7 @@
-import { Metadata } from 'next'
+
 import { Container } from '../components/Container/container'
 import Image from 'next/image'
-import logo from '../../../public/images/logo-old.png'
-import google from '../../../public/icon/google.svg'
+import logo from '../../../public/images/logo.png'
 import Link from 'next/link'
 import { MySVGImage } from '../components/MySvg/MySVG'
 
@@ -25,9 +24,9 @@ export default function Login() {
   return (
     <Container>
       <div  className="flex justify-center items-center my-36">
-      <div  className="bg-gradient-to-r to-[#b0c7f3] via-transparent from-[#E2EAF9] w-[626px] grid justify-center py-6 rounded-md">
+      <div  className="bg-gradient-to-r to-[#b0c7f3] via-transparent from-[#E2EAF9] w-[620px] grid justify-center py-6 rounded-md">
         <div className="text-center">
-          <Image src={logo} alt="logo" className="mx-auto" />
+          <Image src={logo} alt="logo" width={150} height={50} className="mx-auto" />
           <h3 className="my-6 text-blue">Log in your account</h3>
         </div>
 
@@ -48,7 +47,7 @@ export default function Login() {
               className="w-full bg-transparent text-medium font-normal placeholder:text-blue_text outline-none border-b border-blue_text  hover:border-orange hover:text-orange"
             />
           </label>
-          <span className="text-xs font-small text-grey_text text-end">Forgot password?</span>
+          <span className="text-xs font-light text-grey_text text-end">Forgot password?</span>
           <div className="flex justify-center items-center">
             <button
               type="submit"
@@ -58,9 +57,9 @@ export default function Login() {
             </button>
           </div>
           <div className="flex justify-between items-center gap-3 w-full">
-            <div className="h-[1px] bg-blue_text w-full"></div>
+            <div className="h-px bg-blue_text w-full"></div>
             <span className="text-xs">OR</span>
-            <div className="h-[1px] bg-blue_text w-full"></div>
+            <div className="h-px bg-blue_text w-full"></div>
           </div>
         </form>
         

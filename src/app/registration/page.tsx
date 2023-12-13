@@ -1,18 +1,20 @@
 import { Metadata } from 'next'
 import { Container } from '../components/Container/container'
 import { MySVGImage } from '../components/MySvg/MySVG'
-import logo from '../../../public/images/logo-old.png'
+import logo from '../../../public/images/logo.png'
 import Image from 'next/image'
 import Link from 'next/link'
-
+import AppleSvgComponent from '../../../public/icon/AppleSVG';
+import FacebookSvgComponent from '../../../public/icon/FacebookSVG';
+import GoogleSvgComponent from '../../../public/icon/GoogleSVG';
 
 export default function Registration() {
   return (
     <Container>
       <div  className="flex justify-center items-center my-36">
-      <div  className="bg-gradient-to-r to-[#b0c7f3] via-transparent from-[#E2EAF9] w-[626px] grid justify-center py-6 rounded-md">
+      <div  className="bg-gradient-to-r to-[#b0c7f3] via-transparent from-[#E2EAF9] w-[620px] grid justify-center py-6 rounded-md">
         <div className="text-center">
-          <Image src={logo} alt="logo" className="mx-auto" />
+          <Image src={logo} alt="logo" width={150} height={50} className="mx-auto" />
           <h3 className="my-6 text-blue">Create your account</h3>
         </div>
 
@@ -41,8 +43,7 @@ export default function Registration() {
               className="w-full bg-transparent text-medium font-normal placeholder:text-blue_text outline-none border-b border-blue_text  hover:border-orange hover:text-orange"
             />
           </label>
-          <span className="text-xs font-small text-grey_text text-end hover:text-blue">Forgot password?</span>
-          <div className="flex justify-center items-center">
+          <div className="flex justify-center items-center mt-2">
             <button
               type="submit"
               className="w-[280px] h-[33px] rounded-[50px] bg-gradient-to-r to-[#2e5fba] via-transparent from-[#E2EAF9] my-3 text-white text-medium font-normal hover:font-bold"
@@ -51,26 +52,26 @@ export default function Registration() {
             </button>
           </div>
           <div className="flex justify-between items-center gap-3 w-full">
-            <div className="h-[1px] bg-blue_text w-full"></div>
+            <div className="h-px bg-blue_text w-full"></div>
             <span className="text-xs">OR</span>
-            <div className="h-[1px] bg-blue_text w-full"></div>
+            <div className="h-px bg-blue_text w-full"></div>
           </div>
         </form>
         
           <ul className="flex justify-center items-center my-3 gap-6">
             <li className="bg-white w-10 h-10 rounded-md flex justify-center items-center">
               <Link href="/" className="">
-                <MySVGImage xlinkHref="icon/google.svg" x={0} y={0} width={28} height={28} />
+                <GoogleSvgComponent />
               </Link>
             </li>
             <li className="bg-white w-10 h-10 rounded-md flex justify-center items-center">
               <Link href="/" className="">
-                <MySVGImage xlinkHref="icon/facebook-color.svg" x={0} y={0} width={28} height={28} />
+                <FacebookSvgComponent  />
               </Link>
             </li>
             <li className="bg-white w-10 h-10 rounded-md flex justify-center items-center">
               <Link href="/" className="">
-                <MySVGImage xlinkHref="icon/apple.svg" x={0} y={0} width={28} height={28} />
+                <AppleSvgComponent  />
               </Link>
             </li>
           </ul>
