@@ -4,6 +4,9 @@ import Image from 'next/image'
 import logo from '../../../public/images/logo.png'
 import Link from 'next/link'
 import { MySVGImage } from '../components/MySvg/MySVG'
+import GoogleSvgComponent from '../../../public/icon/GoogleSVG'
+import FacebookSvgComponent from '../../../public/icon/FacebookSVG'
+import AppleSvgComponent from '../../../public/icon/AppleSVG'
 
 export default function Login() {
   // const dispatch = useDispatch()
@@ -23,7 +26,7 @@ export default function Login() {
 
   return (
     <Container>
-      <div  className="flex justify-center items-center my-36">
+      <div  className="flex justify-center items-center my-10">
       <div  className="bg-gradient-to-r to-[#b0c7f3] via-transparent from-[#E2EAF9] w-[620px] grid justify-center py-6 rounded-md">
         <div className="text-center">
           <Image src={logo} alt="logo" width={150} height={50} className="mx-auto" />
@@ -63,20 +66,20 @@ export default function Login() {
           </div>
         </form>
         
-          <ul className="flex justify-center items-center my-3 gap-6">
+        <ul className="flex justify-center items-center my-3 gap-6">
             <li className="bg-white w-10 h-10 rounded-md flex justify-center items-center">
               <Link href="/" className="">
-                <MySVGImage xlinkHref="icon/google.svg" x={0} y={0} width={28} height={28} />
+                <GoogleSvgComponent />
               </Link>
             </li>
             <li className="bg-white w-10 h-10 rounded-md flex justify-center items-center">
               <Link href="/" className="">
-                <MySVGImage xlinkHref="icon/facebook-color.svg" x={0} y={0} width={28} height={28} />
+                <FacebookSvgComponent  />
               </Link>
             </li>
             <li className="bg-white w-10 h-10 rounded-md flex justify-center items-center">
               <Link href="/" className="">
-                <MySVGImage xlinkHref="icon/apple.svg" x={0} y={0} width={28} height={28} />
+                <AppleSvgComponent  />
               </Link>
             </li>
           </ul>

@@ -6,7 +6,7 @@ import { Container } from '../Container/container'
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className="">
       <Container>
         <div className="md:flex justify-between block gap-2 items-start py-10 h-auto">
           <div className="">
