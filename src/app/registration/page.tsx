@@ -71,7 +71,7 @@ export default function Registration() {
             </li>
             <li className="bg-white w-10 h-10 rounded-md flex justify-center items-center">
               <Link href="/" className="">
-                <AppleSvgComponent  />
+                <AppleSvgComponent />
               </Link>
             </li>
           </ul>
