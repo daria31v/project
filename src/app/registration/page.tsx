@@ -1,12 +1,12 @@
 import { Metadata } from 'next'
 import { Container } from '../components/Container/container'
-// import { MySVGImage } from '../components/MySvg/MySVG'
 import logo from '../../../public/images/logo.png'
 import Image from 'next/image'
 import Link from 'next/link'
 import AppleSvgComponent from '../../../public/icon/AppleSVG';
 import FacebookSvgComponent from '../../../public/icon/FacebookSVG';
 import GoogleSvgComponent from '../../../public/icon/GoogleSVG';
+
 
 export default function Registration() {
   return (
@@ -76,7 +76,7 @@ export default function Registration() {
             </li>
           </ul>
           <div className="flex gap-3 justify-center items-center">
-            <p className="text-blue_text text-small font-normal">Don’t have account? </p>
+            <p className="text-blue_text text-small font-normal">Do you have an already account? </p>
             <Link href="/login"><span className="font-semibold text-blue text-small">LogIn Now</span></Link>
           </div>
       </div>
