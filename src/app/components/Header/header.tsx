@@ -13,7 +13,7 @@ const Header = () => {
         <div className="flex items-center h-20 pt-12 ">
           <div className="w-48 mr-auto">
             <Link href="/">
-              <Logo src="" alt="logo" width={150} height={100}/>
+              <Logo src="" alt="logo" width={100} height={40}/>
             </Link>
           </div>
 

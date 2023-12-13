@@ -3,7 +3,6 @@ import { Container } from '../components/Container/container'
 import Image from 'next/image'
 import logo from '../../../public/images/logo.png'
 import Link from 'next/link'
-import { MySVGImage } from '../components/MySvg/MySVG'
 import GoogleSvgComponent from '../../../public/icon/GoogleSVG'
 import FacebookSvgComponent from '../../../public/icon/FacebookSVG'
 import AppleSvgComponent from '../../../public/icon/AppleSVG'
@@ -29,7 +28,7 @@ export default function Login() {
       <div  className="flex justify-center items-center my-10">
       <div  className="bg-gradient-to-r to-[#b0c7f3] via-transparent from-[#E2EAF9] w-[620px] grid justify-center py-6 rounded-md">
         <div className="text-center">
-          <Image src={logo} alt="logo" width={150} height={50} className="mx-auto" />
+          <Image src={logo} alt="logo" width={100} height={40} className="mx-auto" />
           <h3 className="my-6 text-blue">Log in your account</h3>
         </div>
 

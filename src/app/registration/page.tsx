@@ -14,7 +14,7 @@ export default function Registration() {
       <div  className="flex justify-center items-center my-6">
       <div  className="bg-gradient-to-r to-[#b0c7f3] via-transparent from-[#E2EAF9] w-[620px] grid justify-center py-6 rounded-md">
         <div className="text-center">
-          <Image src={logo} alt="logo" width={150} height={50} className="mx-auto" />
+          <Image src={logo} alt="logo" width={100} height={40} className="mx-auto" />
           <h3 className="my-6 text-blue">Create your account</h3>
         </div>
 
