@@ -17,13 +17,4 @@ input {
   background-color: transparent;
 }
 
-@layer utilities {
 
-  .wraper {
-    @apply min-h-full flex flex-col
-  }
-  .fix {
-    @apply flex-auto
-  
-  }
-}
