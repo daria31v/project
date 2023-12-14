@@ -7,19 +7,25 @@ module.exports = {
       primary: '#373F41',
       secondary: '#34688F',
       yellow: '#F6CA07',
+      yellow_light: '#F7C86F',
       orange_light: '#EFA007',
       orange: '#F38605',
       duna: '#C25D05',
       white: '#fff',
-      blue_light: '#DBEAE7;'
+      blue: '#3C64B1',
+      blue_light: '#DBEAE7',
+      blue_text: '#87A4DC',
+      grey_text: '#9BADCE',
     },
     fontWeight: {
+      light: '300',
       normal: '400',
       semibold: '600',
       bold: '700'
     },
     fontSize: {
       xs: ['10px', { lineHeight: '1.2' }],
+      small: ['11px', { lineHeight: '3.2' }],
       base: ['14px', { lineHeight: '1.28' }],
       medium: ['16px', { lineHeight: '1.5' }],
       sm: ['20px', { lineHeight: '1'}],

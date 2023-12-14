@@ -1,5 +1,4 @@
-import Image from 'next/image'
-// import slider from '../../public/images/window.jpeg'
+
 import TopPost from './components/TopPost/topPost'
 import RandomPhotoRender from './components/RandomPhotoRender/randomPhotoRender'
 import { Container } from './components/Container/container'
@@ -30,15 +29,8 @@ export default function Home() {
               vitae elit
             </p>
           </div>
-          {/* slider */}
+    
           <div className="flex justify-center items-center bg-yellow">
-            {/* <Image
-              src={slider}
-              alt="slider photo"
-              width={600}
-              height={600}
-              className="rounded-3xl"
-            /> */}
           </div>
         </section>
         <section className="mb-20">

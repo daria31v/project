@@ -3,6 +3,7 @@ import Footer from './components/Footer/footer'
 import Header from './components/Header/header'
 import './globals.css'
 
+
 export const metadata: Metadata = {
   title: 'A World in My Lens',
   description:
@@ -15,11 +16,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <html lang="en">
         {/* className="dark" */}
         <body>
+          <div className="wraper">
           <Header />
-          <main className="bg-opacity-30 ">{children}</main>
+          <main className="bg-opacity-30 fix">{children}</main>
           <Footer />
+
+          </div>
         </body>
       </html>
     </>
   )
+
 }

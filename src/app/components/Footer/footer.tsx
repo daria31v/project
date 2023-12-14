@@ -6,12 +6,12 @@ import { Container } from '../Container/container'
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className="">
       <Container>
         <div className="md:flex justify-between block gap-2 items-start py-10 h-auto">
           <div className="">
             <div className=" w-48">
-              <Logo src="" alt="logo" />
+              <Logo src="" alt="logo" width={100} height={40}/>
             </div>
             <p className="mt-4 text-medium font-semibold ">
               The World is Wonderful: Catch the Moment!
