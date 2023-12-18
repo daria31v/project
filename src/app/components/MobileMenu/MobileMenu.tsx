@@ -1,7 +1,7 @@
 'use client'
 import Link from 'next/link'
 import { AuthNav } from '../AuthNav/authNav'
-import { UserMenu } from '../Registrate/userMenu'
+import { UserMenu } from '../UserMenu/userMenu'
 import { Navigation } from '../Navigation/navigation'
 import { useState, useEffect } from 'react'
 import Image from 'next/image'
