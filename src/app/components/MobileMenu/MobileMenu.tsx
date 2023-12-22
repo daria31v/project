@@ -1,15 +1,17 @@
 'use client'
 import Link from 'next/link'
 import { AuthNav } from '../AuthNav/authNav'
-import { UserMenu } from '../Registrate/userMenu'
+import { UserMenu } from '../UserMenu/userMenu'
 import { Navigation } from '../Navigation/navigation'
 import { useState, useEffect } from 'react'
 import Image from 'next/image'
 import camera from '../../../../public/icon/camera.svg'
 import clsx from 'clsx'
+import { useSession } from 'next-auth/react'
 
 export default function MobileMenu() {
   const [isOpen, setIsOpen] = useState<boolean>(false)
+  const session = useSession()
 
   const handleClick = () => {
     if (!isOpen) {
@@ -29,7 +31,11 @@ export default function MobileMenu() {
 
   return (
     <div className="py-4 h-auto top-10 right-10 z-50">
-      <button onClick={handleClick} type="button" className="inline-block xl:hidden ml-auto z-10 relative">
+      <button
+        onClick={handleClick}
+        type="button"
+        className="inline-block xl:hidden ml-auto z-10 relative"
+      >
         {isOpen ? (
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -65,9 +71,9 @@ export default function MobileMenu() {
       >
         <div className="p-10 rounded-3xl " onClick={handleClick}>
           <Navigation />
-          <AuthNav />
-          {/* <UserMenu/> */}
-          {/* {isLoggedIn ? <UserMenu /> : <AuthNav>} */}
+          <div className="grid grid-cols-1 gap-8 mt-8 text-medium ">
+            {session.data ? <UserMenu /> : <AuthNav />}
+          </div>
         </div>
       </div>
     </div>

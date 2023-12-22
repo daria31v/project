@@ -1,5 +1,5 @@
 import * as React from "react"
-import { SVGProps } from "react"
+
 const GoogleSvgComponent = () => (
   <svg
       enableBackground="new 0 0 512 512"
