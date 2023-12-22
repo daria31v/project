@@ -1,7 +1,7 @@
 import Logo from '../Logo/logo'
 import Link from 'next/link'
 import { Container } from '../Container/container'
-
+import SentSVG from '../../../../public/icon/SentSVG'
 
 const Footer = () => {
   return (
@@ -30,8 +30,18 @@ const Footer = () => {
             <p className="text-medium mb-2">Subscribe to our recent newsletter.</p>
 
             <form className="" name="signup_form" autoComplete="on" noValidate>
-              <input className="px-3 py-2 h-6 outline-none outline-transparent border-b border-blue_text placeholder:text-blue_text" type="email" name="email" placeholder="e-mail" />
-              <button className="text-white ml-2 hover:border p-1 hover:text-orange hover:rounded-md" type="submit">
+              <input
+                className="px-3 py-2 h-6 outline-none outline-transparent border-b border-blue_text placeholder:text-blue_text"
+                type="email"
+                name="email"
+                placeholder="e-mail"
+              />
+              <button
+                className="text-white ml-2 hover:border p-1 hover:text-orange hover:rounded-md"
+                type="submit"
+              >
+                {' '}
+                <SentSVG />
               </button>
             </form>
           </div>

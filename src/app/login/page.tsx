@@ -4,15 +4,15 @@ import logo from '../../../public/images/logo.png'
 import Link from 'next/link'
 import { CredentialsForm } from '../components/CredentialsForm/CredentialsForm'
 import { getServerSession } from 'next-auth'
-import { authConfig } from '../api/auth/[...nextauth]/options'
+import { authConfig } from '../../lib/authConfig'
 import { redirect } from 'next/navigation'
 
 
 export default async function Login() {
-  const session = await getServerSession(authConfig)
-  console.log('session', session)
+  const session = await getServerSession(authConfig);
+  console.log('session', session);
 
-  if (session) return redirect('/profile')
+  if (session) return redirect('/profile');
 
   return (
     <Container>

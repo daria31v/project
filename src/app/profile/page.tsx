@@ -1,12 +1,20 @@
 import React from 'react'
-import { authConfig } from '../api/auth/[...nextauth]/options'
+import { authConfig } from '../../lib/authConfig'
 import { getServerSession } from 'next-auth/next'
 import UserCard from '@/app/components/UserCard/userCard'
 import Image from 'next/image'
 import { Container } from '../components/Container/container'
+import { redirect } from 'next/navigation'
+
 
 export default async function Profile() {
-  const session = await getServerSession(authConfig)
+  // await loginIsRequiredClient();
+  const session = await getServerSession(authConfig);
+  console.log(session);
+  if (!session) {
+    redirect('/profile')
+  }
+
 
   return (
     <Container>

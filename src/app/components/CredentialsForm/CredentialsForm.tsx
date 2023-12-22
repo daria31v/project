@@ -3,7 +3,7 @@
 import { useRouter } from 'next/navigation'
 import { useState } from 'react'
 import { signIn } from 'next-auth/react'
-import { AppleSignInButton, CredentialsSignInButton, FacebookSignInButton, GoogleSignInButton } from '../Button/authButton'
+import { CredentialsSignInButton, GoogleSignInButton } from '../Button/authButton'
 
 interface CredentialsFormProps {
   csrfToken?: string
@@ -65,8 +65,7 @@ export function CredentialsForm(props: CredentialsFormProps) {
       </form>
       <div className="flex justify-center items-center my-3 gap-6">
         <GoogleSignInButton />
-        <FacebookSignInButton/>
-        <AppleSignInButton/>
+
       </div>
     </>
   )

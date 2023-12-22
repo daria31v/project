@@ -11,7 +11,6 @@ import { useSession } from 'next-auth/react'
 const Header = () => {
   const session = useSession()
 
-
   return (
     <header>
       <Container>
