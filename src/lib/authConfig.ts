@@ -56,15 +56,20 @@ export const authConfig: NextAuthOptions = {
       return true
     },
     async jwt({ token, trigger, session }) {
+      // console.log('trigger:', trigger );
+      // if(trigger === 'update'){
+      //   token.user.name === session.name;
+      //   token.user.picture === session.image;
+
+      // } else {}
       const user = await getUserByEmail({ email: token.email })
       token.user = user
 
       return token
     },
     async session({ session, token }) {
-      console.log('token:', token)
       session.user === token.user
-      console.log(session)
+      
       return session
     },
   },
