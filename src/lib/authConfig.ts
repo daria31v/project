@@ -1,97 +1,95 @@
-import { getServerSession, type NextAuthOptions } from 'next-auth'
+import { NextAuthOptions } from 'next-auth'
 import GoogleProvider from 'next-auth/providers/google'
+// import CredentialsProvider from 'next-auth/providers/credentials'
+import connectMongoDB from '../lib/mongodb'
+import User from '../models/user'
+import { signIn } from 'next-auth/react'
+// import bcrypt from 'bcryptjs'
 
-import CredentialProvider from 'next-auth/providers/credentials'
-import { redirect, useRouter } from 'next/navigation'
-import { signIn, useSession } from 'next-auth/react'
-import { connectMongoDB } from './mongodb'
-import User from '@/models/user';
+connectMongoDB()
 
 export const authConfig: NextAuthOptions = {
   providers: [
-    CredentialProvider({
-      name: 'Login',
-      credentials: {
-        email: {
-          label: 'Email',
-          type: 'email',
-          placeholder: 'test@gmail.com',
-        },
-        password: { label: 'Password', type: 'password' },
-      },
-      async authorize(credentials) {
-        // if(!credentials || !credentials.email || !credentials.password) return null;
-        // prisma - db users
-        // const dbUser = await prisma.user.findFirst({
-        //   where: {email: credentials.email},
-        // });
+    // CredentialsProvider({
+    //   name: 'credentials',
+    //   credentials: {},
+    //   async authorize(credentials: any) {
+    //     const { email, password } = credentials
 
-        //   if(dbUser && dbUser.password ===credentials.password) {
-        //     const {password, email, id, ...dbUserWhitoutPassword} = dbUser;
-        //     return dbUserWhitoutPassword as User;
-        //   }
-        //   return null;
-        // }
-        const dbUser = { password: 'cat', email: 'cat@gmail.com', id: '31' }
-        if (credentials?.email === dbUser.email && credentials?.password === dbUser.password) {
-          return dbUser
-        } else {
-          return null
-        }
-      },
-    }),
+    //     try {
+    //       await connectMongoDB()
+    //       const user = await User.findOne({ email })
 
+    //       if (!user) {
+    //         return null
+    //       }
+    //       const passwordsMatch = await bcrypt.compare(password, user.password)
+
+    //       if (!passwordsMatch) {
+    //         return null
+    //       }
+    //       return user
+    //     } catch (error) {
+    //       console.log('Error in Ligin', error)
+    //     }
+    //   },
+    // }),
     GoogleProvider({
       clientId: process.env.GOOGLE_ID as string,
       clientSecret: process.env.GOOGLE_SECRET as string,
     }),
   ],
-  callbacks: {
-    async signIn({ user, account, profile, email }) {
-      console.log('Email', email)
-
-      if (account?.provider === 'google') {
-        const { name, email } = user;
-
-        try {
-          await connectMongoDB()
-
-          const userExists = await User.findOne({ email })
-
-          if (!userExists) {
-            const result = await fetch('http://localhost:3000/api/user', {
-              method: 'POST',
-              headers: { 'Content-Type': 'application/json' },
-              body: JSON.stringify({
-                name,
-                email,
-              }),
-            })
-            if (result.ok) return user
-          }
-        } catch (error) {
-          console.log('error', error)
-        }
-      }
-      return user
-    },
+  session: {
+    strategy: 'jwt',
   },
-  // export async function loginIsRequiredServer(){
-  //   const session = await getServerSession(authConfig)
-  //   if(!session) return redirect ('/')
-  // }
-
-  // export function loginIsRequiredClient (){
-  //   if(typeof window !=='undefined') {
-  //     const session = useSession();
-  //     const router = useRouter();
-  //     if(!session) router.push('/');
-  //   }
-  // }
+  secret: process.env.NEXTAUTH_SECRET,
 
   pages: {
-    signIn: '/auth/signIn',
-    newUser: '/auth/registration',
-    error: '/auth/error',
+    signIn: '/login',
   },
+  callbacks: {
+    async signIn({ user, account, profile, email, credentials }) {
+      // console.log({account, profile});
+      if (account?.type === 'oauth') {
+        return await signInWhithOAuth({ account, profile })
+      }
+      return true
+    },
+    async jwt({ token, trigger, session }) {
+      const user = await getUserByEmail({ email: token.email })
+      token.user = user
+
+      return token
+    },
+    async session({ session, token }) {
+      console.log('token:', token)
+      session.user === token.user
+      console.log(session)
+      return session
+    },
+  },
+}
+
+async function signInWhithOAuth({ account, profile }: any) {
+  const user = await User.findOne({ email: profile.email })
+  if (user) return true
+
+  const newUser = new User({
+    name: profile.name,
+    email: profile.email,
+    password: profile.password,
+    image: profile.picture,
+    provider: account.provider,
+  })
+  // console.log({newUser});
+  await newUser.save()
+  return true
+}
+
+async function getUserByEmail({ email }: any) {
+  const user = await User.findOne({ email }).select('-password')
+
+  if (!user) throw new Error("Email doesn't exist")
+
+  return { ...user._doc, _id: user._id.toString() }
 }

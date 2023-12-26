@@ -9,7 +9,7 @@ import { Container } from '../Container/container'
 import { useSession } from 'next-auth/react'
 
 const Header = () => {
-  const session = useSession()
+  const session = useSession();
 
   return (
     <header>

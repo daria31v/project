@@ -5,7 +5,7 @@ export const UserMenu = () => {
   return (
     <>
       <Link href="/profile" className="hover:text-orange_light">
-        Profile
+        My profile
       </Link>
       <Link
         href="#"

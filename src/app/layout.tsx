@@ -2,8 +2,7 @@ import { Metadata } from 'next'
 import Footer from './components/Footer/footer'
 import Header from './components/Header/header'
 import './globals.css'
-import AuthProvider from './context/AuthProvider';
-
+import AuthProvider from './context/AuthProvider'
 
 export const metadata: Metadata = {
   title: 'A World in My Lens',
@@ -17,18 +16,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <html lang="en">
         {/* className="dark" */}
         <body>
-
-          <div className="wraper">
           <AuthProvider>
-          <Header />
-          <main className="bg-opacity-30 fix">{children}</main>
-          <Footer />
-
+            <div className="wraper">
+              <Header />
+              <main className="bg-opacity-30 fix">{children}</main>
+              <Footer />
+            </div>
           </AuthProvider>
-          </div>
         </body>
       </html>
     </>
   )
-
 }

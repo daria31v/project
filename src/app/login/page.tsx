@@ -2,15 +2,15 @@ import { Container } from '../components/Container/container'
 import Image from 'next/image'
 import logo from '../../../public/images/logo.png'
 import Link from 'next/link'
-import { CredentialsForm } from '../components/CredentialsForm/CredentialsForm'
+import LogInForm from '../components/Forms/LogInForm'
 import { getServerSession } from 'next-auth'
 import { authConfig } from '../../lib/authConfig'
 import { redirect } from 'next/navigation'
 
 
-export default async function Login() {
+export default async function LogInPage() {
   const session = await getServerSession(authConfig);
-  console.log('session', session);
+  // console.log('session', session);
 
   if (session) return redirect('/profile');
 
@@ -23,10 +23,10 @@ export default async function Login() {
             <h3 className="my-6 text-blue">Log in your account</h3>
           </div>
 
-          <CredentialsForm />
+          <LogInForm />
           <div className="flex gap-3 justify-center items-center">
             <p className="text-blue_text text-small font-normal">Don’t have account? </p>
-            <Link href="/registration">
+            <Link href="/register">
               <span className="font-semibold text-blue text-small">Register Now</span>
             </Link>
           </div>
