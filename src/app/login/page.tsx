@@ -10,7 +10,7 @@ import { redirect } from 'next/navigation'
 
 export default async function LogInPage() {
   const session = await getServerSession(authConfig);
-  // console.log('session', session);
+  console.log('session', session);
 
   if (session) return redirect('/profile');
 

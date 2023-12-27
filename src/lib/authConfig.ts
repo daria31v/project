@@ -1,39 +1,39 @@
 import { NextAuthOptions } from 'next-auth'
 import GoogleProvider from 'next-auth/providers/google'
-// import CredentialsProvider from 'next-auth/providers/credentials'
+import CredentialsProvider from 'next-auth/providers/credentials'
 import connectMongoDB from '../lib/mongodb'
 import User from '../models/user'
 import { signIn } from 'next-auth/react'
-// import bcrypt from 'bcryptjs'
+import bcrypt from 'bcryptjs'
 
 connectMongoDB()
 
 export const authConfig: NextAuthOptions = {
   providers: [
-    // CredentialsProvider({
-    //   name: 'credentials',
-    //   credentials: {},
-    //   async authorize(credentials: any) {
-    //     const { email, password } = credentials
+    CredentialsProvider({
+      name: 'credentials',
+      credentials: {},
+      async authorize(credentials: any) {
+        const { email, password } = credentials
 
-    //     try {
-    //       await connectMongoDB()
-    //       const user = await User.findOne({ email })
+        try {
+          await connectMongoDB()
+          const user = await User.findOne({ email })
 
-    //       if (!user) {
-    //         return null
-    //       }
-    //       const passwordsMatch = await bcrypt.compare(password, user.password)
+          if (!user) {
+            return null
+          }
+          const passwordsMatch = await bcrypt.compare(password, user.password)
 
-    //       if (!passwordsMatch) {
-    //         return null
-    //       }
-    //       return user
-    //     } catch (error) {
-    //       console.log('Error in Ligin', error)
-    //     }
-    //   },
-    // }),
+          if (!passwordsMatch) {
+            return null
+          }
+          return user
+        } catch (error) {
+          console.log('Error in Login', error)
+        }
+      },
+    }),
     GoogleProvider({
       clientId: process.env.GOOGLE_ID as string,
       clientSecret: process.env.GOOGLE_SECRET as string,

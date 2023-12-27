@@ -14,10 +14,12 @@ export default function LogInForm() {
   const router = useRouter()
 
   const handleSabmit = async (e: {
+    
     preventDefault: () => void
-    currentTarget: HTMLFormElement | undefined
+    
   }) => {
     e.preventDefault()
+    console.log('handleSubmit');
 
     if ( !email || !password) {
       setError('All fields are required!')
@@ -29,7 +31,7 @@ export default function LogInForm() {
         password,
         redirect: false,
       })
-
+      console.log(singInRes);
       if (singInRes?.error) {
         setError('Invalid credentials');
         return;
@@ -63,7 +65,8 @@ export default function LogInForm() {
         </label>
         <span className="text-xs font-light text-grey_text text-end">Forgot password?</span>
         <div className="flex justify-center items-center">
-          <LoginInButton />
+            <button onSubmit={handleSabmit}>Sent</button>
+          {/* <LoginInButton/> */}
         </div>
         {error && <div className="text-error text-xs font-bold text-start">{error}</div>}
         <div className="flex justify-between items-center gap-3 w-full">
