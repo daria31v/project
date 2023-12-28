@@ -1,5 +1,5 @@
 
-import { authConfig } from '@/lib/authConfig'
+import { authConfig } from '@/utils/authConfig'
 import User from '../models/user'
 import { getServerSession } from 'next-auth'
 import { redirect } from 'next/navigation'
@@ -30,3 +30,4 @@ export async function updateUser({ name, email, password, image }: Props) {
     redirect(`/errors?error=`)
   }
 }
+

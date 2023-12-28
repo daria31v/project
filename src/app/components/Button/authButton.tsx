@@ -21,14 +21,11 @@ export function GoogleSignInButton({ title }: Props) {
   )
 }
 
-export function LoginInButton() {
-  // const handleClick = () => {
-  //   signIn()
-  // }
+export function LoginInButton({ handleClick }: any) {
   return (
     <button
-      type="button"
-      // onClick={handleClick}
+      type="submit"
+      onClick={handleClick}
       className="w-[280px] h-[33px] shadow-xl rounded-[50px] bg-gradient-to-r to-[#2e5fba] via-transparent from-[#E2EAF9] my-3 text-white text-medium font-normal hover:font-bold"
     >
       <span>Log In</span>
@@ -37,13 +34,8 @@ export function LoginInButton() {
 }
 
 export function RegisterButton() {
-  // const handleClick = () => {
-  //   signIn()
-  // }
-
   return (
     <button
-      // onClick={handleClick}
       type="submit"
       className="w-[280px] h-[33px] shadow-xl rounded-[50px] bg-gradient-to-r to-[#2e5fba] via-transparent from-[#E2EAF9] my-3 text-white text-medium font-normal hover:font-bold"
     >
