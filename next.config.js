@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   // output: 'export',
-  images: { unoptimized: true},
+  images: { unoptimized: true, domains: ['lh3.googleusercontent.com', 'images.pexels.com'] },
   webpack(config) {
     config.module.rules.push({
       test: /\.svg$/i,
@@ -11,8 +11,6 @@ const nextConfig = {
 
     return config
   },
-
 }
 
-module.exports = nextConfig;
-
+module.exports = nextConfig

@@ -11,9 +11,12 @@
   },
   "dependencies": {
     "@types/react-router-dom": "^5.3.3",
+    "bcryptjs": "^2.4.3",
     "clsx": "^2.0.0",
     "gray-matter": "^4.0.3",
     "lightgallery": "^2.7.2",
+    "mongodb": "^6.3.0",
+    "mongoose": "^8.0.3",
     "next": "latest",
     "next-auth": "^4.24.5",
     "react": "latest",
@@ -22,6 +25,7 @@
   },
   "devDependencies": {
     "@svgr/webpack": "^8.1.0",
+    "@types/bcryptjs": "^2.4.6",
     "@types/node": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
