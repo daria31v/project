@@ -16,7 +16,7 @@ export default function RegisterPage(){
 
   useEffect(() => {
     if (sessionStatus === 'authenticated') {
-      redirect('/profile')
+      redirect('/login')
     }
   }, [sessionStatus])
 

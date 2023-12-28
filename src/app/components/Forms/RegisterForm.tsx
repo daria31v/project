@@ -48,7 +48,7 @@ export default function RegisterForm() {
       if (res.status === 200) {
         setError('')
         console.log('Go to profile')
-        router.replace('/')
+        router.replace('/login')
       }
       if (res.status === 500) {
         setError('Technical problems')
