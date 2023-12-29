@@ -13,14 +13,14 @@ export const metadata: Metadata = {
 }
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
-const session = await getServerSession();
+// const session = await getServerSession();
 // console.log('Global session',session);
   return (
     <>
       <html lang="en">
         {/* className="dark" */}
         <body>
-          <AuthProvider session={session}>
+          <AuthProvider >
             <div className="wraper">
               <Header />
               <main className="bg-opacity-30 fix">{children}</main>
