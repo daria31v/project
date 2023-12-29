@@ -21,11 +21,11 @@ export function GoogleSignInButton({ title }: Props) {
   )
 }
 
-export function LoginInButton({ handleClick }: any) {
+export function LoginInButton({ onClick }: any) {
   return (
     <button
       type="submit"
-      onClick={handleClick}
+      onClick={onClick}
       className="w-[280px] h-[33px] shadow-xl rounded-[50px] bg-gradient-to-r to-[#2e5fba] via-transparent from-[#E2EAF9] my-3 text-white text-medium font-normal hover:font-bold"
     >
       <span>Log In</span>

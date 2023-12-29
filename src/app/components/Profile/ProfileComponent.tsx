@@ -5,7 +5,7 @@ import ProfileCard from './ProfileCard'
 import ProfileUpdate from './ProfileUpdate'
 
 const ProfileComponent = ({ user }: any) => {
-//   console.log({ user })
+
   const { data: session, update } = useSession();
   console.log({ session })
   return (
