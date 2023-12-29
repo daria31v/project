@@ -17,9 +17,10 @@ export default function LogInForm() {
     const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+[A-Z]{2,}$/i
     return emailRegex.test(email)
   }
+
   const handleSubmit = async (e: any) => {
     e.preventDefault()
-    // console.log('handleSubmit')
+    console.log('handleSubmit')
 
     if (!email || !password) {
       setError('All fields are required!')
@@ -40,7 +41,7 @@ export default function LogInForm() {
         password,
         redirect: false,
       })
-      // console.log(singInRes)
+      console.log(singInRes)
       if (singInRes?.error) {
         setError('Invalid credentials')
         return
@@ -76,7 +77,7 @@ export default function LogInForm() {
         </label>
         <span className="text-xs font-light text-grey_text text-end">Forgot password?</span>
         <div className="flex justify-center items-center">
-          <LoginInButton handleClick={handleSubmit}/>
+          <LoginInButton onClick={handleSubmit}/>
           {/* <LoginInButton /> */}
         </div>
         {error && <div className="text-error text-xs font-bold text-start">{error}</div>}
