@@ -5,13 +5,14 @@ module.exports = {
   theme: {
     colors: {
       primary: '#373F41',
-      secondary: '#34688F',
+      secondary: '#265539',
       yellow: '#F6CA07',
       yellow_light: '#F7C86F',
       orange_light: '#EFA007',
-      orange: '#F38605',
-      duna: '#C25D05',
+      orange: '#F38605',  
+      nude: '#ECAE81',
       white: '#fff',
+      main_title: 'text-slate-300',
       blue: '#3C64B1',
       blue_light: '#DBEAE7',
       blue_text: '#87A4DC',
@@ -23,6 +24,7 @@ module.exports = {
       normal: '400',
       semibold: '600',
       bold: '700',
+      extra_bold:'800'
     },
     fontSize: {
       xs: ['10px', { lineHeight: '1.2' }],
@@ -34,10 +36,13 @@ module.exports = {
       ml: ['30px', { lineHeight: '1.2' }],
       l: ['36px', { lineHeight: '1.28' }],
       xl: ['40px', { lineHeight: '0.8' }],
+      xxl: ['95px', {lineHeight: '0.36'}]
     },
     fontFamily: {
       main: ['Mulish', 'sans-serif'],
-      extra: ['Noto_Sans', 'sans-serif'],
+      extra: ['Belleza', 'sans-serif'],
+
+      // main_title: ['Raluka', 'sans-serif']
     },
     letterSpacing: {
       tightest: '-1.2px',

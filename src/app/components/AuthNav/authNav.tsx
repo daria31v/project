@@ -3,8 +3,8 @@ import Link from 'next/link'
 export const AuthNav = () => {
   return (
     <>
-      <Link href="/login" className="hover:text-orange_light">Log In</Link>
-      <Link href="/register" className="hover:text-orange_light">Join us</Link>
+      <Link href="/login" className="text-orange hover:text-white focus:text-white active:visited:text-white">Log In</Link>
+      <Link href="/register" className="text-orange hover:text-white focus:text-white active:visited:text-white">Join us</Link>
     </>
   )
 }

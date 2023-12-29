@@ -90,7 +90,7 @@ interface BlogProps {
 export default function Blog({ params: { id, photo, title, nikname, avatar, date } }: BlogProps) {
   return (
     <Container>
-      <div className="mt-16">
+      <div className="mt-16 p-[100px]">
         <h1 className="text-ml font-semibold text-start uppercase mb-4 mt-4">Blog & Tips</h1>
         <div className="w-14 h-1 bg-secondary rounded-md mb-4"></div>
         <div className="mb-10">

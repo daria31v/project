@@ -1,4 +1,4 @@
-import beards from '../../../../public/images/beards.jpeg'
+import beards from '../../../../public/images/clouds.jpeg'
 import Image from 'next/image'
 
 interface TopPostProps {
@@ -18,23 +18,22 @@ export default function TopPost() {
   }
 
   return (
-    <div className="font-normal text-medium">
-      <h2 className="text-ml text-center xl:text-left  uppercase font-bold">
+    <div className="font-normal text-medium pb-14">
+      <h2 className="text-ml text-center xl:text-center font-extra uppercase font-normal mb-7 text-secondary">
         people love to visit
       </h2>
-      <div className="xl:grid xl:grid-cols-2 gap-10 md:block font-normal text-medium mt-12 ">
-        <div className="flex justify-center h-[500px]">
+      <div className="xl:flex xl:gap-16 md:block font-normal text-medium ">
+        <div className="flex justify-center h-[347px] w-[706px]">
           <Image
             src={post.photo}
             alt="..."
-            width={640}
-            height={400}
+            width={706}
+            height={347}
             className="rounded-3xl object-cover overflow-hidden"
           ></Image>
         </div>
 
-        <div className="mt-4 xl:mt-0 w-auto">
-          <h3 className="mb-4 text-medium font-bold">{post.title}</h3>
+        <div className="mt-4 xl:mt-0 xl:w-[338px]">
           <p className="text-justify font-extra">{post.post}</p>
         </div>
       </div>

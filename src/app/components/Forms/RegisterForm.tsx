@@ -19,7 +19,7 @@ export default function RegisterForm() {
     const name = e.target[0].value
     const email = e.target[1].value
     const password = e.target[2].value
-    console.log(name, email, password)
+    // console.log(name, email, password)
 
     if (!isValidEmail(email)) {
       setError('Email is invalid!')
