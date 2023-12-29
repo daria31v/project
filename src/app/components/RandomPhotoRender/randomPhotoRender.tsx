@@ -25,9 +25,9 @@ interface PhotoProps {
 
 export default function RandomPhotoRender() {
   return (
-    <div className="md:mb-20 mb-6">
-      <h1 className="text-ml xl:text-start text-center uppercase font-bold">Share your journey</h1>
-      <div className="mt-12 sm:text-center md:text-justify max-w-auto mx-auto py-10">
+    <div className="">
+      <h1 className="text-ml xl:text-start text-center uppercase font-normal font-extra">Share your journey</h1>
+      <div className="sm:text-center md:text-justify max-w-auto mx-auto mt-7 pb-14">
         <ul className="grid gap-4 grid-cols-1 sm:grid-cols-1  md:grid-cols-2 xl:grid-cols-3 xl:gap-16 md:gap-10">
           {posts.map((post) => (
             <li key={post.id}>
@@ -35,7 +35,7 @@ export default function RandomPhotoRender() {
                 <Image
                   src={post.photo}
                   alt="random photo"
-                  className="w-full h-full overflow-hidden  object-cover max-h-[350px] rounded-2xl"
+                  className="w-full h-full overflow-hidden object-cover max-h-[410px] rounded-2xl"
                 ></Image>
               </div>
             </li>

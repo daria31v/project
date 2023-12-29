@@ -4,7 +4,7 @@ import Link from 'next/link'
 export const UserMenu = () => {
   return (
     <>
-      <Link href="/profile" className="hover:text-orange_light">
+      <Link href="/profile" className="text-orange  hover:text-white focus:text-white active:visited:text-white">
         My profile
       </Link>
       <Link
@@ -14,7 +14,7 @@ export const UserMenu = () => {
             callbackUrl: '/',
           })
         }
-        className="hover:text-orange_light"
+        className=" text-orange hover:text-white focus:text-white active:visited:text-white"
       >
         LogOut
       </Link>

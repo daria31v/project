@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
 const session = await getServerSession();
-console.log('Global session',session);
+// console.log('Global session',session);
   return (
     <>
       <html lang="en">

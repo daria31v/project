@@ -7,7 +7,7 @@ import ProfileComponent from '../components/Profile/ProfileComponent'
 
 export default async function ProfilePage() {
   const session = await getServerSession(authConfig)
-  console.log('Profile session:',session);
+  // console.log('Profile session:',session);
   if (!session) {
     redirect('/login')
   }

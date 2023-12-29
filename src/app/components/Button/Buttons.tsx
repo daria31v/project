@@ -1,19 +1,16 @@
-'use client'
+// 'use client'
 
-import { experimental_useFormStatus as useFormStatus } from 'react-dom'
+import { ReactNode } from 'react'
 
-type Props = {
-  value: string
+type BtnProps = {
+  // onSubmit: (formData: FormData) => void;
+  children: ReactNode
+  className?: string
 }
 
-const Button = ({ value, ...props }: Props) => {
-  const { pending } = useFormStatus()
-
-  return (
-    <button {...props} disabled={pending}>
-      {pending ? 'Loading....' : value}
-    </button>
-  )
+const Button: React.FC<BtnProps> = ({ children, className }) => {
+  const btnClasses = `custom-form ${className ? className : ''}`
+  return <button className={btnClasses}>{children}</button>
 }
 
 export default Button
