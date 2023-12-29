@@ -21,7 +21,8 @@
     "next-auth": "^4.24.5",
     "react": "latest",
     "react-dom": "latest",
-    "react-router-dom": "^6.16.0"
+    "react-router-dom": "^6.16.0",
+    "sharp": "^0.33.1"
   },
   "devDependencies": {
     "@svgr/webpack": "^8.1.0",
