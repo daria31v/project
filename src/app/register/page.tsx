@@ -4,28 +4,28 @@ import logo from '../../../public/images/logo.png'
 import Image from 'next/image'
 import Link from 'next/link'
 import RegisterForm from '../components/Forms/RegisterForm'
-import { authConfig } from '../../utils/authConfig'
-import { getServerSession } from 'next-auth'
+// import { authConfig } from '../../utils/authConfig'
+// import { getServerSession } from 'next-auth'
 import { redirect } from 'next/navigation'
 import { useSession } from 'next-auth/react'
-import { useEffect } from 'react'
+// import { useEffect } from 'react'
 
 export default function RegisterPage(){
 
-  const { data: session, status: sessionStatus } = useSession()
+  const { data: session} = useSession()
+  if (session) redirect ('/login')
+  // useEffect(() => {
+  //   if (sessionStatus === 'authenticated') {
+  //     redirect('/login')
+  //   }
+  // }, [sessionStatus])
 
-  useEffect(() => {
-    if (sessionStatus === 'authenticated') {
-      redirect('/login')
-    }
-  }, [sessionStatus])
-
-  if (sessionStatus === 'loading') {
-    return <h1>Loading....</h1>
-  }
+  // if (sessionStatus === 'loading') {
+  //   return <h1>Loading....</h1>
+  // }
 
   return (
-    sessionStatus !== 'authenticated' && (
+    // sessionStatus !== 'authenticated' && (
       <Container>
         <div className="flex justify-center items-center my-6 p-[100px]">
           <div className="shadow-xl bg-gradient-to-r to-[#FFB800] via-transparent from-[#E2EAF9] w-[620px] grid justify-center py-6 rounded-md">
@@ -50,6 +50,6 @@ export default function RegisterPage(){
           </div>
         </div>
       </Container>
-    )
+    // )
   )
 }
