@@ -14,7 +14,7 @@ export default async function ProfilePage() {
 
   return (
     <Container>
-      <section className="mt-16 font-bold">
+      <section className="mt-16 font-bold p-[100px]">
       <h2 className="mb-9 font-bold text-md tracking-wider uppercase">My profile</h2>
        <ProfileComponent user={session?.user}/>
       </section>

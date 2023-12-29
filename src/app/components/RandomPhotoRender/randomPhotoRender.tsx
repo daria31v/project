@@ -26,7 +26,7 @@ interface PhotoProps {
 export default function RandomPhotoRender() {
   return (
     <div className="">
-      <h1 className="text-ml xl:text-start text-center uppercase font-normal font-extra">Share your journey</h1>
+      <h1 className="text-ml xl:text-start text-center uppercase font-normal font-extra text-white">Share your journey</h1>
       <div className="sm:text-center md:text-justify max-w-auto mx-auto mt-7 pb-14">
         <ul className="grid gap-4 grid-cols-1 sm:grid-cols-1  md:grid-cols-2 xl:grid-cols-3 xl:gap-16 md:gap-10">
           {posts.map((post) => (

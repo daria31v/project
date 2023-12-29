@@ -14,7 +14,7 @@ interface Partner {
 
 export const PartnersList = () => {
   return (
-    <div className="mb-20">
+    <div className="mb-20 px-[100px]">
       <ul className="grid gap-4 grid-cols-1 sm:grid-cols-1  md:grid-cols-2 xl:grid-cols-3 xl:gap-16 md:gap-10">
         {partners.map((partner) => (
           <li key={partner.id} className="transition transform hover:-translate-y-3 motion-reduce:transition-none">

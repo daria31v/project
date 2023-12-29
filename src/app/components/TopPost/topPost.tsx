@@ -19,7 +19,7 @@ export default function TopPost() {
 
   return (
     <div className="font-normal text-medium pb-14">
-      <h2 className="text-ml text-center xl:text-center font-extra uppercase font-normal mb-7">
+      <h2 className="text-ml text-center xl:text-center font-extra uppercase font-normal mb-7 text-secondary">
         people love to visit
       </h2>
       <div className="xl:flex xl:gap-16 md:block font-normal text-medium ">
