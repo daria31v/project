@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
 import { Container } from '../components/Container/container'
-import { GallerySlider } from '../components/Slider/GallerySlider'
 import FiilterComponent from '../components/Filter/FiilterComponent'
+import { GallerySlider } from '../components/Slider/GallerySlider'
 
 // SEO
 export const metadata: Metadata = {
