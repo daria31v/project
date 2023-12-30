@@ -1,10 +1,10 @@
 'use client'
-import Logo from '../Logo/Logo'
+import Logo from '../Logo/logo'
 import Link from 'next/link'
 import { AuthNav } from '../AuthNav/authNav'
 import { UserMenu } from '../User/userMenu'
 import MobileMenu from '../MobileMenu/MobileMenu'
-import { Navigation } from '../Navigation/Navigation'
+import { Navigation } from '../Navigation/navigation'
 import { Container } from '../Container/container'
 import { useSession } from 'next-auth/react'
 

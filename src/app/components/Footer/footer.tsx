@@ -1,4 +1,4 @@
-import Logo from '../Logo/Logo'
+import Logo from '../Logo/logo'
 import Link from 'next/link'
 import { Container } from '../Container/container'
 import SentSVG from '../../../../public/icon/SentSVG'
