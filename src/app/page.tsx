@@ -1,5 +1,5 @@
-import TopPost from './components/TopPost/topPost'
-import RandomPhotoRender from './components/RandomPhotoRender/randomPhotoRender'
+import TopPost from './components/PopularPost/TopPost'
+import RandomPhotoRender from './components/DemoGallery/RandomPhotoRender'
 import { Container } from './components/Container/container'
 import Button from './components/Button/Buttons'
 import Scroll from '../../public/icon/Scroll'
@@ -9,12 +9,12 @@ export default function Home() {
     <div>
       <Container>
         <section className="">
-          <div className="text-center pb-[283px] pt-[350px] bg-orange_light max-h-[742px] maw-w-[1600px]">
-            <h1 className="text-center font-bold text-xxl mb-4 uppercase tracking-[-0.8px] text-white ">
+          <div className="text-center pb-[283px] pt-[350px]  max-h-[742px] bg-hero bg-cover bg-center bg-no-repeat">
+            <h1 className="text-center font-main_title font-normal xl:text-xxl md:text-xl text-md mb-4 uppercase tracking-[3px] text-white ">
               {' '}
               A world in my lens
             </h1>
-            <h2 className="text-md font-extra_bold text-center text-white mt-9 tracking-wide">
+            <h2 className="xl:text-md text-xs font-extra_bold text-center text-white mt-9 tracking-wide">
             Let’s discover your next journey from others.
             </h2>
             <div className="flex justify-center items-center mt-20 ">
@@ -22,10 +22,10 @@ export default function Home() {
 
             </div>
           </div>
-          <div className="px-[100px] bg-secondary pt-7">
+          <div className=" bg-secondary pt-7 xl:px-[100px] md:px-12 px-6">
             <RandomPhotoRender />
             </div>
-            <div className="px-[100px] bg-yellow pt-7">
+            <div className="xl:px-[100px] px-[50px] bg-yellow pt-7">
             <TopPost />
           </div>
         </section>

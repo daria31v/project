@@ -8,7 +8,7 @@ const ErrorsPage = () => {
 
   return (
     <Container>
-      <section className="my-36 grid justify-center gap-12 items-center justify-items-center">
+      <section className="my-36 grid justify-center gap-12 items-center justify-items-center xl:px-[100px] md:px-12 px-6">
         <h1 className="text-error mb-8 uppercase text-xl">Someting went wrong</h1>
         <h2 className="text-error uppercase text-xl">please</h2>
         <button

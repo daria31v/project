@@ -15,7 +15,7 @@ export default function RegisterPage(){
 
   return (
       <Container>
-        <div className="flex justify-center items-center my-6 p-[100px]">
+        <div className="flex justify-center items-center my-6 xl:px-[100px] md:px-12 px-6">
           <div className="shadow-xl bg-gradient-to-r to-[#FFB800] via-transparent from-[#E2EAF9] w-[620px] grid justify-center py-6 rounded-md">
             <div className="text-center mb-3">
               <Image src={logo} alt="logo" width={100} height={40} className="mx-auto" />
