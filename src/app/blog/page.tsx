@@ -90,34 +90,10 @@ interface BlogProps {
 export default function Blog({ params: { id, photo, title, nikname, avatar, date } }: BlogProps) {
   return (
     <Container>
-      <div className="mt-16 p-[100px]">
-        <h1 className="text-ml font-semibold text-start uppercase mb-4 mt-4">Blog & Tips</h1>
+      <div className="mt-16 xl:px-[100px] md:px-12 px-6">
+        <h1 className="text-ml font-semibold text-start uppercase mb-4 mt-4 text-secondary">Blog & Tips</h1>
         <div className="w-14 h-1 bg-secondary rounded-md mb-4"></div>
-        <div className="mb-10">
-          <p className="text-medium text-secondary font-semibold mb-3">Choose category</p>
-          <div className="md:flex gap-3 columns-2 text-base">
-            <div>
-              <span>All</span>
-              <input id="" type="radio"></input>
-            </div>
-            <div>
-              <span>Rivers</span>
-              <input id="" type="radio"></input>
-            </div>
-            <div>
-              <span>Mountains</span>
-              <input id="" type="radio"></input>
-            </div>
-            <div>
-              <span>Oceans</span>
-              <input id="" type="radio"></input>
-            </div>
-            <div>
-              <span>Waterfall</span>
-              <input id="" type="radio"></input>
-            </div>
-          </div>
-        </div>
+        
         <div className="mt-6 flex justify-center">
           <ul className="md:grid md:grid-cols-2 xl:grid-cols-3 justify-between md:gap-10 mb-10">
             {posts.map((post) => (

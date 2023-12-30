@@ -15,6 +15,7 @@ import sky from '../../../../public/images/sky.jpg'
 import kids from '../../../../public/images/photo_7.jpg'
 import lake from '../../../../public/images/photo_5.jpg'
 import sun from '../../../../public/images/sun.jpg'
+import Button from '../Button/Buttons'
 
 export const GallerySlider = () => {
 
@@ -91,12 +92,10 @@ export const GallerySlider = () => {
 
         
       </LightGallery>
-      <button
-        type="button"
-        className="bg-orange_light text-white px-2 py-1 rounded-md font-main z-50 mt-7"
-      >
-        See more photos
-      </button>
+      <div className="flex justify-center items-center mb-12">
+      <Button className="p-2 border">next</Button>
+
+      </div>
     </>
   )
 }

@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
-import Footer from './components/Footer/footer'
-import Header from './components/Header/header'
+import Footer from './components/Footer/Footer'
+import Header from './components/Header/Header'
 import './globals.css'
 import AuthProvider from '../utils/AuthProvider'
 import { getServerSession } from 'next-auth'

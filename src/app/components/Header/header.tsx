@@ -1,10 +1,10 @@
 'use client'
-import Logo from '../Logo/logo'
+import Logo from '../Logo/Logo'
 import Link from 'next/link'
 import { AuthNav } from '../AuthNav/authNav'
-import { UserMenu } from '../UserMenu/userMenu'
+import { UserMenu } from '../User/userMenu'
 import MobileMenu from '../MobileMenu/MobileMenu'
-import { Navigation } from '../Navigation/navigation'
+import { Navigation } from '../Navigation/Navigation'
 import { Container } from '../Container/container'
 import { useSession } from 'next-auth/react'
 
@@ -13,8 +13,8 @@ const Header = () => {
 
   return (
     <Container>
-      <header className="bg-secondary h-[88px] py-3 px-[100px]">
-        <div className="flex items-center">
+      <header className="bg-secondary h-[88px] py-3 xl:px-[100px] md:px-12 px-6">
+        <div className="flex">
           <div className="w-48 mr-auto">
             <Link href="/">
               <Logo src="" alt="logo" width={114} height={48} />
@@ -22,7 +22,7 @@ const Header = () => {
           </div>
 
           <div className="hidden xl:flex xl:items-center">
-            <div className="mr-[211px]">
+            <div className=" mr-36">
               <Navigation />
             </div>
 

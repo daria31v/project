@@ -36,13 +36,12 @@ module.exports = {
       ml: ['30px', { lineHeight: '1.2' }],
       l: ['36px', { lineHeight: '1.28' }],
       xl: ['40px', { lineHeight: '0.8' }],
-      xxl: ['95px', {lineHeight: '0.36'}]
+      xxl: ['95px', {lineHeight: '0.8'}]
     },
     fontFamily: {
       main: ['Mulish', 'sans-serif'],
       extra: ['Belleza', 'sans-serif'],
-
-      // main_title: ['Raluka', 'sans-serif']
+      main_title: ['Rubik Lines', 'sans-serif']
     },
     letterSpacing: {
       tightest: '-1.2px',
@@ -54,7 +53,12 @@ module.exports = {
       widest: '1.6px',
       widester: '4px',
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'hero': "url('/images/hero.webp')",
+        'section-texture': "url('/images/texture.webp')",
+      }
+    }
   },
   plugins: [],
 }

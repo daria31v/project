@@ -41,7 +41,7 @@ export default async function Post({ params: { id, src, alt } }: PostProps) {
   }
   return (
     <Container>
-      <section className="p-8 ">
+      <section className="pt-8 xl:px-[100px] md:px-12 px-6">
         <Link href={`/blog`} className="bg-white rounded-md text-secondary p-2 flex justify-center w-40 mb-4"> - All blogs - </Link>
         <div key={post.id}>
           <Image src={image} alt="post" width={150}></Image>
