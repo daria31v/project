@@ -1,4 +1,4 @@
-import { Metadata } from "next";
+// import { Metadata } from "next";
 import Image from 'next/image'
 import image from '../../../../../public/images/photo.jpg'
 import { Container } from '@/app/components/Container/container'
@@ -41,7 +41,7 @@ export default async function Post({ params: { id, src, alt } }: PostProps) {
   }
   return (
     <Container>
-      <section className="pt-8 xl:px-[100px] md:px-12 px-6">
+      <section className="py-16 xl:px-[100px] md:px-12 px-6 bg-section-texture bg-cover bg-center bg-no-repeat">
         <Link href={`/blog`} className="bg-white rounded-md text-secondary p-2 flex justify-center w-40 mb-4"> - All blogs - </Link>
         <div key={post.id}>
           <Image src={image} alt="post" width={150}></Image>

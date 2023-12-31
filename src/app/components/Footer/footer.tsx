@@ -12,44 +12,49 @@ const Footer = () => {
             <div className="flex justify-center items-center xl:justify-start">
               <Logo src="" alt="logo" width={114} height={48} />
             </div>
-            <p className="mt-[22px] text-medium font-semibold text-center xl:text-start">
-              The World is Wonderful: Catch the Moment!
+            <p className="mt-3 text-medium font-semibold italic text-center xl:text-start">
+              Discover your next wonderful journey through others&apos; eyes and <br /> catch the
+              moment in the wonderful world of photography!
             </p>
-            <p className=" text-medium font-semibold text-center xl:text-start">Let’s discover your next journey from others.</p>
           </div>
 
-          
           <div className="grid gap-5 xl:gap-2 md:grid-cols-2 mt-6 xl:mt-0">
-          <div className="grid text-medium items-center xl:items-start md:mt-0 mt-4">
-            <h4 className="text-sm text-orange font-semibold">OUR COMPANY</h4>
-            <Link href="/about" className="hover:text-orange_light ">
-              About us
-            </Link>
-            <Link href="/partners" className="hover:text-orange_light">
-              Our parners
-            </Link>
-          </div>
-          <div className="grid item-center mt-6 md:mt-0">
-            <h4 className="font-semibold text-sm text-orange mb-2 rounded-sm">SUBSCRIBE</h4>
-            <p className="text-medium mb-1">Subscribe to our recent newsletter.</p>
+            <div className="grid gap-3 text-medium items-center xl:items-start md:mt-0 mt-4">
+              <h4 className="text-sm text-orange font-semibold">OUR COMPANY</h4>
+              <Link href="/about" className="hover:text-orange_light ">
+                About us
+              </Link>
+              <Link href="/partners" className="hover:text-orange_light">
+                Our parners
+              </Link>
+            </div>
+            <div className="grid item-center mt-6 md:mt-0">
+              <h4 className="font-semibold text-sm text-orange mb-2 rounded-sm">SUBSCRIBE</h4>
+              <p className="text-medium mb-1">Subscribe to our recent newsletter</p>
 
-            <form className="" name="signup_form" autoComplete="on" noValidate>
-              <input
-                className="px-3 py-2 h-6 w-[200px] outline-none outline-transparent border-b border-nude placeholder:text-nude"
-                type="email"
-                name="email"
-                placeholder="e-mail"
+              <form className="flex items-center" name="signup_form" autoComplete="on" noValidate>
+                <input
+                  className="px-2 py-3 h-6 w-[200px] outline-none outline-transparent border-b border-orange placeholder:text-orange"
+                  type="email"
+                  name="email"
+                  placeholder="e-mail"
                 />
-              <button
-                className="text-white ml-2 hover:border p-1 hover:text-orange hover:rounded-md"
-                type="submit"
+                <button
+                  className="text-white ml-2 hover:border hover:text-orange hover:rounded-md p-2 flex items-center justify-center"
+                  type="button"
                 >
-                {' '}
-                <SentSVG />
-              </button>
-            </form>
-                </div>
+                  {' '}
+                  <SentSVG />
+                </button>
+              </form>
+            </div>
           </div>
+        </div>
+        <div className="flex justify-center items-center pb-3">
+          <p className="text-base text-white">
+            © 2024 &#34;World in my lens&#34;. All rights reserved. Any use of materials from this
+            website without the written permission of the copyright owner is prohibited
+          </p>
         </div>
       </footer>
     </Container>
