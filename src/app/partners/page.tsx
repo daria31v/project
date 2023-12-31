@@ -11,14 +11,22 @@ export const metadata: Metadata = {
 export default function Partners() {
   return (
     <Container>
-      <section className="xl:px-[100px] md:px-12 px-6">
-        <div className="w-auto text-start my-16">
-          <h1 className="text-l mb-4 uppercase font-semibold text-secondary">partners & sponsors</h1>
-          <div className="w-14 h-1 bg-secondary rounded-md mb-4"></div>
-          <p className=" text-medium font-normal tracking-widest">
-            We appreciate your efforts and generosity in supporting our company on its journey to
-            create better community
-          </p>
+      <section className="py-16 xl:px-[100px] md:px-12 px-6 bg-section-texture bg-cover bg-center bg-no-repeat">
+        <div className="">
+          <div className="grid justify-around">
+            <div>
+              <h1 className="text-md font-bold text-center uppercase mb-4 mt-4 text-secondary">
+                partners & sponsors
+              </h1>
+            </div>
+            <div className="flex justify-center items-center mb-4">
+              <div className="w-14 h-1 bg-secondary rounded-md mb-4"></div>
+            </div>
+            <p className="max-w-[469px] font-normal text-primary text-center text-medium mb-9">
+              We appreciate your efforts and generosity in supporting our company on its journey to
+              create better community
+            </p>
+          </div>
         </div>
 
         <PartnersList />

@@ -13,6 +13,7 @@
     "@types/react-router-dom": "^5.3.3",
     "bcryptjs": "^2.4.3",
     "clsx": "^2.0.0",
+    "formik": "^2.4.5",
     "gray-matter": "^4.0.3",
     "lightgallery": "^2.7.2",
     "mongodb": "^6.3.0",

@@ -16,6 +16,8 @@ import kids from '../../../../public/images/photo_7.jpg'
 import lake from '../../../../public/images/photo_5.jpg'
 import sun from '../../../../public/images/sun.jpg'
 import Button from '../Button/Buttons'
+import ScrollSVG from '../../../../public/icon/Scroll'
+
 
 export const GallerySlider = () => {
 
@@ -92,8 +94,10 @@ export const GallerySlider = () => {
 
         
       </LightGallery>
-      <div className="flex justify-center items-center mb-12">
-      <Button className="p-2 border">next</Button>
+      <div className="flex justify-center items-center mb-6">
+      
+     
+      <Button className="border-2 border-orange w-14 h-14 flex justify-center items-center p-4 rounded-full shadow-xl bg-gradient-to-t to-[#22462CB2] via-transparent from-orange"><ScrollSVG/></Button>
 
       </div>
     </>

@@ -6,25 +6,31 @@ module.exports = {
     colors: {
       primary: '#373F41',
       secondary: '#265539',
+      green_light: '#2655398C',
       yellow: '#F6CA07',
       yellow_light: '#F7C86F',
-      orange_light: '#EFA007',
-      orange: '#F38605',  
+      orange: '#F38605',
+      orange_light: '#EFA0077E',
+      duna: '#C25D05',
       nude: '#ECAE81',
       white: '#fff',
-      main_title: 'text-slate-300',
+      main_title: '#f2f2f2d1',
+      main_text: '#F0E3D2',
       blue: '#3C64B1',
-      blue_light: '#DBEAE7',
+      peach: '#FFE9D9B0',
+      peach_light: '#FFE9D9AB',
+      pink: '#ECAE81',
+      grey: '#E7EFFD',
       blue_text: '#87A4DC',
-      grey_text: '#9BADCE',
       error: '#C24141',
     },
+
     fontWeight: {
       light: '300',
       normal: '400',
       semibold: '600',
       bold: '700',
-      extra_bold:'800'
+      extra_bold: '800',
     },
     fontSize: {
       xs: ['10px', { lineHeight: '1.2' }],
@@ -36,12 +42,12 @@ module.exports = {
       ml: ['30px', { lineHeight: '1.2' }],
       l: ['36px', { lineHeight: '1.28' }],
       xl: ['40px', { lineHeight: '0.8' }],
-      xxl: ['95px', {lineHeight: '0.8'}]
+      xxl: ['60px', { lineHeight: '0.8' }],
+      extra: ['95px', { lineHeight: '0.8' }],
     },
     fontFamily: {
       main: ['Mulish', 'sans-serif'],
-      extra: ['Belleza', 'sans-serif'],
-      main_title: ['Rubik Lines', 'sans-serif']
+      extra: ['Belleza', 'sans-serif']
     },
     letterSpacing: {
       tightest: '-1.2px',
@@ -55,10 +61,10 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        'hero': "url('/images/hero.webp')",
+        hero: "url('/images/hero.webp')",
         'section-texture': "url('/images/texture.webp')",
-      }
-    }
+      },
+    },
   },
   plugins: [],
 }

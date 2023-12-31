@@ -18,22 +18,22 @@ export default function TopPost() {
   }
 
   return (
-    <div className="font-normal text-medium pb-14">
+    <div className="font-normal text-medium pb-14 ">
       <h2 className="text-ml text-center xl:text-center font-extra uppercase font-normal mb-7 text-secondary">
         people love to visit
       </h2>
-      <div className="xl:flex xl:gap-16 md:block font-normal text-medium ">
-        <div className="flex justify-center h-[347px] max-w-[706px]">
+      <div className="xl:flex md:block font-normal text-medium ">
+        <div className="flex justify-center h-[347px] max-w-[706px] shadow-xl rounded-2xl xl:mr-auto">
           <Image
             src={post.photo}
             alt="..."
             width={706}
             height={347}
-            className="rounded-3xl object-cover overflow-hidden"
+            className="rounded-2xl object-cover overflow-hidden "
           ></Image>
         </div>
 
-        <div className="mt-4 xl:mt-0 xl:w-[338px]">
+        <div className="mt-6 md:mt-8 xl:mt-0 xl:w-[338px] 2xl:w-[550px] ">
           <p className="text-justify font-extra">{post.post}</p>
         </div>
       </div>

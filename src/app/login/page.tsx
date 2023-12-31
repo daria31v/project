@@ -28,7 +28,7 @@ export default function LogInPage() {
   return (
     status !== 'authenticated' && (
       <Container>
-        <div className="flex justify-center items-center my-10 xl:px-[100px] md:px-12 px-6">
+        <div className="flex justify-center items-center py-16 xl:px-[100px] md:px-12 px-6 bg-section-texture bg-cover bg-center bg-no-repeat">
           <div className="bg-gradient-to-r to-[#b0c7f3] via-transparent from-[#E2EAF9] w-[620px] grid justify-center py-6 rounded-md">
             <div className="text-center">
               <Image src={logo} alt="logo" width={100} height={40} className="mx-auto" />
