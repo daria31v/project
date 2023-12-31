@@ -16,13 +16,13 @@ module.exports = {
       white: '#fff',
       main_title: '#f2f2f2d1',
       main_text: '#F0E3D2',
-      blue: '#3C64B1',
       peach: '#FFE9D9B0',
       peach_light: '#FFE9D9AB',
       pink: '#ECAE81',
       grey: '#E7EFFD',
-      blue_text: '#87A4DC',
-      error: '#C24141',
+      grey_text: '#808080',
+      error: '#ff2424',
+
     },
 
     fontWeight: {

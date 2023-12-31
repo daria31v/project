@@ -28,22 +28,22 @@ export default function LogInPage() {
   return (
     status !== 'authenticated' && (
       <Container>
-        <div className="flex justify-center items-center py-16 xl:px-[100px] md:px-12 px-6 bg-section-texture bg-cover bg-center bg-no-repeat">
-          <div className="bg-gradient-to-r to-[#b0c7f3] via-transparent from-[#E2EAF9] w-[620px] grid justify-center py-6 rounded-md">
+        <section  className="flex justify-center items-center py-36 xl:px-[100px] md:px-12 px-6 bg-section-texture bg-cover bg-center bg-no-repeat">
+          <div className="bg-gradient-to-r to-[#265539D2] via-transparent from-[#2655397C] w-[620px] h-[450px] grid justify-center py-6 rounded-md">
             <div className="text-center">
               <Image src={logo} alt="logo" width={100} height={40} className="mx-auto" />
-              <h3 className="my-6 text-blue">Log in your account</h3>
+              <h3 className="mb-2 mt-2 text-white">Log in your account</h3>
             </div>
 
             <LogInForm />
             <div className="flex gap-3 justify-center items-center">
-              <p className="text-blue_text text-small font-normal">Don’t have account? </p>
+              <p className="text-white text-small font-normal">Don’t have account? </p>
               <Link href="/register">
-                <span className="font-semibold text-blue text-small">Register Now</span>
+                <span className="font-semibold text-orange text-small">Register Now</span>
               </Link>
             </div>
           </div>
-        </div>
+        </section>
       </Container>
     )
   )
