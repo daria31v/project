@@ -12,13 +12,13 @@ const UploadPostForm = () => {
           <div className="xl:flex xl:gap-12">
             <div className="xl:max-w-[330px] text-center">
               <span className="text-duna text-xs">Uploaded Photo</span>
-              <Image src={defaultImg} alt="default image" width={330} height={330} />
+              <Image src={defaultImg} alt="default image" width={330} height={330} className="shadow-md"/>
 
               <div className="flex justify-end gap-3 mt-3">
-                <Button className="w-[34px] h-[34px] bg-peach text-md text-duna px-2 py-1 flex justify-center items-center rounded-md">
+                <Button className="w-[34px] h-[34px] shadow-md bg-peach text-md text-duna px-2 py-1 flex justify-center items-center rounded-md">
                   <span>+</span>
                 </Button>
-                <Button className="w-[34px] h-[34px] bg-peach text-md text-duna px-2 py-1 flex justify-center items-center rounded-md">
+                <Button className="w-[34px] h-[34px] shadow-md bg-peach text-md text-duna px-2 py-1 flex justify-center items-center rounded-md">
                   <span>-</span>
                 </Button>
               </div>
@@ -34,19 +34,19 @@ const UploadPostForm = () => {
 
               <div className="flex gap-2 items-center mt-6">
                 <span className="text-base text-duna font-bold mr-7">Place for the rest</span>
-                <label className="rounded-md h-8 inline-block px-3 py-1 text-center cursor-pointer bg-peach_light  text-secondary hover:bg-secondary hover:text-peach_light hover:shadow-md focus:shadow-md">
+                <label className="rounded-md h-8 inline-block px-3 py-1 shadow-md text-center cursor-pointer bg-peach_light  text-secondary hover:bg-secondary hover:text-peach_light hover:shadow-md focus:shadow-md">
                   Waterfall
                   <input type="checkbox" className="absolute opacity-0 pointer-events-none" />
                 </label>
-                <label className="rounded-md h-8 inline-block px-3 py-1 text-center cursor-pointer bg-peach_light  text-secondary hover:bg-secondary hover:text-peach_light hover:shadow-md focus:shadow-md">
+                <label className="rounded-md h-8 inline-block px-3 py-1 shadow-md text-center cursor-pointer bg-peach_light  text-secondary hover:bg-secondary hover:text-peach_light hover:shadow-md focus:shadow-md">
                   Mountain
                   <input type="checkbox" className="absolute opacity-0 pointer-events-none" />
                 </label>
-                <label className="rounded-md h-8 inline-block px-3 py-1 text-center cursor-pointer bg-peach_light  text-secondary hover:bg-secondary hover:text-peach_light hover:shadow-md focus:shadow-md">
+                <label className="rounded-md h-8 inline-block px-3 py-1 shadow-md text-center cursor-pointer bg-peach_light  text-secondary hover:bg-secondary hover:text-peach_light hover:shadow-md focus:shadow-md">
                   River
                   <input type="checkbox" className="absolute opacity-0 pointer-events-none" />
                 </label>
-                <label className="rounded-md h-8 inline-block px-3 py-1 text-center cursor-pointer bg-peach_light text-secondary hover:bg-secondary hover:text-peach_light hover:shadow-md focus:shadow-md">
+                <label className="rounded-md h-8 inline-block px-3 py-1 shadow-md text-center cursor-pointer bg-peach_light text-secondary hover:bg-secondary hover:text-peach_light hover:shadow-md focus:shadow-md">
                   Other
                   <input type="checkbox" className="absolute opacity-0 pointer-events-none" />
                 </label>
@@ -73,7 +73,7 @@ const UploadPostForm = () => {
             </div>
           </div>
           <div className="flex items-center justify-center">
-            <Button className="flex rounded-3xl justify-center items-center text-white text-base w-[150px] h-[50px] bg-gradient-to-r to-[#F38605] from-[#EFA00766]">
+            <Button className="flex rounded-3xl justify-center items-center shadow-md text-white text-base w-[150px] h-[50px] bg-gradient-to-r to-[#F38605] from-[#EFA00766]">
               Upload Now
             </Button>
           </div>

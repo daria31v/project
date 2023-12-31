@@ -74,7 +74,7 @@ export default function LogInForm() {
             className="w-full h-11 bg-transparent text-medium font-normal placeholder:text-orange outline-none border-b border-white  hover:border-orange hover:text-orange"
           />
         </label>
-        <span className="text-xs font-light text-grey_text text-end text-orange">
+        <span className="text-xs font-light text-end text-orange">
           Forgot password?
         </span>
         <div className="flex justify-center items-center">

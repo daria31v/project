@@ -21,7 +21,7 @@ export const PartnersList = () => {
             <div className="text-center rounded-md text-secondary hover:text-white  py-5 px-11">
               <Link href={partner.web} className="cursor-pointer">
               <div className=" rounded-full bg-white mx-auto text-center overflow-hidden ">
-                <Image src={partner.logo} alt='name company' width={109} height={109} className="mx-auto w-full"></Image>
+                <Image src={partner.logo} alt='name company' width={109} height={109} className="mx-auto w-full" priority></Image>
               </div>
                 <p className="mt-4 font-normal text-sm text-primary ">{partner.name}</p>
               </Link>

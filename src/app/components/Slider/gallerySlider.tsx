@@ -33,6 +33,7 @@ export const GallerySlider = () => {
             alt="fly"
             src={fly}
             className="mb-4 rounded-lg transition transform hover:-translate-y-3 motion-reduce:transition-none"
+            priority
           />
         </a>
         <a href="/images/kids.jpg">
@@ -40,6 +41,7 @@ export const GallerySlider = () => {
             alt="kids"
             src={kids}
             className="mb-4 rounded-lg transition transform hover:-translate-y-3 motion-reduce:transition-none"
+            priority
           />
         </a>
         <a href="/images/sky.jpg">
@@ -47,6 +49,7 @@ export const GallerySlider = () => {
             alt="sky"
             src={sky}
             className="mb-4 rounded-lg transition transform hover:-translate-y-3 motion-reduce:transition-none"
+            priority
           />
         </a>
         <a href="/images/photo_4.jpg">
@@ -54,6 +57,7 @@ export const GallerySlider = () => {
             alt="flower"
             src={flower}
             className="mb-4 rounded-lg transition transform hover:-translate-y-3 motion-reduce:transition-none"
+            priority
           />
         </a>
         <a href="/images/photo_5.jpg">
@@ -61,6 +65,7 @@ export const GallerySlider = () => {
             alt="lake"
             src={lake}
             className="mb-4 rounded-lg transition transform hover:-translate-y-3 motion-reduce:transition-none"
+            priority
           />
         </a>
         <a href="/images/photo_2.jpg">
@@ -68,6 +73,7 @@ export const GallerySlider = () => {
             alt="stone"
             src={stone}
             className="mb-4 rounded-lg transition transform hover:-translate-y-3 motion-reduce:transition-none"
+            priority
           />
         </a>
         <a href="/images/sun.jpg">
@@ -75,6 +81,7 @@ export const GallerySlider = () => {
             alt="sun"
             src={sun}
             className="mb-4 rounded-lg transition transform hover:-translate-y-3 motion-reduce:transition-none"
+            priority
           />
         </a>
         <a href="/images/sky.jpg">
@@ -82,6 +89,7 @@ export const GallerySlider = () => {
             alt="sunrise"
             src={sunrise}
             className="mb-4 rounded-lg transition transform hover:-translate-y-3 motion-reduce:transition-none"
+            priority
           />
         </a>
         <a href="/images/buddha.jpg">
@@ -89,6 +97,7 @@ export const GallerySlider = () => {
             alt="buddha"
             src={buddha}
             className="mb-4 rounded-lg transition transform hover:-translate-y-3 motion-reduce:transition-none"
+            priority
           />
         </a>
 

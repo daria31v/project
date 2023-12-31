@@ -40,6 +40,7 @@ export default function RandomPhotoRender() {
                     src={post.photo}
                     alt="random photo"
                     className="w-full overflow-hidden object-cover h-[410px] rounded-2xl"
+                    priority
                   ></Image>
                 </Link>
               </div>

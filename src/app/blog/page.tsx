@@ -94,7 +94,7 @@ export default function Blog({ params: { id, photo, title, nikname, avatar, date
   return (
     <Container>
       <section className=" xl:px-[100px] py-16 md:px-12 px-6 bg-section-texture bg-cover bg-center bg-no-repeat">
-        <h1 className="text-ml font-semibold text-start uppercase my-4 text-secondary">
+        <h1 className="text-medium font-semibold text-start uppercase my-4 text-secondary">
           Blog & Tips
         </h1>
         <div className="w-14 h-1 bg-secondary rounded-md mb-4"></div>
@@ -116,7 +116,8 @@ export default function Blog({ params: { id, photo, title, nikname, avatar, date
                 <div className="overflow-hidden rounded-2xl relative">
                   <Link href={`/blog/post/${post.id}`}>
                     <Image src={post.photo} alt="post photo"
-                    className=" h-[250px]" 
+                    className=" h-[250px]"
+                    priority
                     />
                   </Link>
                   <div className="absolute inset-0 flex flex-col justify-end ">
@@ -129,7 +130,7 @@ export default function Blog({ params: { id, photo, title, nikname, avatar, date
                       </div>
                       <div className="ml-auto">
                         <Button>
-                          <HeartSVG />
+                          <HeartSVG className=""/>
                         </Button>
                       </div>
                       </div>
