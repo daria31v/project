@@ -29,7 +29,8 @@ export default function TopPost() {
             alt="..."
             width={706}
             height={347}
-            className="rounded-2xl object-cover overflow-hidden "
+            className="rounded-2xl object-cover overflow-hidden"
+            priority
           ></Image>
         </div>
 

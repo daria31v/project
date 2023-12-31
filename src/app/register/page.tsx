@@ -1,7 +1,5 @@
 'use client'
 import { Container } from '../components/Container/container'
-import logo from '../../../public/images/logo.png'
-import Image from 'next/image'
 import Link from 'next/link'
 import RegisterForm from '../components/Forms/RegisterForm'
 import { redirect } from 'next/navigation'
@@ -16,23 +14,24 @@ export default function RegisterPage(){
   return (
       <Container>
         <div className="flex justify-center items-center xl:px-[100px] md:px-12 py-16 bg-section-texture bg-cover bg-center bg-no-repeat">
-          <div className="shadow-xl bg-gradient-to-r to-[#FFB800] via-transparent from-[#E2EAF9] w-[620px] grid justify-center py-6 rounded-md">
-            <div className="text-center mb-3">
-              <Image src={logo} alt="logo" width={100} height={40} className="mx-auto" />
-              <h3 className="my-6 text-secondary font-bold uppercase">Join us</h3>
-              <p className="text-secondary text-base font-bold text-start">
-                Create own account and share wonderful photo and thoughts
+
+          <div className="shadow-xl bg-gradient-to-br from-[#ECAE8177] via-transparent to-[#F38605] w-[620px] h-[450px] grid justify-center py-5 rounded-md">
+            <div className="text-center">
+
+              <h3 className=" text-white font-extra_bold text-md uppercase">Join us</h3>
+              <p className="text-secondary text-small font-normal text-center tracking-widest">
+              Create an account and join our journey
               </p>
             </div>
 
             <RegisterForm />
 
             <div className="flex gap-3 justify-center items-center">
-              <p className="text-blue_text text-small font-normal">
+              <p className="text-secondary text-small font-normal">
                 Do you have an already account?{' '}
               </p>
               <Link href="/login">
-                <span className="font-bold text-blue text-small ">Log In Now</span>
+                <span className="font-bold text-secondary text-small hover:text-white">Log In Now</span>
               </Link>
             </div>
           </div>

@@ -4,7 +4,7 @@ const FiilterComponent = () => {
   return (
     <div>
       <div className="mb-8">
-        <p className="text-medium text-secondary font-semibold mb-3">Select deviсe</p>
+        <p className="text-medium text-secondary font-semibold mb-3 uppercase">Select deviсe</p>
       </div>
 
 

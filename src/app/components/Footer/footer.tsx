@@ -34,7 +34,7 @@ const Footer = () => {
 
               <form className="flex items-center" name="signup_form" autoComplete="on" noValidate>
                 <input
-                  className="px-2 py-3 h-6 w-[200px] outline-none outline-transparent border-b border-orange placeholder:text-orange"
+                  className="pr-2 py-3 h-6 w-[200px] outline-none outline-transparent border-b border-orange placeholder:text-nude"
                   type="email"
                   name="email"
                   placeholder="e-mail"

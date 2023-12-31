@@ -3,7 +3,7 @@
 import { AuthNav } from '../AuthNav/authNav'
 import { UserMenu } from '../User/userMenu'
 import { Navigation } from '../Navigation/navigation'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import clsx from 'clsx'
 import { useSession } from 'next-auth/react'
 
@@ -12,27 +12,28 @@ export default function MobileMenu() {
   const session = useSession()
 
   const handleClick = () => {
-    if (!isOpen) {
-      handleOpen()
-    } else {
-      handleClose()
-    }
-  }
+    setIsOpen((prevIsOpen) => !prevIsOpen);
+  };
 
-  const handleOpen = () => {
-    setIsOpen(true)
-  }
 
-  const handleClose = () => {
-    setIsOpen(false)
-  }
+  // useEffect(() => {
+  //   if (isOpen) {
+  //     document.body.style.filter = 'blur(2px)';
+  //   } else {
+  //     document.body.style.filter = 'none';
+  //   }
+  //   return () => {
+  //     document.body.style.filter = 'none';
+  //   };
+  // }, [isOpen]);
 
   return (
-    <div className="py-4 h-auto top-10 right-10 z-50">
+    <div className="py-4 h-auto top-10 right-10 z-50" >
       <button
         onClick={handleClick}
         type="button"
         className="inline-block xl:hidden ml-auto z-10 relative"
+       
       >
         {isOpen ? (
           <svg
@@ -63,11 +64,11 @@ export default function MobileMenu() {
       </button>
       <div
         className={clsx(
-          'xl:hidden fixed md:w-1/2 top-0 right-0 z-1 font-extra font-bold uppercase text-xl text-white bg-yellow_light shadow-xl rounded-3xl',
+          'xl:hidden fixed md:w-1/2 top-0 right-0 z-1 uppercase  bg-green_light shadow-xl rounded-3xl',
           isOpen ? 'block' : 'hidden',
-        )}
+        )}  
       >
-        <div className="p-10 rounded-3xl " onClick={handleClick}>
+        <div className="p-10 rounded-3xl " onClick={handleClick}  style={{ filter: 'none' }}>
           <Navigation />
           <div className="grid grid-cols-1 gap-8 mt-8 text-medium ">
             {session.data ? <UserMenu /> : <AuthNav />}

@@ -5,7 +5,6 @@ import { useEffect, useState } from 'react'
 import { signIn } from 'next-auth/react'
 import { LoginInButton, GoogleSignInButton } from '../Button/authButton'
 
-
 export default function LogInForm() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
@@ -54,40 +53,46 @@ export default function LogInForm() {
 
   return (
     <>
-      <form className="text-blue_text text-end" autoComplete="off" onSubmit={handleSubmit}>
-        <label className="flex w-full h-9 mb-4">
+      <form className=" text-end" autoComplete="off" onSubmit={handleSubmit}>
+        <label className="flex">
           <input
             onChange={(e) => setEmail(e.target.value)}
             type="text"
             name="email"
             placeholder="Email"
             required
-            className="w-full text-medium font-normal placeholder:text-blue_text outline-none outline-transparent border-b border-blue_text hover:border-orange hover:text-orange"
+            className="w-full h-11 text-medium font-normal placeholder:text-orange outline-none outline-transparent border-b border-white hover:border-orange hover:text-orange"
           />
         </label>
-        <label className="flex w-full h-9">
+        <label className="flex">
           <input
             onChange={(e) => setPassword(e.target.value)}
             type="password"
             name="password"
             placeholder="Password"
             required
-            className="w-full bg-transparent text-medium font-normal placeholder:text-blue_text outline-none border-b border-blue_text  hover:border-orange hover:text-orange"
+            className="w-full h-11 bg-transparent text-medium font-normal placeholder:text-orange outline-none border-b border-white  hover:border-orange hover:text-orange"
           />
         </label>
-        <span className="text-xs font-light text-grey_text text-end">Forgot password?</span>
+        <span className="text-xs font-light text-end text-orange">
+          Forgot password?
+        </span>
         <div className="flex justify-center items-center">
-          <LoginInButton onClick={handleSubmit}/>
-          {/* <LoginInButton /> */}
+          <LoginInButton onClick={handleSubmit} />
         </div>
-        {error && <div className="text-error text-xs font-bold text-start">{error}</div>}
-        <div className="flex justify-between items-center gap-3 w-full">
-          <div className="h-px bg-blue_text w-full"></div>
-          <span className="text-xs">OR</span>
-          <div className="h-px bg-blue_text w-full"></div>
-        </div>
+        {error ? (
+          <div className="text-error text-xs font-bold text-center rounded-md py-1 bg-main_text">
+            {error}
+          </div>
+        ) : (
+          <div className="flex justify-between items-center gap-3 w-full">
+            <div className="h-px bg-white w-full"></div>
+            <span className="text-xs text-white">OR</span>
+            <div className="h-px bg-white w-full"></div>
+          </div>
+        )}
       </form>
-      <div className="flex justify-center items-center my-3 gap-6">
+      <div className="flex justify-center items-center my-2 gap-6">
         <GoogleSignInButton title={'Log In with Google'} />
       </div>
     </>

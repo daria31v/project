@@ -9,12 +9,12 @@ const ProfileComponent = ({ user }: any) => {
   const { data: session, update } = useSession();
   console.log({ session })
   return (
-    <div className="md:flex md:gap-10 md:justify-center md:items-center">
+    <div className="md:pl-[55px] mt-3 md:grid md:grid-cols-2">
       <div>
         <ProfileCard user={session?.user || user} />
       </div>
       <div>
-        <ProfileUpdate 
+        <ProfileUpdate userData={session?.user || user}
         // update={update}
         />
       </div>

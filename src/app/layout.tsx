@@ -23,7 +23,8 @@ const session = await getServerSession();
           <AuthProvider session={session}>
             <div className="wraper">
               <Header />
-              <main className="bg-opacity-30 fix">{children}</main>
+
+              <main>{children}</main>
               <Footer />
             </div>
           </AuthProvider>

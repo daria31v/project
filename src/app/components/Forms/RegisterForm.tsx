@@ -53,7 +53,6 @@ export default function RegisterForm() {
       if (res.status === 500) {
         setError('Technical problems')
       }
-
     } catch (error) {
       setError('Somthing is wrong')
       console.log(error)
@@ -63,50 +62,53 @@ export default function RegisterForm() {
 
   return (
     <>
-      <form className="text-blue_text text-end" autoComplete="off" onSubmit={handleSubmit}>
-        <div className="flex gap-8">
-          <label className="flex w-full h-9 mb-4">
-            <input
-              type="text"
-              name="name"
-              placeholder="Full Name"
-              required
-              className="w-full text-medium font-normal placeholder:text-blue_text outline-none outline-transparent border-b border-blue_text  hover:border-orange hover:text-orange"
-            />
-          </label>
-        </div>
-        <label className="flex w-full h-9 mb-4">
+      <form className="text-secondary mx-[170px]" autoComplete="off" onSubmit={handleSubmit}>
+        <label className=" w-full font-semibold text-base">
+          Full Name
+          <input
+            type="text"
+            name="name"
+            placeholder=""
+            required
+            className="w-full h-[34px] mt-1 text-medium font-normal placeholder:text-secondary bg-white rounded"
+          />
+        </label>
+        <label className="w-full font-semibold text-base">
+          Email
           <input
             type="email"
             name="email"
-            placeholder="Email"
+            placeholder=""
             required
-            className="w-full text-medium font-normal placeholder:text-blue_text outline-none outline-transparent border-b border-blue_text  hover:border-orange hover:text-orange"
+            className="w-full h-[34px] mt-1 text-medium font-normal placeholder:text-secondary bg-white rounded"
           />
         </label>
-        <label className="flex w-full h-9">
+        <label className="w-full font-semibold text-base">
+          Password
           <input
             type="password"
             name="password"
-            placeholder="Password"
+            placeholder=""
             required
-            className="w-full bg-transparent text-medium font-normal placeholder:text-blue_text outline-none border-b border-blue_text  hover:border-orange hover:text-orange"
+            className="w-full h-[34px] mt-1 text-medium font-normal placeholder:text-secondary bg-white rounded"
           />
         </label>
-        <div className="flex justify-center items-center mt-2">
-          <RegisterButton />
-        </div>
-        <div className="text-error text-xs font-bold text-start">{error && error}</div>
 
-        <div className="text-xs flex gap-1 my-2 justify-center">
-          <input type="checkbox" />
+        <div className="text-[9px] font-normal flex gap-1 my-2 items-center text-grey_text">
+          <input type="checkbox" className="" />
           <Link href="/" className="decoration-solid ">
             <span className="underline">Please Check our Terms and Conditions</span>
           </Link>{' '}
-          <span className="">and</span>
+          <span className="">&</span>
           <Link href="/">
             <span className="underline">Privacy Policy.</span>
           </Link>
+        </div>
+        {error && <div className="text-error text-xs font-bold text-center rounded-md py-1 bg-main_text">
+          {error && error}
+        </div>}
+        <div className="flex justify-center items-center">
+          <RegisterButton />
         </div>
       </form>
     </>
