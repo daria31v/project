@@ -30,73 +30,73 @@ export const GallerySlider = () => {
       >
         <a href="/images/fly.jpg">
           <Image
-            alt="fly"
+            alt="DEVICE - SONY"
             src={fly}
-            className="mb-4 rounded-lg transition transform hover:-translate-y-3 motion-reduce:transition-none"
+            className="mb-4 rounded-lg transition transform duration-500 hover:-translate-y-1 hover:scale-105 focus:sha motion-reduce:transition-none"
             priority
           />
         </a>
         <a href="/images/kids.jpg">
           <Image
-            alt="kids"
+            alt="DEVICE - LENOVO"
             src={kids}
-            className="mb-4 rounded-lg transition transform hover:-translate-y-3 motion-reduce:transition-none"
+            className="mb-4 rounded-lg transition transform duration-500 hover:-translate-y-1 hover:scale-105 focus:sha motion-reduce:transition-none"
             priority
           />
         </a>
         <a href="/images/sky.jpg">
           <Image
-            alt="sky"
+            alt="DEVICE - SAMSUNG"
             src={sky}
-            className="mb-4 rounded-lg transition transform hover:-translate-y-3 motion-reduce:transition-none"
+            className="mb-4 rounded-lg transition transform duration-500 hover:-translate-y-1 hover:scale-105 focus:sha motion-reduce:transition-none"
             priority
           />
         </a>
         <a href="/images/photo_4.jpg">
           <Image
-            alt="flower"
+            alt="DEVICE - NIKON"
             src={flower}
-            className="mb-4 rounded-lg transition transform hover:-translate-y-3 motion-reduce:transition-none"
+            className="mb-4 rounded-lg transition transform duration-500 hover:-translate-y-1 hover:scale-105 focus:sha motion-reduce:transition-none"
             priority
           />
         </a>
         <a href="/images/photo_5.jpg">
           <Image
-            alt="lake"
+            alt="DEVICE - OLYMPUS"
             src={lake}
-            className="mb-4 rounded-lg transition transform hover:-translate-y-3 motion-reduce:transition-none"
+            className="mb-4 rounded-lg transition transform duration-500 hover:-translate-y-1 hover:scale-105 focus:sha motion-reduce:transition-none"
             priority
           />
         </a>
         <a href="/images/photo_2.jpg">
           <Image
-            alt="stone"
+            alt="DEVICE - LEICA"
             src={stone}
-            className="mb-4 rounded-lg transition transform hover:-translate-y-3 motion-reduce:transition-none"
+            className="mb-4 rounded-lg transition transform duration-500 hover:-translate-y-1 hover:scale-105 focus:sha motion-reduce:transition-none"
             priority
           />
         </a>
         <a href="/images/sun.jpg">
           <Image
-            alt="sun"
+            alt="DEVICE - SAMSUNG"
             src={sun}
-            className="mb-4 rounded-lg transition transform hover:-translate-y-3 motion-reduce:transition-none"
+            className="mb-4 rounded-lg transition transform duration-500 hover:-translate-y-1 hover:scale-105 focus:sha motion-reduce:transition-none"
             priority
           />
         </a>
         <a href="/images/sky.jpg">
           <Image
-            alt="sunrise"
+            alt="DEVICE - FUJIFILM"
             src={sunrise}
-            className="mb-4 rounded-lg transition transform hover:-translate-y-3 motion-reduce:transition-none"
+            className="mb-4 rounded-lg transition transform duration-500 hover:-translate-y-1 hover:scale-105 focus:sha motion-reduce:transition-none"
             priority
           />
         </a>
         <a href="/images/buddha.jpg">
           <Image
-            alt="buddha"
+            alt="DEVICE - APPLE"
             src={buddha}
-            className="mb-4 rounded-lg transition transform hover:-translate-y-3 motion-reduce:transition-none"
+            className="mb-4 rounded-lg transition transform duration-500 hover:-translate-y-1 hover:scale-105 focus:sha motion-reduce:transition-none"
             priority
           />
         </a>

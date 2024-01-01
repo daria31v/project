@@ -17,8 +17,8 @@ const session = await getServerSession();
 // console.log('Global session',session);
   return (
     <>
-      <html lang="en">
-        {/* className="dark" */}
+      <html lang="en"
+        className="!scroll-smooth">
         <body>
           <AuthProvider session={session}>
             <div className="wraper">

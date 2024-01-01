@@ -107,7 +107,7 @@ export default function Blog({ params: { id, photo, title, nikname, avatar, date
         </div>
 
         <div className="mt-11">
-          <ul className="md:grid md:grid-cols-2 xl:grid-cols-3 md:gap-11 mb-10">
+          <ul className="md:grid md:grid-cols-2 xl:grid-cols-3 md:gap-11 mb-10 grid gap-7">
             {posts.map((post) => (
               <li
                 key={post.id}
@@ -116,7 +116,7 @@ export default function Blog({ params: { id, photo, title, nikname, avatar, date
                 <div className="overflow-hidden rounded-2xl relative">
                   <Link href={`/blog/post/${post.id}`}>
                     <Image src={post.photo} alt="post photo"
-                    className=" h-[250px]"
+                    className=" overflow-hidden h-[250px] 2xl:h-[300px]"
                     priority
                     />
                   </Link>
