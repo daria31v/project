@@ -61,7 +61,7 @@ export default function LogInForm() {
             name="email"
             placeholder="Email"
             required
-            className="w-full h-11 text-medium font-normal placeholder:text-orange outline-none outline-transparent border-b border-white hover:border-orange hover:text-orange"
+            className="w-full h-11 text-medium text-white font-normal placeholder:text-orange outline-none outline-transparent border-b border-white hover:border-orange hover:text-white"
           />
         </label>
         <label className="flex">
@@ -71,7 +71,7 @@ export default function LogInForm() {
             name="password"
             placeholder="Password"
             required
-            className="w-full h-11 bg-transparent text-medium font-normal placeholder:text-orange outline-none border-b border-white  hover:border-orange hover:text-orange"
+            className="w-full h-11 bg-transparent text-white text-medium font-normal placeholder:text-orange outline-none border-b border-white  hover:border-orange hover:text-white"
           />
         </label>
         <span className="text-xs font-light text-end text-orange">

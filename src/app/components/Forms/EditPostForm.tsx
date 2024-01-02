@@ -4,14 +4,14 @@ import Button from '../Button/Buttons'
 import SearchSVG from '../../../../public/icon/SearchSVG'
 import mape from '../../../../public/images/mape.png'
 
-const UploadPostForm = () => {
+const EditPostForm = ({user} : any) => {
   return (
     <>
       <div className="xl:maw-w-[1090px] h-[600px] bg-white rounded-md">
         <form className="px-10 py-7">
           <div className="xl:flex xl:justify-between xl:gap-12">
             <div className="xl:max-w-[330px] text-center">
-              <span className="text-duna text-xs">Uploaded Photo</span>
+              <span className="text-duna text-xs">Edited Photo</span>
               <Image src={defaultImg} alt="default image" width={330} height={330} className="shadow-md"/>
 
               <div className="flex justify-end gap-3 mt-3">
@@ -25,9 +25,10 @@ const UploadPostForm = () => {
             </div>
 
             <div className="block">
-            <label>
+              <label>
               <input className=" font-bold text-sm placeholder:text-pink mb-2 w-full" placeholder="Add your title"/>
               </label>
+
               <div className="w-[626px] h-[1px] bg-duna rounded-md mb-4 "></div>
               <textarea
                 placeholder="Write here"
@@ -85,4 +86,4 @@ const UploadPostForm = () => {
   )
 }
 
-export default UploadPostForm
+export default EditPostForm

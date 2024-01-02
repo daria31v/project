@@ -100,14 +100,14 @@ export default function Blog({ params: { id, photo, title, nikname, avatar, date
         <div className="w-14 h-1 bg-secondary rounded-md mb-4"></div>
         <div className="flex justify-between">
           <p className="text-secondary">EXPLORE OTHER USER&apos;S PHOTOS</p>
-          <Link href="/profile/posts/new" className="text-secondary text-base font-semibold px-3 rounded-md h-10  flex justify-center items-center bg-white shadow-md cursor-pointer gap-1">
+          <Link href="/profile/posts/new" className="text-secondary text-base font-semibold px-3 rounded-md h-[38px] flex justify-center items-center bg-white shadow-md cursor-pointer gap-1 hover:bg-secondary hover:text-white">
             <NewPost />
             New post
           </Link>
         </div>
 
         <div className="mt-11">
-          <ul className="md:grid md:grid-cols-2 xl:grid-cols-3 md:gap-11 mb-10">
+          <ul className="md:grid md:grid-cols-2 xl:grid-cols-3 md:gap-11 mb-10 grid gap-7">
             {posts.map((post) => (
               <li
                 key={post.id}
@@ -116,10 +116,9 @@ export default function Blog({ params: { id, photo, title, nikname, avatar, date
                 <div className="overflow-hidden rounded-2xl relative">
                   <Link href={`/blog/post/${post.id}`}>
                     <Image src={post.photo} alt="post photo"
-                    className=" h-[250px]"
+                    className=" overflow-hidden h-[250px] 2xl:h-[300px]"
                     priority
                     />
-                  </Link>
                   <div className="absolute inset-0 flex flex-col justify-end ">
                     <div className="bg-green_light h-16 px-4 pt-2 font-extra font-semibold  hover:bg-orange_light">
                       <div className="flex justify-between items-center">
@@ -136,6 +135,7 @@ export default function Blog({ params: { id, photo, title, nikname, avatar, date
                       </div>
                     </div>
                   </div>
+                  </Link>
                 </div>
               </li>
             ))}

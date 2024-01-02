@@ -1,17 +1,12 @@
-import beards from '../../../../public/images/clouds.jpeg'
+import motorhome from '../../../../public/images/motorhome.webp'
 import Image from 'next/image'
 
-interface TopPostProps {
-  photo: string
-  title: string
-  nikname?: string
-  post: string
-}
+
 
 export default function TopPost() {
   const post = {
     id: 1,
-    photo: beards,
+    photo: motorhome,
     title: 'Wonderful Blog',
     nikname: 'Fox',
     post: 'Gallia est omnis divisa in partes tres, quarum. Fabio vel iudice vincam, sunt in culpa qui officia. Salutantibus vitae elit libero, a pharetra augue. Hi omnes lingua, institutis, legibus inter se differunt. Quid securi etiam tamquam eu fugiat nulla pariatur. Cras mattis iudicium purus sit amet fermentum.Gallia est omnis divisa in partes tres, quarum. Fabio vel iudice vincam, sunt in culpa qui officia. Salutantibus vitae elit libero, a pharetra augue. Hi omnes lingua, institutis, legibus inter se differunt. Quid securi etiam tamquam eu fugiat nulla pariatur. Cras mattis iudicium purus sit amet fermentum.',

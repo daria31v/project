@@ -2,6 +2,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
 
 body {
   height: 100%;
@@ -10,9 +17,30 @@ body {
   font-family: 'Mulish', sans-serif;
   
 }
-ul {
+html {
+  scroll-behavior: smooth;
+  width: auto;
+}
+main {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul,
+ol {
   list-style: none;
 }
+
+a {
+  text-decoration: none;
+}
+
+
 input {
   background-color: transparent;
 }
