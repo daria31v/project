@@ -3,8 +3,8 @@ import CommentsList from './CommentsList'
 
 const CommentsComponent = () => {
   return (
-    <div className="mt-9">
-      <p className="mb-8 font-bold text-sm">Write your comment</p>
+    <div className="">
+      <p className="mb-8 font-medium md:text-sm text-medium tracking-widest">Write your comment</p>
         <CommentsList/>
     </div>
   )

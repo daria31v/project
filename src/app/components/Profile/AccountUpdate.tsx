@@ -47,7 +47,7 @@ const ProfileUpdate = ({userData} : any) => {
       </label>
 
     
-     <ControlButtonMGroup/>
+     <ControlButtonMGroup />
 
       </FormComponent>
     </div>

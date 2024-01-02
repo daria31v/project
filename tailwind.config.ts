@@ -38,7 +38,7 @@ module.exports = {
       small: ['11px', { lineHeight: '3.2' }],
       base: ['14px', { lineHeight: '1.28' }],
       medium: ['16px', { lineHeight: '1.5' }],
-      sm: ['20px', { lineHeight: '1' }],
+      sm: ['20px', { lineHeight: '1.5' }],
       md: ['28px', { lineHeight: '1.28' }],
       ml: ['30px', { lineHeight: '1.2' }],
       l: ['36px', { lineHeight: '1.28' }],

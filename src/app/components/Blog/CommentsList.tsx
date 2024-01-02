@@ -5,8 +5,11 @@ import SentCommentForm from '../Forms/SentCommentForm'
 const CommentsList = () => {
   return (
     <div>
-      <SentCommentForm/>
-        <CommentsItem/>
+      <SentCommentForm />
+      <ul className="grid gap-5 mt-10">
+      <CommentsItem />
+      </ul>
+
     </div>
   )
 }

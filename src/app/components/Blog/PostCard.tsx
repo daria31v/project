@@ -5,23 +5,23 @@ import InfoBlock from './InfoBlock'
 const PostCard = ({ post }: any) => {
   return (
     <>
-      <div key={post.id}>
+      <div key={post.id} className="mb-6">
         <div>
-        <h2 className=" uppercase font-extra text-xxl">{post.title}</h2>
+        <h2 className=" uppercase font-extra xl:text-xxl text-medium">{post.title}</h2>
         </div>
         <InfoBlock/>
 
         <div className="flex justify-center items-center shadow-md rounded-2xl">
-          <Image src={post.photo} alt="post" width={1000} height={400} />
+          <Image src={post.photo} alt="post" width={1000} height={400}  className="xl:w-[1000px] md:w-[600px]  w-80"/>
         </div>
 
-        <div className="flex items-start gap-16 mt-8">
-          <div className="bg-green_light text-white p-4 rounded-md h-[347px] max-w-[650px] shadow-md">
-            <p>{post.tips}</p>
+        <div className="xl:flex xl:items-start xl:gap-16 mt-8">
+          <div className="bg-peach_light text-secondary p-4 rounded-md xl:h-[347px] max-w-[650px] shadow-md text-justify">
+            <p className="text-base xl:text-sm ">{post.tips}</p>
           </div>
 
-          <div className="rounded-md">
-            <Image src={mape} alt="mape" width={258} height={274} className="object-cover" />
+          <div className="rounded-md mt-8 flex justify-center items-center">
+            <Image src={mape} alt="mape" width={258} height={274} className="object-cover xl:w-[258px] w-[200px]" />
           </div>
         </div>
 

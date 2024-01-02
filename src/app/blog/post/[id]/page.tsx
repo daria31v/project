@@ -43,7 +43,7 @@ export default async function Post({ params: { id, src, alt } }: PostProps) {
         </h1>
         <div className="w-14 h-1 bg-secondary rounded-md mb-4"></div>
         <div className="flex justify-end mb-4">
-        <Link href="/blog" className="text-secondary border border-green_light text-small font-semibold px-3 rounded-md h-[38px] flex justify-center items-center bg-white shadow-md cursor-pointer hover:bg-secondary hover:text-white">
+        <Link href="/blog" className="text-secondary border border-peach_light text-small font-semibold px-3 rounded-md h-[38px] flex justify-center items-center bg-white shadow-md cursor-pointer hover:bg-secondary hover:text-white">
         Back to My blog
           </Link>
         </div>
