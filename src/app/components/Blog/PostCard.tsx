@@ -7,9 +7,9 @@ const PostCard = ({ post }: any) => {
     <>
       <div key={post.id} className="mb-6">
         <div>
-        <h2 className=" uppercase font-extra xl:text-xxl text-medium">{post.title}</h2>
+        <h2 className=" uppercase font-extra xl:text-xl text-medium text-secondary">{post.title}</h2>
         </div>
-        <InfoBlock/>
+        <InfoBlock post={post}/>
 
         <div className="flex justify-center items-center shadow-md rounded-2xl">
           <Image src={post.photo} alt="post" width={1000} height={400}  className="xl:w-[1000px] md:w-[600px]  w-80"/>

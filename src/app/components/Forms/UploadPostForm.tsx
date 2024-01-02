@@ -7,7 +7,7 @@ import mape from '../../../../public/images/mape.png'
 const UploadPostForm = () => {
   return (
     <>
-      <div className="xl:maw-w-[1090px] h-[600px] bg-white rounded-md">
+      <div className="xl:maw-w-[1090px]  bg-white rounded-md">
         <form className="px-10 py-7">
           <div className="xl:flex xl:justify-between xl:gap-12">
             <div className="xl:max-w-[330px] text-center">

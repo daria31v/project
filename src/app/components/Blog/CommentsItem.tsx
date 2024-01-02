@@ -5,7 +5,7 @@ const CommentsItem = () => {
   return (
     <>
       
-        <li className="flex xl:gap-2 md:gap-3 gap-4">
+        <li className="flex xl:gap-2 md:gap-3 gap-4 text-primary">
           <div>
             <Image src={user} alt="user photo" width={35} height={35} className="mx-auto" />
             <div className="grid ">
@@ -19,7 +19,7 @@ const CommentsItem = () => {
             </div>
           </div>
         </li>
-        <li className="flex xl:gap-2 md:gap-3 gap-4">
+        <li className="flex xl:gap-2 md:gap-3 gap-4 text-primary">
           <div>
             <Image src={user} alt="user photo" width={35} height={35} className="mx-auto" />
             <div className="grid ">
