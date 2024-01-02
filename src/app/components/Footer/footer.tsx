@@ -52,8 +52,7 @@ const Footer = () => {
         </div>
         <div className="flex justify-center items-center pb-3">
           <p className="text-base text-white">
-            © 2024 &#34;World in my lens&#34;. All rights reserved. Any use of materials from this
-            website without the written permission of the copyright owner is prohibited
+            © 2024 World in my lens | All rights reserved. 
           </p>
         </div>
       </footer>
