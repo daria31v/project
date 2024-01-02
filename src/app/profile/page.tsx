@@ -2,7 +2,7 @@
 import { authConfig } from '../../utils/authConfig'
 import { getServerSession } from 'next-auth/next'
 import { Container } from '../components/Container/container'
-import { redirect, useRouter } from 'next/navigation'
+import { redirect } from 'next/navigation'
 import ProfileComponent from '../components/Profile/ProfileComponent'
 import Link from 'next/link'
 
@@ -23,7 +23,7 @@ export default async function ProfilePage() {
 
         <div className="flex justify-between mb-4">
           <p className="text-secondary text-medium font-normal">YOU CAN EDIT YOUR PROFILE HERE</p>
-          <Link href="/blog" className="text-secondary border border-green_light text-small font-semibold px-3 w-[100px] rounded-md h-[38px] flex justify-center items-center bg-white shadow-md cursor-pointer">
+          <Link href="/blog" className="text-secondary border border-green_light text-small font-semibold px-3 w-[100px] rounded-md h-[38px] flex justify-center items-center bg-white shadow-md cursor-pointer hover:bg-secondary hover:text-white">
         Back to blog
           </Link>
           </div>

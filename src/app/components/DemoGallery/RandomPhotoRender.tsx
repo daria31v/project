@@ -1,21 +1,21 @@
 import Image from 'next/image'
-import buddha from '../../../../public/images/buddha.jpg'
-import fly from '../../../../public/images/sun.jpg'
-import photo from '../../../../public/images/photo_5.jpg'
+import cave from '../../../../public/images/cave.webp'
+import girl from '../../../../public/images/girl.webp'
+import house from '../../../../public/images/house.webp'
 import Link from 'next/link'
 
 const posts = [
   {
     id: 1,
-    photo: buddha,
+    photo: cave,
   },
   {
     id: 2,
-    photo: fly,
+    photo: girl,
   },
   {
     id: 3,
-    photo: photo,
+    photo: house,
   },
 ]
 

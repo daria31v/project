@@ -1,8 +1,9 @@
 // import { Metadata } from "next";
-import Image from 'next/image'
-import image from '../../../../../public/images/photo.jpg'
+
 import { Container } from '@/app/components/Container/container'
 import Link from 'next/link'
+import PostComponent from '@/app/components/Blog/PostComponent'
+import post from '../../../../app/components/Blog/post.json'
 
 interface PostProps {
   params: {
@@ -30,25 +31,27 @@ interface PostProps {
 // }
 
 export default async function Post({ params: { id, src, alt } }: PostProps) {
+  
   // const data = await getData({id});
-  const post = {
-    id: 1,
-    Image: image,
-    title: 'Wonderful Blog',
-    nikname: 'Fox',
-    avatar: 'http://',
-    tips: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua consequ ut labore et dolore magna aliqua',
-  }
+
+  
   return (
     <Container>
       <section className="py-16 xl:px-[100px] md:px-12 px-6 bg-section-texture bg-cover bg-center bg-no-repeat">
-        <Link href={`/blog`} className="bg-white rounded-md text-secondary p-2 flex justify-center w-40 mb-4"> - All blogs - </Link>
-        <div key={post.id}>
-          <Image src={image} alt="post" width={150}></Image>
-          <p>user: {post.nikname}</p>
-          <h3>{post.title}</h3>
-          <p>{post.tips}</p>
+      <h1 className="text-ml font-semibold text-start uppercase my-4 text-secondary">
+      blog &gt; post
+        </h1>
+        <div className="w-14 h-1 bg-secondary rounded-md mb-4"></div>
+        <div className="flex justify-end mb-4">
+        <Link href="/blog" className="text-secondary border border-green_light text-small font-semibold px-3 rounded-md h-[38px] flex justify-center items-center bg-white shadow-md cursor-pointer hover:bg-secondary hover:text-white">
+        Back to My blog
+          </Link>
         </div>
+
+        <PostComponent postData={post}/>
+
+
+       
       </section>
     </Container>
   )

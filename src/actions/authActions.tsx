@@ -27,7 +27,7 @@ export async function updateUser({ name, email, password, image }: Props) {
     return {msg: "Update profile successful!"}
   } catch (error) {
     console.log(error);
-    redirect(`/errors?error=`)
+    redirect(`/error`)
   }
 }
 

@@ -4,6 +4,7 @@ import React from 'react'
 import Button from '../Button/Buttons'
 import DoneSVG from '../../../../public/icon/DoneSVG'
 import ProfileNav from './ProfileNav'
+import avatar from '../../../../public/images/user.webp'
 
 const ProfileCard = ({ user }: any) => {
   return (
@@ -22,7 +23,7 @@ const ProfileCard = ({ user }: any) => {
           ) : (
             <Image
             className="mb-6 rounded-full"
-            src="/images/user.png"
+            src={avatar}
             alt="default photo user"
             width={200}
             height={200}

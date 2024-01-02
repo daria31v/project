@@ -56,7 +56,7 @@ export default function RegisterForm() {
     } catch (error) {
       setError('Somthing is wrong')
       console.log(error)
-      router.push('/errors')
+      router.push('/error')
     }
   }
 
