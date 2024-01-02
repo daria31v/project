@@ -1,16 +1,10 @@
 import * as React from 'react'
 
-const PlusSVGComponent = () => {}
-//   <svg height="128px"
-// 	id="Layer_1" style="enable-background:new 0 0 128 128;" version="1.1" viewBox="0 0 128 128" width="128px"
-// 	xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-// 	<g>
-// 		<line style="fill:none;stroke:#2F3435;stroke-width:12;stroke-miterlimit:10;" x1="13.787" x2="114.213"
-// 			y1="64.001" y2="64.001" />
-// 		<line style="fill:none;stroke:#2F3435;stroke-width:12;stroke-miterlimit:10;" x1="64" x2="64" y1="13.787"
-// 			y2="114.213" />
-// 	</g>
-// </svg>
-
-
+const PlusSVGComponent = () => (
+<svg width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<path fillRule="evenodd" clipRule="evenodd"
+		d="M10 5C10.5523 5 11 5.44772 11 6V9L14 9C14.5523 9 15 9.44772 15 10C15 10.5523 14.5523 11 14 11H11V14C11 14.5523 10.5523 15 10 15C9.44771 15 9 14.5523 9 14V11H6C5.44772 11 5 10.5523 5 10C5 9.44771 5.44772 9 6 9L9 9V6C9 5.44772 9.44771 5 10 5Z"
+		fill="#C25D05" />
+</svg>
+)
 export default PlusSVGComponent

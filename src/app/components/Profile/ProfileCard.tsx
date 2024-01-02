@@ -5,6 +5,7 @@ import Button from '../Button/Buttons'
 import DoneSVG from '../../../../public/icon/DoneSVG'
 import ProfileNav from './ProfileNav'
 import avatar from '../../../../public/images/user.webp'
+import PlusSVG from '../../../../public/icon/PlusSVG'
 
 const ProfileCard = ({ user }: any) => {
   return (
@@ -33,10 +34,10 @@ const ProfileCard = ({ user }: any) => {
 
         <div className="flex justify-end gap-3 mb-3 rounded-md">
           <Button className=" h-7 shadow-md bg-peach border border-duna px-5 py-1 flex justify-center items-center rounded-[20px]">
-            <DoneSVG className=""/>
+          <PlusSVG/>
           </Button>
           <Button className=" h-7 shadow-md bg-peach border text-duna text-md border-duna px-5 py-1 flex justify-center items-center rounded-[20px]">
-            <span>+</span>
+            <DoneSVG className=""/>
           </Button>
         </div>
       </div>

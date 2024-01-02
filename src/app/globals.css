@@ -45,6 +45,10 @@ input {
   background-color: transparent;
 }
 
+.stroke-orange path,
+.stroke-orange circle {
+  stroke: orange; 
+}
 
 
 
