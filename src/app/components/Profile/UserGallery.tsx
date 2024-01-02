@@ -41,7 +41,7 @@ const UserGallery = ({ userData }: any) => {
             </div>
           </li>
           <li className="relative">
-            <div className="bg-white rouded-md p-2 rounded-md">
+            <div className="bg-white rouded-md p-2">
               <Image src={photo} alt='photo' className="rounded-md w-full"/>
             <div className="absolute top-2 right-2">
               <Button className="h-6 rounded-md text-xs p-1 bg-white border border-orange hover:text-error hover:border-error">Delete</Button>
