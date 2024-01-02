@@ -4,13 +4,7 @@ import { redirect} from 'next/navigation'
 import { Container } from '../components/Container/container'
 import Link from 'next/link'
 
-export default function Error({
-  error,
-  reset,
-}: {
-  error: Error & { digest?: string }
-  reset: () => void
-}) {
+export default function Error() {
   return (
     <Container>
       <section className="py-16 xl:px-[100px] md:px-12 px-6 bg-section-texture bg-cover bg-center bg-no-repeat h-screen">
