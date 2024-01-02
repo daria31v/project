@@ -21,6 +21,7 @@ module.exports = {
       pink: '#ECAE81',
       grey: '#E7EFFD',
       grey_text: '#808080',
+      grey_decor:'#D9D9D9',
       error: '#ff2424',
 
     },

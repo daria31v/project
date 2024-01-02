@@ -36,7 +36,7 @@ export default async function ProfileGallery () {
             </div>
         </div>
 
-        <div className="md:pl-[55px] md:grid md:grid-cols-2">
+        <div className="md:pl-[55px] 2xl:pl-[100px] md:grid md:grid-cols-2">
           <div>
             <ProfileCard user={session?.user} />
           </div>

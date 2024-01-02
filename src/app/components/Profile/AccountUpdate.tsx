@@ -3,7 +3,7 @@ import Button from '../Button/Buttons'
 import ControlButtonMGroup from '../Button/ControlButtonMGroup'
 // import { updateUser } from '@/actions/authActions'
 import FormComponent from '../Forms/FormComponent'
-import CounterLikes from './CounterLikes'
+import CounterLikes from './CounterAllLikes'
 
 
 type Props = {
@@ -32,7 +32,7 @@ const ProfileUpdate = ({userData} : any) => {
     // console.log(res)
   }
   return (
-    <div>
+    <div className="p-5">
       <CounterLikes/>
       <h2 className="my-[54px] text-secondary font-bold text-l tracking-wider ">Account Settings</h2>
       <FormComponent onSubmit={handleUpdateProfile} className="grid grid-cols-1 gap-10 w-[426px] text-secondary">

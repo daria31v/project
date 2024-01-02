@@ -9,7 +9,7 @@ const ProfileComponent = ({ user }: any) => {
   const { data: session, update } = useSession();
 
   return (
-    <div className="md:pl-[55px] mt-3 md:grid md:grid-cols-2">
+    <div className="md:pl-[55px] 2xl:pl-[100px] mt-3 md:grid md:grid-cols-2">
       <div>
         <ProfileCard user={session?.user || user} />
       </div>
