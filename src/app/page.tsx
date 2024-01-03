@@ -18,7 +18,7 @@ export default function Home() {
             Let’s discover your next journey from others
             </h2>
             <div className="flex justify-center items-center mt-20 ">
-            <Button className="border-2 border-orange w-14 h-[80px] flex justify-center items-end px-[21px] pb-[15px] rounded-3xl shadow-xl bg-gradient-to-t to-[#22462CB2] via-transparent from-[#ECAE81B2]"><Scroll/></Button>
+            <Button className="border-2 border-orange md:w-12 md:h-[70px] w-8 h-10 flex justify-center items-end px-2 md:pb-2 pb-1 rounded-3xl shadow-xl bg-gradient-to-t to-[#22462CB2] via-transparent from-[#ECAE81B2]"><Scroll/></Button>
 
             </div>
           </div>

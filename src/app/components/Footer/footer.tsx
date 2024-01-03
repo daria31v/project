@@ -33,19 +33,22 @@ const Footer = () => {
               <p className="text-medium mb-1">Subscribe to our recent newsletter</p>
 
               <form className="flex items-center" name="signup_form" autoComplete="on" noValidate>
+                <div className="relative">
+
                 <input
                   className="pr-2 py-3 h-6 w-[200px] outline-none outline-transparent border-b border-orange placeholder:text-nude"
                   type="email"
                   name="email"
                   placeholder="e-mail"
-                />
+                  />
                 <button
-                  className="text-white ml-2 hover:border hover:text-orange hover:rounded-md p-2 flex items-center justify-center"
-                  type="button"
-                >
+                  className="absolute right-0 top-[-10px]  text-white ml-2  hover:rounded-md p-2 flex items-center justify-center"
+                  type="submit"
+                  >
                   {' '}
                   <SentSVG />
                 </button>
+                  </div>
               </form>
             </div>
           </div>

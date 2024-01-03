@@ -12,8 +12,8 @@ const NewPostPage = () => {
         </h1>
         <div className="w-14 h-1 bg-secondary rounded-md mb-4"></div>
         <div className="flex justify-between mb-4">
-          <p className="text-secondary uppercase">Tell other about a location that inspired you</p>
-        <Link href="/profile/posts" className="text-secondary border border-green_light text-small font-semibold px-3 rounded-md h-[38px] flex justify-center items-center bg-white shadow-md cursor-pointer hover:bg-secondary hover:text-white">
+          <p className="text-secondary uppercase text-base">Tell other about a location that inspired you</p>
+        <Link href="/profile/posts" className="text-secondary border border-green_light md:text-small text-xs font-semibold px-3 rounded-md h-[38px] flex justify-center items-center bg-white shadow-md cursor-pointer hover:bg-secondary hover:text-white">
         Back to My blog
           </Link>
         </div>
