@@ -10,14 +10,14 @@
   {
     "id": 2,
     "name": "Canon",
-    "logo": "images/canon.png",
+    "logo": "images/canon.webp",
     "web": "https://www.canon.cz/",
     "image_path": "../public/images"
   },
   {
     "id": 3,
     "name": "Apple",
-    "logo": "images/apple.jpeg",
+    "logo": "images/apple.webp",
     "web": "https://www.apple.com/cz/store",
     "image_path": "../public/images"
   },
@@ -53,14 +53,14 @@
   {
     "id": 8,
     "name": "Olympus",
-    "logo": "images/olympus.png",
+    "logo": "images/olympus.webp",
     "web": "https://explore.omsystem.com/cz/cs/",
     "image_path": "../public/images"
   },
   {
     "id": 9,
     "name": "Fujifilm",
-    "logo": "images/fujifilm.jpeg",
+    "logo": "images/fujifilm.webp",
     "web": "https://www.fujifoto.cz/",
     "image_path": "../public/images"
   }

@@ -5,7 +5,6 @@ import './globals.css'
 import AuthProvider from '../utils/AuthProvider'
 import { getServerSession } from 'next-auth'
 
-
 export const metadata: Metadata = {
   title: 'A World in My Lens',
   description:
@@ -13,18 +12,16 @@ export const metadata: Metadata = {
 }
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
-const session = await getServerSession();
-// console.log('Global session',session);
+  const session = await getServerSession()
+  // console.log('Global session',session);
   return (
     <>
-      <html lang="en"
-        className="!scroll-smooth">
+      <html lang="en" className="!scroll-smooth" >
         <body>
           <AuthProvider session={session}>
-            <div className="wraper">
+            <div >
               <Header />
-
-              <main>{children}</main>
+              <main id="app-container">{children}</main>
               <Footer />
             </div>
           </AuthProvider>

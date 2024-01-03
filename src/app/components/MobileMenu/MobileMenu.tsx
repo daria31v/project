@@ -6,69 +6,55 @@ import { Navigation } from '../Navigation/navigation'
 import { useState, useEffect } from 'react'
 import clsx from 'clsx'
 import { useSession } from 'next-auth/react'
+import MenuSVG from '../../../../public/icon/MenuSVG'
+import CloseSVG from '../../../../public/icon/CloseSVG'
 
 export default function MobileMenu() {
   const [isOpen, setIsOpen] = useState<boolean>(false)
   const session = useSession()
 
   const handleClick = () => {
-    setIsOpen((prevIsOpen) => !prevIsOpen);
-  };
+    setIsOpen((prevIsOpen) => !prevIsOpen)
+  }
 
+  useEffect(() => {
+    const appContainer = document.getElementById('app-container');
+    const body = document.querySelector('body');
 
-  // useEffect(() => {
-  //   if (isOpen) {
-  //     document.body.style.filter = 'blur(2px)';
-  //   } else {
-  //     document.body.style.filter = 'none';
-  //   }
-  //   return () => {
-  //     document.body.style.filter = 'none';
-  //   };
-  // }, [isOpen]);
+    console.log(appContainer);
+    if (appContainer && body) {
+      if (isOpen) {
+        appContainer.style.filter = 'blur(2px)';
+        body.style.overflow = 'hidden';
+     
+      } else {
+        appContainer.style.filter = 'none';
+        body.style.overflow = 'auto'; 
+      }
+
+      return () => {
+        appContainer.style.filter = 'none';
+        body.style.overflow = 'auto'; 
+      }
+    }
+  }, [isOpen])
 
   return (
-    <div className="py-4 h-auto top-10 right-10 z-50" >
+    <div className="py-4 h-auto top-10 right-10 z-50">
       <button
         onClick={handleClick}
         type="button"
         className="inline-block xl:hidden ml-auto z-10 relative"
-       
       >
-        {isOpen ? (
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth="1.5"
-            stroke="currentColor"
-            className=" w-6 h-6"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-            />
-          </svg>
-        ) : (
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            height="24"
-            viewBox="0 -960 960 960"
-            width="24"
-            className="stroke-secondary"
-          >
-            <path d="M456-600h320q-27-69-82.5-118.5T566-788L456-600Zm-92 80 160-276q-11-2-22-3t-22-1q-66 0-123 25t-101 67l108 188ZM170-400h218L228-676q-32 41-50 90.5T160-480q0 21 2.5 40.5T170-400Zm224 228 108-188H184q27 69 82.5 118.5T394-172Zm86 12q66 0 123-25t101-67L596-440 436-164q11 2 21.5 3t22.5 1Zm252-124q32-41 50-90.5T800-480q0-21-2.5-40.5T790-560H572l160 276ZM480-480Zm0 400q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-155.5t86-127Q252-817 325-848.5T480-880q83 0 155.5 31.5t127 86q54.5 54.5 86 127T880-480q0 82-31.5 155t-86 127.5q-54.5 54.5-127 86T480-80Z" />
-          </svg>
-        )}
+        {isOpen ? <CloseSVG /> : <MenuSVG />}
       </button>
       <div
         className={clsx(
-          'xl:hidden fixed md:w-1/2 top-0 right-0 z-1 uppercase  bg-green_light shadow-xl rounded-3xl',
+          'xl:hidden fixed md:w-1/2 top-0 h-screen right-0 z-1 uppercase  bg-secondary opacity-90 shadow-xl rounded-3xl',
           isOpen ? 'block' : 'hidden',
-        )}  
+        )}
       >
-        <div className="p-10 rounded-3xl " onClick={handleClick}  style={{ filter: 'none' }}>
+        <div className="px-10 py-20 grid gap-7 font-bold rounded-3xl z-10" onClick={handleClick} style={{ filter: 'none' }}>
           <Navigation />
           <div className="grid grid-cols-1 gap-8 mt-8 text-medium ">
             {session.data ? <UserMenu /> : <AuthNav />}

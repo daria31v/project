@@ -37,7 +37,7 @@ export function RegisterButton() {
   return (
     <button
       type="submit"
-      className="w-[280px] h-[38px] shadow-xl rounded-[50px] bg-gradient-to-r from-[#f3f5f8] via-transparent to-[orange] text-secondary text-medium font-bold hover:from-secondary hover:to-secondary hover:text-white"
+      className="w-[280px] h-[38px] shadow-xl rounded-[50px] bg-white border border-duna text-secondary text-medium font-bold hover:bg-duna hover:text-white"
     >
       Join Us
     </button>

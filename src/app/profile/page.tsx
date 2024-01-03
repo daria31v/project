@@ -21,9 +21,9 @@ export default async function ProfilePage() {
         </h1>
         <div className="w-14 h-1 bg-secondary rounded-md mb-4"></div>
 
-        <div className="flex justify-between mb-4">
-          <p className="text-secondary text-medium font-normal">YOU CAN EDIT YOUR PROFILE HERE</p>
-          <Link href="/blog" className="text-secondary border border-green_light text-small font-semibold px-3 w-[100px] rounded-md h-[38px] flex justify-center items-center bg-white shadow-md cursor-pointer hover:bg-secondary hover:text-white">
+        <div className="md:flex md:justify-between mb-4">
+          <p className="text-secondary md:text-medium text-base font-normal md:mb-0 mb-4">YOU CAN EDIT YOUR PROFILE HERE</p>
+          <Link href="/blog" className="text-secondary border border-green_light md:text-small text-xs text-center  font-semibold px-3 w-[100px] rounded-md h-[38px] flex justify-center items-center bg-white shadow-md cursor-pointer hover:bg-secondary hover:text-white">
         Back to blog
           </Link>
           </div>

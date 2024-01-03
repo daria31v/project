@@ -64,37 +64,34 @@ export default function RegisterForm() {
     <>
       <form className="text-secondary mx-[170px]" autoComplete="off" onSubmit={handleSubmit}>
         <label className=" w-full font-semibold text-base">
-          Full Name
           <input
             type="text"
             name="name"
-            placeholder=""
+            placeholder="Full Name"
             required
-            className="w-full h-[34px] mt-1 text-medium font-normal placeholder:text-secondary bg-white rounded"
+            className="w-full h-9 bg-transpaernt mt-1 text-medium font-normal placeholder:text-secondary text-white outline-none outline-transparent border-b border-white"
           />
         </label>
         <label className="w-full font-semibold text-base">
-          Email
           <input
             type="email"
             name="email"
-            placeholder=""
+            placeholder="Email"
             required
-            className="w-full h-[34px] mt-1 text-medium font-normal placeholder:text-secondary bg-white rounded"
+            className="w-full h-9 bg-transpaernt mt-1 text-medium font-normal placeholder:text-secondary text-white outline-none outline-transparent border-b border-white"
           />
         </label>
         <label className="w-full font-semibold text-base">
-          Password
           <input
             type="password"
             name="password"
-            placeholder=""
+            placeholder="Password"
             required
-            className="w-full h-[34px] mt-1 text-medium font-normal placeholder:text-secondary bg-white rounded"
+            className="w-full h-9 bg-transpaernt mt-1 text-medium font-normal placeholder:text-secondary text-white outline-none outline-transparent border-b border-white"
           />
         </label>
 
-        <div className="text-[9px] font-normal flex gap-1 my-2 items-center text-grey_text">
+        <div className="text-[9px] font-normal flex gap-1 my-6 items-center text-grey_text">
           <input type="checkbox" className="" />
           <Link href="/" className="decoration-solid ">
             <span className="underline">Please Check our Terms and Conditions</span>
@@ -104,9 +101,11 @@ export default function RegisterForm() {
             <span className="underline">Privacy Policy.</span>
           </Link>
         </div>
-        {error && <div className="text-error text-xs font-bold text-center rounded-md py-1 bg-main_text">
-          {error && error}
-        </div>}
+        {error && (
+          <div className="text-error text-xs font-bold text-center rounded-md py-1 bg-main_text">
+            {error && error}
+          </div>
+        )}
         <div className="flex justify-center items-center">
           <RegisterButton />
         </div>

@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
 
@@ -45,6 +46,10 @@ input {
   background-color: transparent;
 }
 
+.stroke-orange path,
+.stroke-orange circle {
+  stroke: orange; 
+}
 
 
 

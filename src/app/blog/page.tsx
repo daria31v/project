@@ -94,14 +94,14 @@ export default function Blog({ params: { id, photo, title, nikname, avatar, date
   return (
     <Container>
       <section className=" xl:px-[100px] py-16 md:px-12 px-6 bg-section-texture bg-cover bg-center bg-no-repeat">
-        <h1 className="text-medium font-semibold text-start uppercase my-4 text-secondary">
+        <h1 className="text-md font-semibold text-start uppercase my-4 text-secondary">
           Blog & Tips
         </h1>
         <div className="w-14 h-1 bg-secondary rounded-md mb-4"></div>
         <div className="flex justify-between">
-          <p className="text-secondary">EXPLORE OTHER USER&apos;S PHOTOS</p>
+          <p className="text-secondary text-base">EXPLORE OTHER USER&apos;S PHOTOS</p>
           <Link href="/profile/posts/new" className="text-secondary text-base font-semibold px-3 rounded-md h-[38px] flex justify-center items-center bg-white shadow-md cursor-pointer gap-1 hover:bg-secondary hover:text-white">
-            <NewPost />
+            <NewPost className=''/>
             New post
           </Link>
         </div>
@@ -143,7 +143,7 @@ export default function Blog({ params: { id, photo, title, nikname, avatar, date
         </div>
 
         <div className="flex justify-center items-center py-4">
-        <Button className="border-2 border-orange w-14 h-14 flex justify-center items-center p-4 rounded-full shadow-xl bg-gradient-to-t to-[#22462CB2] via-transparent from-orange"><ScrollSVG/></Button>
+        <Button className="border-2 border-orange md:w-14 md:h-14  flex justify-center items-center p-4 rounded-full shadow-xl bg-gradient-to-t to-[#22462CB2] via-transparent from-orange"><ScrollSVG/></Button>
         </div>
       </section>
     </Container>

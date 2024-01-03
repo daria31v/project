@@ -1,4 +1,3 @@
-import * as React from 'react'
 
 const HeartSVGComponent = ({className}) => (
   <svg className={className} width="34" height="30" viewBox="0 0 34 30" fill="none" xmlns="http://www.w3.org/2000/svg">

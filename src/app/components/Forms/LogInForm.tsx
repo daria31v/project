@@ -69,7 +69,7 @@ export default function LogInForm() {
             onChange={(e) => setPassword(e.target.value)}
             type="password"
             name="password"
-            placeholder="Password"
+            placeholder="Password" 
             required
             className="w-full h-11 bg-transparent text-white text-medium font-normal placeholder:text-orange outline-none border-b border-white  hover:border-orange hover:text-white"
           />
