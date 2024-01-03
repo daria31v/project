@@ -10,8 +10,8 @@ import PlusSVG from '../../../../public/icon/PlusSVG'
 const ProfileCard = ({ user }: any) => {
   return (
     <>
-      <div className="w-[240px] grid">
-        <div className="flex justify-center items-center mb-7">
+      <div className="grid">
+        <div className="flex justify-center items-center">
 
         {user?.image ? (
           <Image
@@ -32,7 +32,7 @@ const ProfileCard = ({ user }: any) => {
             )}
         </div>
 
-        <div className="flex justify-end gap-3 mb-3 rounded-md">
+        <div className="flex justify-end gap-3 my-3 rounded-md">
           <Button className=" h-7 shadow-md bg-peach border border-duna px-5 py-1 flex justify-center items-center rounded-[20px]">
           <PlusSVG/>
           </Button>

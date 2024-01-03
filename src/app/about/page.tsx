@@ -27,7 +27,7 @@ export default function About() {
       
       <div className="xl:grid xl:grid-cols-2 xl:gap-20 xl:my-16">
         <div className="max-w-full">
-          <h2 className="font-extra font-normal text-ml text-secondary mb-7 text-center xl:text-start">What we believe</h2>
+          <h2 className="font-extra font-normal text-ml text-secondary mb-7 text-center xl:text-start mt-4 xl:mt-0">What we believe</h2>
           <p className="text-justify font-normal text-medium text-primary">Gallia est omnis divisa in partes tres, quarum. <a href='https://www.linkedin.com/in/daria-vdovichenko/' className="decoration-sky-500 font-bold">NAME</a> & <a href='https://www.linkedin.com/in/cherin-kim-blanton/' className="decoration-sky-500 font-bold">NAME</a> Fabio vel iudice vincam, sunt in culpa qui officia. Salutantibus vitae elit libero, a pharetra augue. Hi omnes lingua, institutis, legibus inter se differunt. Quid securi etiam tamquam eu fugiat nulla pariatur. Cras mattis iudicium purus sit amet fermentum.Gallia est omnis divisa in partes tres, quarum. Fabio vel iudice vincam, sunt in culpa qui officia. Salutantibus vitae elit </p>
         </div>
         <div className=" my-9 xl:my-0 flex justify-center items-center">

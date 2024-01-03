@@ -28,8 +28,8 @@ export default function LogInPage() {
   return (
     status !== 'authenticated' && (
       <Container>
-        <section  className="flex justify-center items-center py-36 xl:px-[100px] md:px-12 px-6 bg-section-texture bg-cover bg-center bg-no-repeat">
-          <div className="bg-gradient-to-r to-[#265539D2] via-transparent from-[#2655397C] w-[620px] h-[450px] grid justify-center py-6 rounded-md">
+        <section  className="flex justify-center items-center md:py-36 py-20 xl:px-[100px] md:px-12 px-4 bg-section-texture bg-cover bg-center bg-no-repeat">
+          <div className="bg-gradient-to-r to-[#265539D2] via-transparent from-[#2655397C] w-[620px] h-[450px] grid justify-center py-6 px-6 rounded-md">
             <div className="text-center">
               <Image src={logo} alt="logo" width={100} height={40} className="mx-auto" />
               <h3 className="mb-2 mt-2 text-white">Log in your account</h3>

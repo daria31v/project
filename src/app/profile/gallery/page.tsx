@@ -7,7 +7,7 @@ import { getServerSession } from 'next-auth/next'
 import Link from 'next/link'
 import { redirect } from 'next/navigation'
 import React from 'react'
-
+import GallerySVG from '../../../../public/icon/GallerySVG'
 export default async function ProfileGallery () {
   const session = await getServerSession(authConfig)
 
@@ -20,12 +20,13 @@ export default async function ProfileGallery () {
         <h1 className="text-md font-semibold text-start uppercase mb-4 text-secondary">My gallery</h1>
         <div className="w-14 h-1 bg-secondary rounded-md mb-4"></div>
 
-        <div className="flex justify-between mb-4">
+        <div className="md:flex md:justify-between md:items-center mb-4">
           <p className="text-secondary text-medium font-normal">YOU CAN MENAGE YOUR GALLERY HERE</p>
-          <div className="flex gap-5">
+          <div className="flex justify-center items-center gap-5 mt-4 md:mt-0">
             {/* Modal add photo */}
           <Button  className="text-secondary text-small font-semibold px-3 rounded-md h-[38px] border border-green_light flex justify-center items-center bg-white shadow-md cursor-pointer gap-1 hover:bg-secondary hover:text-white">
-            Add new photo
+            <GallerySVG/> 
+            New Photo
           </Button>
           <Link
             href="/gallery"
@@ -36,8 +37,8 @@ export default async function ProfileGallery () {
             </div>
         </div>
 
-        <div className="md:pl-[55px] 2xl:pl-[100px] md:grid md:grid-cols-2">
-          <div>
+        <div className=" md:flex">
+          <div className="md:px-10">
             <ProfileCard user={session?.user} />
           </div>
           <div>

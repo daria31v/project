@@ -7,12 +7,15 @@ import mape from '../../../../public/images/mape.png'
 const EditPostForm = ({user} : any) => {
   return (
     <>
-      <div className="xl:maw-w-[1090px] h-[600px] bg-white rounded-md">
+      <div className="xl:maw-w-[1090px] bg-white rounded-md">
         <form className="px-10 py-7">
           <div className="xl:flex xl:justify-between xl:gap-12">
             <div className="xl:max-w-[330px] text-center">
               <span className="text-duna text-xs">Edited Photo</span>
+              <div className="md:flex md:items-center md:justify-center">
               <Image src={defaultImg} alt="default image" width={330} height={330} className="shadow-md"/>
+              </div>
+
 
               <div className="flex justify-end gap-3 mt-3">
                 <Button className="w-[34px] h-[34px] shadow-md bg-peach text-md text-duna px-2 py-1 flex justify-center items-center rounded-md">
@@ -25,17 +28,16 @@ const EditPostForm = ({user} : any) => {
             </div>
 
             <div className="block">
-              <label>
+            <label>
               <input className=" font-bold text-sm placeholder:text-pink mb-2 w-full" placeholder="Add your title"/>
               </label>
-
-              <div className="w-[626px] h-[1px] bg-duna rounded-md mb-4 "></div>
+              <div className="xl:w-[626px] h-[1px] bg-duna rounded-md mb-4 "></div>
               <textarea
                 placeholder="Write here"
-                className="xl:w-[626px] xl:h-[216px] placeholder:text-pink bg-peach_light p-3 rounded-md shadow-md"
+                className="xl:w-[626px] w-full xl:h-[216px] h-52 text-base placeholder:text-pink bg-peach_light p-3 rounded-md shadow-md"
               ></textarea>
 
-              <div className="flex gap-2 items-center mt-6">
+              <div className="md:flex md:gap-2 md:items-center grid gap-4 mt-6">
                 <span className="text-base text-duna font-bold mr-7">Place for the rest</span>
                 <label className="rounded-md h-8 inline-block px-3 py-1 shadow-md text-center cursor-pointer bg-peach_light  text-secondary hover:bg-secondary hover:text-peach_light hover:shadow-md focus:shadow-md">
                   Waterfall
@@ -55,16 +57,16 @@ const EditPostForm = ({user} : any) => {
                 </label>
               </div>
 
-              <div className="flex items-start justify-between mt-6">
+              <div className="md:flex md:items-start md:justify-between grid gap-4 mt-6">
                 <span className="text-base text-duna font-bold">Mark your place</span>
 
                 <div className="relative">
                   <input
                     type="text"
                     placeholder="e.g Yosemite National Park"
-                    className="px-3 py-1 placeholder:text-nude text-small font-normal w-[250px] h-8 rounded-3xl bg-peach_light shadow-md"
+                    className="px-3 py-1 placeholder:text-nude text-small font-normal md:w-[250px] h-8 rounded-3xl bg-peach_light shadow-md"
                   />
-                  <Button className="absolute inset-y-0 right-0 flex items-center px-3 text-peach_dark">
+                  <Button className="absolute inset-y-0 right-0 flex items-center px-3 text-peach_dark md:mb-0">
                     <SearchSVG />
                   </Button>
                 </div>
