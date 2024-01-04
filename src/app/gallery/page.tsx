@@ -1,16 +1,25 @@
+// 'use client'
 import { Metadata } from 'next'
 import { Container } from '../components/Container/container'
 import FilterComponent from '../components/Filter/FilterComponent'
 import { GallerySlider } from '../components/Slider/gallerySlider'
 import Button from '../components/Button/Buttons'
 import GallerySVG from '../../..//public/icon/GallerySVG'
+import NewsApiService from '../../utils/new-api-service'
+import { useEffect, useState } from 'react'
+
 // SEO
 export const metadata: Metadata = {
   title: 'Gallery | A World in My Lens',
   description: '',
 }
-
+// const newsApiService = new NewsApiService();
+// console.log(newsApiService);
+// console.log(api);
+// const apiData = newsApiService.fetchImage().then(data => data.hits)
+// console.dir(apiData);
 export default function Gallery() {
+
   return (
     <Container>
       <section className="xl:px-[100px] pt-16 pb-6 md:px-12 px-6 bg-section-texture bg-cover bg-center bg-no-repeat">
@@ -31,7 +40,7 @@ export default function Gallery() {
             <FilterComponent />
             {/* modal add photo */}
           </div>
-          <GallerySlider />
+          <GallerySlider/>
         </div>
       </section>
     </Container>

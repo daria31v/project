@@ -21,7 +21,7 @@ export default function MobileMenu() {
     const appContainer = document.getElementById('app-container');
     const body = document.querySelector('body');
 
-    console.log(appContainer);
+    
     if (appContainer && body) {
       if (isOpen) {
         appContainer.style.filter = 'blur(2px)';
