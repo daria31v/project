@@ -10,6 +10,7 @@
     "format": "prettier --write \"{src,test}/**/*.{tsx,ts}\""
   },
   "dependencies": {
+    "@react-google-maps/api": "^2.19.2",
     "@types/react-router-dom": "^5.3.3",
     "axios": "^1.6.4",
     "bcryptjs": "^2.4.3",

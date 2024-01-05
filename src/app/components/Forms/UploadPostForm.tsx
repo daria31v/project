@@ -1,8 +1,11 @@
+'use client'
 import Image from 'next/image'
 import defaultImg from '../../../../public/images/post.webp'
 import Button from '../Button/Buttons'
 import SearchSVG from '../../../../public/icon/SearchSVG'
 import mape from '../../../../public/images/mape.png'
+// import { GoogleMap, Marker } from '@react-google-maps/api'
+import Link from 'next/link'
 
 const UploadPostForm = () => {
   return (
@@ -13,9 +16,13 @@ const UploadPostForm = () => {
             <div className="xl:max-w-[330px] text-center">
               <span className="text-duna text-xs">Uploaded Photo</span>
               <div className="md:flex md:items-center md:justify-center">
-
-              <Image src={defaultImg} alt="default image" width={330} height={330} className="shadow-md"/>
-
+                <Image
+                  src={defaultImg}
+                  alt="default image"
+                  width={330}
+                  height={330}
+                  className="shadow-md"
+                />
               </div>
               <div className="flex justify-end gap-3 mt-3 md:mb-0 mb-4">
                 <Button className="w-[34px] h-[34px] shadow-md bg-peach text-md text-duna px-2 py-1 flex justify-center items-center rounded-md">
@@ -28,8 +35,11 @@ const UploadPostForm = () => {
             </div>
 
             <div className="block">
-            <label>
-              <input className=" font-bold text-sm placeholder:text-pink mb-2 w-full" placeholder="Add your title"/>
+              <label>
+                <input
+                  className=" font-bold text-sm placeholder:text-pink mb-2 w-full"
+                  placeholder="Add your title"
+                />
               </label>
               <div className="xl:w-[626px] h-[1px] bg-duna rounded-md mb-4 "></div>
               <textarea
@@ -72,7 +82,28 @@ const UploadPostForm = () => {
                 </div>
                 {/* //Google Mapes */}
                 <div className="rounded-md">
-                  <Image src={mape} alt='mape' width={222} height={121} className="object-cover"/>
+                  <Link
+                    href="https://maps.google.com"
+                  >
+                    <Image
+                      src={mape}
+                      alt="mape"
+                      width={222}
+                      height={121}
+                      className="object-cover"
+                    />
+                  </Link>
+                  {/* <GoogleMap
+                    id="map"
+                    mapContainerStyle={{ width: '100%', height: '200px' }}
+                    center={{ lat: 50.07934699269188, lng: 14.412624951787148 }}
+                    zoom={12}
+                    options={{ 
+                      googleMapsApiKey: process.env.GOOGLE_MAP_KEY as string,
+                    }}
+                  >
+                    <Marker position={{ lat: 50.07934699269188, lng: 14.412624951787148 }} />
+                  </GoogleMap> */}
                 </div>
               </div>
             </div>

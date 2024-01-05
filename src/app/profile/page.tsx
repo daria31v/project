@@ -5,16 +5,23 @@ import { Container } from '../components/Container/container'
 import { redirect } from 'next/navigation'
 import ProfileComponent from '../components/Profile/ProfileComponent'
 import Link from 'next/link'
+import toast, { Toaster } from 'react-hot-toast'
 
 export default async function ProfilePage() {
   const session = await getServerSession(authConfig)
   // // console.log('Profile session:',session);
   if (!session) {
     redirect('/login')
-  }
+    return null
+  } 
+  
+  
+  
+  
 
   return (
     <Container>
+      <Toaster/>
       <section className="py-16 font-bold xl:px-[100px] md:px-12 px-6 bg-section-texture bg-cover bg-center bg-no-repeat">
       <h1 className="text-md font-semibold text-start uppercase mb-4 text-secondary">
       My profile
