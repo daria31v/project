@@ -11,6 +11,7 @@ import BtnNewPhoto from '../components/Button/BtnNewPhoto'
 import Modal from '../components/Modals/Modal'
 import { useState } from 'react'
 import AddPhoto from '../components/Modals/AddPhoto'
+import { useSession } from 'next-auth/react'
 
 // SEO
 // export const metadata: Metadata = {
@@ -20,6 +21,7 @@ import AddPhoto from '../components/Modals/AddPhoto'
 
 export default function Gallery() {
   const [isModalOpen, setIsModalOpen] = useState(false)
+  const { data: session } = useSession()
 
   const openModal = () => {
     setIsModalOpen(true)
@@ -37,18 +39,20 @@ export default function Gallery() {
             Gallery
           </h1>
           <div className="w-14 h-1 bg-secondary rounded-md "></div>
-        
+
           <div className="md:flex md:justify-between md:items-center mb-4">
-            <p className="text-secondary uppercase text-medium md:mt-0 mt-4">Dive into diverse visual gallery</p>
+            <p className="text-secondary uppercase text-medium md:mt-0 mt-4">
+              Dive into diverse visual gallery
+            </p>
             <BtnNewPhoto openModal={openModal} />
           </div>
-
-          <div>
-            <Modal isOpen={isModalOpen} onClose={closeModal} className="w-10 h-10">
-              <AddPhoto onClose={closeModal} />
-            </Modal>
-          </div>
-
+          {session && (
+            <div>
+              <Modal isOpen={isModalOpen} onClose={closeModal} className="w-10 h-10">
+                <AddPhoto onClose={closeModal} />
+              </Modal>
+            </div>
+          )}
           <div className="md:flex md:items-end md:justify-between">{/* <FilterComponent /> */}</div>
           <GallerySlider />
         </div>
