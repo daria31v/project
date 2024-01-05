@@ -4,6 +4,7 @@ import { useRouter } from 'next/navigation'
 import { useEffect, useState } from 'react'
 import { signIn } from 'next-auth/react'
 import { LoginInButton, GoogleSignInButton } from '../Button/authButton'
+import toast, { Toaster } from 'react-hot-toast'
 
 export default function LogInForm() {
   const [email, setEmail] = useState('')
@@ -19,7 +20,6 @@ export default function LogInForm() {
 
   const handleSubmit = async (e: any) => {
     e.preventDefault()
-    console.log('handleSubmit')
 
     if (!email || !password) {
       setError('All fields are required!')
@@ -40,11 +40,12 @@ export default function LogInForm() {
         password,
         redirect: false,
       })
-      console.log(singInRes)
+  
       if (singInRes?.error) {
         setError('Invalid credentials')
         return
       }
+      toast.success('Welcome!');
       router.replace('/profile')
     } catch (error) {
       console.log('Error during logIn', error)
@@ -53,6 +54,7 @@ export default function LogInForm() {
 
   return (
     <>
+    <Toaster/>
       <form className=" text-end" autoComplete="off" onSubmit={handleSubmit}>
         <label className="flex">
           <input

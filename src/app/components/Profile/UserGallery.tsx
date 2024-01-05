@@ -19,7 +19,7 @@ const UserGallery = ({ userData }: any) => {
           <li className="relative">
             <div className="bg-white rounded-md">
               <Image src={relax} alt='photo' className="rounded-md w-full md:h-[140px] h-[240px] xl:h-[200px] object-cover"/>
-              {/* white modal aprove */}
+             
             <div className="absolute top-2 right-2">
               <Button  className="flex justify-center items-center h-6 rounded-md text-xs p-1 bg-yellow_light hover:bg-orange"><DeleteSVG className="hover:stroke-white"/></Button>
             </div>

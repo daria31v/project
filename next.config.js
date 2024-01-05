@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // output: 'export',
+  experimental: {
+    serverActions: true,
+  },
+
   images: { unoptimized: true, domains: ['lh3.googleusercontent.com', 'images.pexels.com'] },
   webpack(config) {
     config.module.rules.push({

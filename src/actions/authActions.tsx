@@ -14,7 +14,7 @@ type Props = {
 
 export async function updateUser({ name, email, password, image }: Props) {
   const session = await getServerSession(authConfig)
-  console.log(session);
+  // console.log(session);
   if (!session) throw new Error('Unauthorization!')
 
   try {
@@ -26,7 +26,7 @@ export async function updateUser({ name, email, password, image }: Props) {
 
     return {msg: "Update profile successful!"}
   } catch (error) {
-    console.log(error);
+    // console.log(error);
     redirect(`/error`)
   }
 }

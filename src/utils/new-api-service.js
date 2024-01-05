@@ -11,7 +11,7 @@ export default class NewsApiService {
     const KEY = '31608375-581536e59e6cd039daecb6e21';
     const value = 'mountain,landscape,rivers,sun'
     const params = 'image_type=photo&per_page=40';
-    const quantityImg = 14;       
+    const quantityImg = 17;       
     
         try {
             const response = await axios.get(`${BASE_URL}?key=${KEY}&q=${value}&${params}&per_page=${quantityImg}&page=${this.page}`);

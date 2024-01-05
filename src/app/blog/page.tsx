@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { Container } from '../components/Container/container'
 import NewPost from '../../../public/icon/NewPostSVG'
 import BlogList from '../components/Blog/BlogList/BlogList'
+import LinkNewPost from '../components/Button/LinkNewPost'
 // SEO
 export const metadata: Metadata = {
   title: 'Blog&Tips | A World in My Lens',
@@ -29,14 +30,9 @@ export default function Blog({ params: { id, photo, title, name, avatar, date } 
         </h1>
         <div className="w-14 h-1 bg-secondary rounded-md mb-4"></div>
         <div className="flex justify-between">
-          <p className="text-secondary text-medium uppercase">Insights & Tips: Your go-to for valuable blog posts and helpful tips</p>
-          <Link
-            href="/profile/posts/new"
-            className="text-secondary text-base font-semibold px-3 rounded-md h-[38px] flex justify-center items-center bg-white shadow-md cursor-pointer gap-1 hover:bg-secondary hover:text-white"
-          >
-            <NewPost className="hover:stroke-white" />
-            New post
-          </Link>
+          <p className="text-secondary text-medium uppercase">Insights & Tips: <br/> Your go-to for valuable blog posts and helpful tips</p>
+          
+          <LinkNewPost/>
         </div>
         <BlogList />
       </section>

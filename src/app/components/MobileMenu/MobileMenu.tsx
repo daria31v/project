@@ -8,6 +8,7 @@ import clsx from 'clsx'
 import { useSession } from 'next-auth/react'
 import MenuSVG from '../../../../public/icon/MenuSVG'
 import CloseSVG from '../../../../public/icon/CloseSVG'
+import Link from 'next/link'
 
 export default function MobileMenu() {
   const [isOpen, setIsOpen] = useState<boolean>(false)
@@ -46,7 +47,7 @@ export default function MobileMenu() {
         type="button"
         className="inline-block xl:hidden ml-auto z-10 relative"
       >
-        {isOpen ? <CloseSVG /> : <MenuSVG />}
+        {isOpen ? <CloseSVG className=""/> : <MenuSVG />}
       </button>
       <div
         className={clsx(
@@ -56,6 +57,9 @@ export default function MobileMenu() {
       >
         <div className="px-10 py-20 grid gap-7 font-bold rounded-3xl z-10" onClick={handleClick} style={{ filter: 'none' }}>
           <Navigation />
+        <div>
+          <Link href='/about' className="text-medium font-bold text-nude hover:text-white">About us</Link>
+        </div>
           <div className="grid grid-cols-1 gap-8 mt-8 text-medium ">
             {session.data ? <UserMenu /> : <AuthNav />}
           </div>

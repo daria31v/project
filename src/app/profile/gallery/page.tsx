@@ -47,8 +47,7 @@ export default async function ProfileGallery () {
             <UserGallery userData={session?.user} />
           </div>
         </div>
-        <div></div>
-        <div></div>
+   
       </section>
     </Container>
   )

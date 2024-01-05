@@ -22,7 +22,7 @@ export const GallerySlider = () => {
         const newsApiService = new NewsApiService()
         const data = await newsApiService.fetchImage()
         setPhotos(data.hits || [])
-        console.log(data.hits)
+  
       } catch (error) {
         console.error('Error fetching images:', error)
       }

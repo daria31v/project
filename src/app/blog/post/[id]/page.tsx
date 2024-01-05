@@ -15,8 +15,6 @@ interface PostProps {
 export default async function Post({ params: { id, src, alt } }: PostProps) {
   const postId = parseInt(id, 10); 
   const postData = postsData.find((post) => post.id === postId);
-  console.log(postData);
-
 
   return (
     <Container>

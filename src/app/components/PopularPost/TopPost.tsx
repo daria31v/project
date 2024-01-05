@@ -16,7 +16,7 @@ export default function TopPost() {
 
 
       <div className="xl:flex md:block font-normal text-medium ">
-        <div className="flex justify-center h-[347px] max-w-[706px] shadow-xl rounded-2xl xl:mr-auto">
+        <div className="flex justify-center md:h-[320px] max-w-[706px] shadow-xl rounded-2xl xl:mr-auto">
           <Link href='/blog/post/5'>
 
           <Image
@@ -24,7 +24,7 @@ export default function TopPost() {
             alt="..."
             width={706}
             height={347}
-            className="rounded-2xl object-cover overflow-hidden"
+            className="rounded-2xl object-cover overflow-hidden shadow-lg hover:shadow-duna"
             priority
             ></Image>
           </Link>
@@ -32,9 +32,9 @@ export default function TopPost() {
 
         <div className="mt-6 md:mt-8 xl:mt-0 xl:w-[338px] 2xl:w-[550px] ">
           <p className="uppercase text-center text-secondary font-semibold mb-2">{topPost.title}</p>
-          <p className="text-justify font-extra indent-5 overflow-ellipsis overflow-hidden ... xl:w-[338px] xl:h-52">{topPost.tips}</p>
+          <p className="text-justify font-extra indent-5 overflow-ellipsis overflow-hidden ... xl:w-[338px] 2xl:w-full xl:h-52">{topPost.tips}</p>
           <div className="flex justify-end">
-          <Link href='/blog/post/5' className="text-small uppercase mt-1 font-bold text-secondary">more</Link>
+          <Link href='/blog/post/5' className="text-small uppercase mt-1 font-bold text-secondary">... more</Link>
 
           </div>
         </div>

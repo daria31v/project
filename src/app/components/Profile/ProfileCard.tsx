@@ -1,6 +1,6 @@
 'use client'
 import Image from 'next/image'
-import React from 'react'
+import React, { useRef } from 'react'
 import Button from '../Button/Buttons'
 import DoneSVG from '../../../../public/icon/DoneSVG'
 import ProfileNav from './ProfileNav'
@@ -8,12 +8,32 @@ import avatar from '../../../../public/images/user.webp'
 import PlusSVG from '../../../../public/icon/PlusSVG'
 
 const ProfileCard = ({ user }: any) => {
+  const fileInputRef = useRef<HTMLInputElement>(null);
+
+  const handleImageUpload = () => {
+    if (fileInputRef.current) {
+      fileInputRef.current.click();
+    }
+  };
+
+  const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const selectedFile = event.target.files?.[0];
+   //POST req
+    // console.log('File', selectedFile);
+  };
   return (
     <>
       <div className="grid">
         <div className="flex justify-center items-center">
-
         {user?.image ? (
+          <>
+        <input
+          type="file"
+          accept="users/*"
+          ref={fileInputRef}
+          style={{ display: 'none' }}
+          onChange={handleFileChange}
+          />
           <Image
           className="rounded-full"
           src={user?.image}
@@ -21,7 +41,16 @@ const ProfileCard = ({ user }: any) => {
           width={200}
           height={200}
           />
+          </>
           ) : (
+            <>
+            <input
+          type="file"
+          accept="users/*"
+          ref={fileInputRef}
+          style={{ display: 'none' }}
+          onChange={handleFileChange}
+          />
             <Image
             className="mb-6 rounded-full"
             src={avatar}
@@ -29,6 +58,7 @@ const ProfileCard = ({ user }: any) => {
             width={200}
             height={200}
             />
+            </>
             )}
         </div>
 
