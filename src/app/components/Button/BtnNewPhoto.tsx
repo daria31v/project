@@ -3,7 +3,12 @@ import GallerySVG from '../../../../public/icon/GallerySVG'
 import toast, { Toaster } from 'react-hot-toast'
 import { useSession } from 'next-auth/react'
 
-const BtnNewPhoto = () => {
+
+type Props = {
+    openModal: () => void;
+  };
+  
+  const BtnNewPhoto: React.FC<Props> = ({ openModal }) => {
   const { data: session } = useSession()
 
   const handleClick = () => {
@@ -11,7 +16,7 @@ const BtnNewPhoto = () => {
       toast.error('Authorization Required. Please Log in or register to proceed')
       console.log('click')
     }
-    return
+    openModal()
   }
 
   return (

@@ -16,9 +16,10 @@ export default async function RootLayout({ children }: { children: React.ReactNo
 
   return (
     <>
-      <html lang="en" className="!scroll-smooth">
+      <html lang="en" className="!scroll-smooth" >
         <body>
           <AuthProvider session={session}>
+          <div id="modal-root"></div>
             <div>
               <Header />
               <main id="app-container">{children}</main>

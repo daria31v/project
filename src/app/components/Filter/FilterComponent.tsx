@@ -11,7 +11,7 @@ const FiilterComponent = () => {
         {partners.map((partner) => (
           <label
             key={partner.id}
-            className="mr-2 rounded-md h-8 inline-block md:px-3 px-1 py-1 text-center cursor-pointer bg-white  text-duna text-small font-normal hover:bg-secondary hover:text-pink hover:font-bold hover:shadow-md focus:shadow-md"
+            className="mr-2 rounded-md h-8 flex justify-center items-center md:px-3 px-1 py-1 text-center cursor-pointer bg-white  text-duna text-small font-normal hover:bg-secondary hover:text-pink hover:font-bold hover:shadow-md focus:shadow-md"
           >
             <span>{partner.name}</span>
             <input type="checkbox" className="absolute opacity-0 pointer-events-none" />

@@ -1,0 +1,13 @@
+<svg width="330" height="330" viewBox="0 0 330 330" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="0.5" y="0.5" width="329" height="329" rx="4.5" fill="#FFE9D9" fill-opacity="0.69" stroke="#C25D05" stroke-dasharray="4 4"/>
+<g opacity="0.5">
+<rect x="132" y="88" width="66.7857" height="65.0435" rx="5" fill="#FFE9D9" fill-opacity="0.69"/>
+<path d="M184.872 96.1305H145.914C142.84 96.1305 140.348 98.5572 140.348 101.551V139.493C140.348 142.486 142.84 144.913 145.914 144.913H184.872C187.946 144.913 190.437 142.486 190.437 139.493V101.551C190.437 98.5572 187.946 96.1305 184.872 96.1305Z" stroke="#C25D05" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M155.653 115.101C157.958 115.101 159.827 113.281 159.827 111.036C159.827 108.791 157.958 106.971 155.653 106.971C153.348 106.971 151.479 108.791 151.479 111.036C151.479 113.281 153.348 115.101 155.653 115.101Z" stroke="#C25D05" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M190.438 128.652L176.524 115.101L145.914 144.913" stroke="#C25D05" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<rect x="179" y="135" width="22" height="21" rx="5" fill="#FFE9D9" fill-opacity="0.69"/>
+<ellipse cx="190" cy="145.5" rx="11" ry="10.5" fill="#C25D05"/>
+<path d="M184.5 145.172H194.812" stroke="white" stroke-width="3"/>
+<path d="M189.656 140.25L189.656 150.094" stroke="white" stroke-width="3"/>
+</svg>

@@ -47,7 +47,7 @@ export default function MobileMenu() {
         type="button"
         className="inline-block xl:hidden ml-auto z-10 relative"
       >
-        {isOpen ? <CloseSVG /> : <MenuSVG />}
+        {isOpen ? <CloseSVG className=""/> : <MenuSVG />}
       </button>
       <div
         className={clsx(
