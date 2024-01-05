@@ -1,4 +1,4 @@
-// 'use client'
+
 import { Metadata } from 'next'
 import { Container } from '../components/Container/container'
 import FilterComponent from '../components/Filter/FilterComponent'
@@ -13,12 +13,9 @@ export const metadata: Metadata = {
   title: 'Gallery | A World in My Lens',
   description: '',
 }
-// const newsApiService = new NewsApiService();
-// console.log(newsApiService);
-// console.log(api);
-// const apiData = newsApiService.fetchImage().then(data => data.hits)
-// console.dir(apiData);
+
 export default function Gallery() {
+  
 
   return (
     <Container>
@@ -30,6 +27,7 @@ export default function Gallery() {
           <div className="w-14 h-1 bg-secondary rounded-md mb-4"></div>
           <div className="flex justify-between items-center mb-4">
             <p className="text-secondary uppercase text-base">Select device</p>
+            {/* modal add photo */}
             <Button className="text-secondary my-4 text-small font-semibold px-3 rounded-md h-[38px] border border-green_light flex justify-center items-center bg-white shadow-md cursor-pointer gap-1 hover:bg-secondary hover:text-white">
               <GallerySVG />
               New Photo
@@ -38,7 +36,6 @@ export default function Gallery() {
 
           <div className="md:flex md:items-end mb-16 md:justify-between">
             <FilterComponent />
-            {/* modal add photo */}
           </div>
           <GallerySlider/>
         </div>

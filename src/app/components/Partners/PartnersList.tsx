@@ -2,7 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import partners from './partnersData.json'
 
-// console.log(partners);
+
 interface Partner {
   id: number
   name: string
