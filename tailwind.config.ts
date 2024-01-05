@@ -65,10 +65,6 @@ module.exports = {
       backgroundImage: {
         hero: "url('/images/hero.webp')",
         'section-texture': "url('/images/texture.webp')",
-      },
-      animation: {
-        'spin-slow': 'spin 3s linear infinite',
-        
       }
     },
   },

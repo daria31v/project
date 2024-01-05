@@ -27,8 +27,8 @@ const PostCard = ({ post } : PostCardProps) => {
         </div>
         <InfoBlock post={post}/>
 
-        <div className="flex justify-center items-center shadow-md rounded-2xl">
-          <Image src={post.photo} alt="post" width={600} height={300}  className="xl:w-full md:w-[600px] rounded-2xl w-80"/>
+        <div className="flex justify-center items-center shadow-md rounded-2xl ">
+          <Image src={post.photo} alt="post" width={600} height={600}  className="xl:w-full md:w-[600px] object-cover h-[700px] rounded-2xl w-80"/>
         </div>
 
         <div className="xl:flex xl:items-start xl:gap-8 mt-8">

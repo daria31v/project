@@ -57,8 +57,8 @@ export const GallerySlider = () => {
         ))}
       </LightGallery>
       <div className="flex justify-center items-center my-6">
-        <Button className="border-2 border-orange md:w-14 md:h-14 flex justify-center items-center p-4 rounded-full shadow-xl bg-gradient-to-t to-[#22462CB2] via-transparent from-orange">
-          <ScrollSVG />
+        <Button className="border-2 border-orange opacity-80 animate-bounce md:w-14 md:h-14 flex justify-center items-center p-4 rounded-full shadow-xl bg-gradient-to-t to-[#22462CB2] via-transparent from-orange">
+          <ScrollSVG className="hover:stroke-white"/>
         </Button>
       </div>
     </>

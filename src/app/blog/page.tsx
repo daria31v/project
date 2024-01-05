@@ -6,7 +6,7 @@ import BlogList from '../components/Blog/BlogList/BlogList'
 // SEO
 export const metadata: Metadata = {
   title: 'Blog&Tips | A World in My Lens',
-  description: '',
+  description: 'Welcome to our Insights & Tips section, a treasure trove of enlightening blog posts and practical tips curated to enhance your journey. Delve into a wealth of information, from engaging narratives to actionable advice, designed to enrich your experiences and empower your adventures.',
 }
 
 interface BlogProps {
@@ -29,12 +29,12 @@ export default function Blog({ params: { id, photo, title, name, avatar, date } 
         </h1>
         <div className="w-14 h-1 bg-secondary rounded-md mb-4"></div>
         <div className="flex justify-between">
-          <p className="text-secondary text-base">EXPLORE OTHER USER&apos;S PHOTOS</p>
+          <p className="text-secondary text-medium uppercase">Insights & Tips: Your go-to for valuable blog posts and helpful tips</p>
           <Link
             href="/profile/posts/new"
             className="text-secondary text-base font-semibold px-3 rounded-md h-[38px] flex justify-center items-center bg-white shadow-md cursor-pointer gap-1 hover:bg-secondary hover:text-white"
           >
-            <NewPost className="" />
+            <NewPost className="hover:stroke-white" />
             New post
           </Link>
         </div>

@@ -36,17 +36,17 @@ export default function About() {
               Developed by{' '}
               <a
                 href="https://www.linkedin.com/in/daria-vdovichenko/"
-                className="decoration-sky-500 font-bold"
+                className="decoration-sky-500 font-bold italic"
               >
                 Daria Vdovichenko
               </a>{' '}
-              and designed by
+              and designed by{' '}
               <a
                 href="https://www.linkedin.com/in/cherin-kim-blanton/"
-                className="decoration-sky-500 font-bold"
+                className="decoration-sky-500 font-bold italic"
               >
                 Cherin Kim Blanton
-              </a>{' '}
+              </a>
               , our project is a culmination of our passion for photography, travel, and the earnest
               desire to share these ences. Driven by our fervor for capturing moments and
               exploring the world through our lens, we envisioned this project as a means to

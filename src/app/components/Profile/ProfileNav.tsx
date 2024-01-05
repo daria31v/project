@@ -13,7 +13,7 @@ const ProfileNav = () => {
           href="/profile"
           className="px-6 h-[52px] flex gap-5 items-center py-2 border border-r-secondary border-b-0 bg-white hover:text-white focus:text-white hover:bg-secondary focus:bg-secondary active:text-white active:bg-secondary"
         >
-          <AccountSVG />
+          <AccountSVG className="hover:stroke-white"/>
           Account details
         </Link>
         <Link
@@ -27,11 +27,11 @@ const ProfileNav = () => {
           href="/profile/gallery"
           className="px-6 h-[52px] flex gap-5 items-center py-2 border border-r-secondary bg-white hover:text-white focus:text-white hover:bg-secondary focus:bg-secondary active:text-white active:bg-secondary"
         >
-          <GallerySVG  />
+          <GallerySVG className="hover:stroke-white"/>
           Gallery
         </Link>
         <LogOutBtn className=" px-6 h-[52px] text-secondary border-t-0 flex gap-5 items-center py-2 border border-r-secondary bg-white hover:text-white focus:text-white hover:bg-secondary focus:bg-secondary font-medium text-medium">
-          <LogoutSVG />
+          <LogoutSVG className="hover:stroke-white"/>
           Log Out
         </LogOutBtn>
       </nav>
