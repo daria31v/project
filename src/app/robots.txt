@@ -1,0 +1,16 @@
+Sitemap: https://world-in-my-lens-daria31v.vercel.app/
+
+User-agent: *
+User-agent: AdsBot-Google
+User-agent: AdsIdxBot
+User-agent: Google-InspectionTool
+
+Allow: https://world-in-my-lens-daria31v.vercel.app/gallery
+Allow: https://world-in-my-lens-daria31v.vercel.app/blog
+Allow: https://world-in-my-lens-daria31v.vercel.app/blog/post/${id}
+Allow: https://world-in-my-lens-daria31v.vercel.app/about
+
+
+Disallow: https://world-in-my-lens-daria31v.vercel.app/register
+Disallow: https://world-in-my-lens-daria31v.vercel.app/login
+Disallow: https://world-in-my-lens-daria31v.vercel.app/profile
