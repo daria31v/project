@@ -4,6 +4,8 @@ import { useState } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { RegisterButton } from '../Button/authButton'
+import toast, { Toaster } from 'react-hot-toast';
+
 
 export default function RegisterForm() {
   const [error, setError] = useState('')
@@ -14,12 +16,13 @@ export default function RegisterForm() {
     return emailRegex.test(email)
   }
 
+
   const handleSubmit = async (e: any) => {
     e.preventDefault()
     const name = e.target[0].value
     const email = e.target[1].value
     const password = e.target[2].value
-    // console.log(name, email, password)
+  
 
     if (!isValidEmail(email)) {
       setError('Email is invalid!')
@@ -40,21 +43,24 @@ export default function RegisterForm() {
           password,
         }),
       })
-      console.log('res', res)
+     
 
       if (res.status === 400) {
         setError('This email is already registrate!')
       }
       if (res.status === 200) {
+        toast.success('Successfully created account! Log In please!');
         setError('')
-        console.log('Go to profile')
-        router.replace('/login')
+        setTimeout(() => {
+          router.replace('/login');
+        }, 5000); 
       }
       if (res.status === 500) {
         setError('Technical problems')
       }
     } catch (error) {
       setError('Somthing is wrong')
+      toast.error('Error: Something went wrong');
       console.log(error)
       router.push('/error')
     }
@@ -62,6 +68,7 @@ export default function RegisterForm() {
 
   return (
     <>
+    <Toaster/>
       <form className="text-secondary mx-[170px]" autoComplete="off" onSubmit={handleSubmit}>
         <label className=" w-full font-semibold text-base">
           <input

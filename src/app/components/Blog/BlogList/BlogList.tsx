@@ -51,7 +51,7 @@ export default function BlogList () {
           </ul>
         </div>
         <div className="flex justify-center items-center py-4">
-        <Button className="border-2 border-orange md:w-14 md:h-14  flex justify-center items-center p-4 rounded-full shadow-xl bg-gradient-to-t to-[#22462CB2] via-transparent from-orange"><ScrollSVG className=""/></Button>
+        <Button className="border-2 border-orange md:w-14 md:h-14 animate-bounce opacity-80 flex justify-center items-center p-4 rounded-full shadow-xl bg-gradient-to-t to-[#22462CB2] via-transparent from-orange"><ScrollSVG className=""/></Button>
         </div>
     </div>
   )

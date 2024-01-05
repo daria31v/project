@@ -19,7 +19,6 @@ export default function LogInForm() {
 
   const handleSubmit = async (e: any) => {
     e.preventDefault()
-    console.log('handleSubmit')
 
     if (!email || !password) {
       setError('All fields are required!')
@@ -40,7 +39,7 @@ export default function LogInForm() {
         password,
         redirect: false,
       })
-      console.log(singInRes)
+  
       if (singInRes?.error) {
         setError('Invalid credentials')
         return

@@ -17,7 +17,7 @@ export const authConfig: NextAuthOptions = {
 
         try {
           const user = await User.findOne({ email: credentials.email })
-          console.log(user)
+          
           if (user) {
             const passwordsMatch = await bcrypt.compare(credentials.password, user.password)
             if (passwordsMatch) {
@@ -83,14 +83,7 @@ export const authConfig: NextAuthOptions = {
       return true
     },
     async jwt({ token, trigger, session }) {
-      // console.log('trigger:', trigger );
-      // if(trigger === 'update'){
-      //   token.user.name === session.name;
-      //   token.user.picture === session.image;
-
-      // } else {}
-      // const user = await getUserByEmail({ email: token.email })
-      // token.user = user
+      
 
       return token
     },
@@ -102,36 +95,12 @@ export const authConfig: NextAuthOptions = {
   },
 }
 
-// async function signInWhithOAuth({ account, profile }: any) {
-//   const user = await User.findOne({ email: profile.email })
-//   if (user) return true
-
-//   const newUser = new User({
-//     name: profile.name,
-//     email: profile.email,
-//     password: profile.password,
-//     image: profile.picture,
-//     provider: account.provider,
-//   })
-//   console.log({newUser});
-//   await newUser.save()
-//   return true
-// }
-
-// async function getUserByEmail({ email }: any) {
-//   const user = await User.findOne({ email }).select('-password')
-
-//   if (!user) throw new Error("Email doesn't exist")
-
-//   return { ...user._doc, _id: user._id.toString() }
-// }
-
 
 
 export async function updateUserStatus({userId, newStatus} : any) {
   const uri = process.env.MONGODB_URI as ""; 
   const client = new MongoClient(uri);
-  console.log(client);
+
   try {
     await client.connect();
 

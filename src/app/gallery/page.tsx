@@ -6,6 +6,9 @@ import { GallerySlider } from '../components/Slider/gallerySlider'
 import Button from '../components/Button/Buttons'
 import GallerySVG from '../../..//public/icon/GallerySVG'
 // import { useEffect, useState } from 'react'
+import toast, { Toaster } from 'react-hot-toast';
+import BtnNewPhoto from '../components/Button/BtnNewPhoto'
+
 
 // SEO
 export const metadata: Metadata = {
@@ -15,7 +18,6 @@ export const metadata: Metadata = {
 
 export default function Gallery() {
   
-
   return (
     <Container>
       <section className="xl:px-[100px] pt-16 pb-6 md:px-12 px-6 bg-section-texture bg-cover bg-center bg-no-repeat">
@@ -27,10 +29,8 @@ export default function Gallery() {
           <div className="flex justify-between items-center mb-4">
             <p className="text-secondary uppercase text-medium">Dive into diverse visual gallery</p>
             {/* modal add photo */}
-            <Button className="text-secondary my-4 text-small font-semibold px-3 rounded-md h-[38px] border border-green_light flex justify-center items-center bg-white shadow-md cursor-pointer gap-1 hover:bg-secondary hover:text-white">
-              <GallerySVG  className="hover:stroke-white"/>
-              New Photo
-            </Button>
+            <BtnNewPhoto/>
+           
           </div>
 
           <div className="md:flex md:items-end md:justify-between">
