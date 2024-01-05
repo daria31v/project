@@ -8,6 +8,8 @@ import Link from 'next/link'
 import { redirect } from 'next/navigation'
 import React from 'react'
 import GallerySVG from '../../../../public/icon/GallerySVG'
+
+
 export default async function ProfileGallery () {
   const session = await getServerSession(authConfig)
 
@@ -25,7 +27,7 @@ export default async function ProfileGallery () {
           <div className="flex justify-center items-center gap-5 mt-4 md:mt-0">
             {/* Modal add photo */}
           <Button  className="text-secondary text-small font-semibold px-3 rounded-md h-[38px] border border-green_light flex justify-center items-center bg-white shadow-md cursor-pointer gap-1 hover:bg-secondary hover:text-white">
-            <GallerySVG/> 
+            <GallerySVG className="hover:stroke-white"/> 
             New Photo
           </Button>
           <Link

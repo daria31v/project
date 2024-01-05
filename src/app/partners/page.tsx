@@ -5,7 +5,7 @@ import { PartnersList } from '../components/Partners/PartnersList'
 // SEO
 export const metadata: Metadata = {
   title: 'Partners | A World in My Lens',
-  description: '',
+  description: 'Welcome to a space dedicated to celebrating collaborations with esteemed manufacturers and innovators in the realm of photography technology. Here, we honor the fruitful alliances that drive our visual narratives, uniting with leading creators and visionaries to craft stories that transcend the lens.',
 }
 
 export default function Partners() {

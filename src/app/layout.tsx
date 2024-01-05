@@ -8,18 +8,18 @@ import { getServerSession } from 'next-auth'
 export const metadata: Metadata = {
   title: 'A World in My Lens',
   description:
-    'This is unique platform created for those who appreciate relaxation, travel, and the beauty around them.',
+    'Discover the vibrant stories and perspectives behind A World in My Lens. Explore our journey, mission, and passion for capturing the world through our unique lens.',
 }
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   const session = await getServerSession()
-  // console.log('Global session',session);
+
   return (
     <>
-      <html lang="en" className="!scroll-smooth" >
+      <html lang="en" className="!scroll-smooth">
         <body>
           <AuthProvider session={session}>
-            <div >
+            <div>
               <Header />
               <main id="app-container">{children}</main>
               <Footer />
