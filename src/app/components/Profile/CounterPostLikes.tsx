@@ -1,5 +1,5 @@
 'use client'
-import React from 'react'
+
 import HeartSVGComponent from '../../../../public/icon/HeartSVG'
 
 const CounterLikes = () => {
@@ -9,7 +9,7 @@ const CounterLikes = () => {
         <HeartSVGComponent className="fill-orange rounded-full" />
       </span>
 
-      <span className="text-orange">153</span>
+      <span className="text-orange">213</span>
     </div>
   )
 }

@@ -1,4 +1,4 @@
-import React from 'react'
+
 import CounterPostLikes from '../Profile/CounterPostLikes'
 import CounterComments from './CounterComments'
 

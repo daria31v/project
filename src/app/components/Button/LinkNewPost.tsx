@@ -10,7 +10,7 @@ const LinkNewPost = () => {
 
   const handleClick = () => {
     if (!session) {
-      toast.error('Need authorization')
+      toast.error('Please Log In or Join us😊')
       setTimeout(() => {
         redirect('/login')
       }, 3000)
@@ -20,6 +20,7 @@ const LinkNewPost = () => {
 
   return (
     <div>
+      <Toaster/>
       <Link
         onClick={handleClick}
         href="/profile/posts/new"
