@@ -13,7 +13,7 @@ type Props = {
 
   const handleClick = () => {
     if (!session) {
-      toast.error('Authorization Required. Please Log in or register to proceed')
+      toast.error('Please Log In or Join us😊')
       console.log('click')
     }
     openModal()

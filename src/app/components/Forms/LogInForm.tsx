@@ -45,7 +45,7 @@ export default function LogInForm() {
         setError('Invalid credentials')
         return
       }
-      toast.success('Welcome!');
+      toast.success('Welcome to us!');
       router.replace('/profile')
     } catch (error) {
       console.log('Error during logIn', error)

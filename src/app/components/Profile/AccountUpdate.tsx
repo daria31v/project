@@ -1,5 +1,5 @@
 'use client'
-import Button from '../Button/Buttons'
+
 import ControlButtonMGroup from '../Button/ControlButtonMGroup'
 // import { updateUser } from '@/actions/authActions'
 import FormComponent from '../Forms/FormComponent'
@@ -20,10 +20,10 @@ const ProfileUpdate = ({ userData }: any) => {
   //     console.log({name, email, password});
   // }
   const handleUpdateProfile = async (formData: FormData) => {
-    const name = formData.get('name')
-    const email = formData.get('email')
-    const password = formData.get('password')
-    const image = formData.get('image')
+    // const name = formData.get('name')
+    // const email = formData.get('email')
+    // const password = formData.get('password')
+    // const image = formData.get('image')
 
     // const res = await updateUser({ name, email, password, image })
     // if(res?.msg) alert (res?.msg)
@@ -60,7 +60,7 @@ const ProfileUpdate = ({ userData }: any) => {
           />
         </label>
         <label className="grid mt-1">
-          Password
+          Change Password
           <input
             className=" border-b border-b-secondary placeholder:text-duna text-medium font-semibold"
             name="password"
