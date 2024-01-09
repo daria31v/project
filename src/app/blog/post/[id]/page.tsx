@@ -29,7 +29,7 @@ export default async function Post({ params: { id, src, alt } }: PostProps) {
             href="/blog"
             className="text-secondary border border-peach_light text-small font-semibold px-2 rounded-md h-[38px] flex justify-center items-center bg-white shadow-md cursor-pointer hover:bg-secondary hover:text-white"
           >
-            Back to My blog
+            Back to blog
           </Link>
         </div>
 

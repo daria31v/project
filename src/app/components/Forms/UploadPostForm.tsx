@@ -10,10 +10,10 @@ import Link from 'next/link'
 const UploadPostForm = () => {
   return (
     <>
-      <div className="xl:maw-w-[1090px]  bg-white rounded-md">
+      <div className="xl:w-[1090px] mx-auto  bg-white rounded-md">
         <form className="px-10 py-7">
-          <div className="xl:flex xl:justify-between xl:gap-12">
-            <div className="xl:max-w-[330px] text-center">
+          <div className="xl:flex xl:gap-12">
+            <div className="xl:max-w-[330px] text-center ">
               <span className="text-duna text-xs">Uploaded Photo</span>
               <div className="md:flex md:items-center md:justify-center">
                 <Image

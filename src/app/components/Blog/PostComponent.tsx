@@ -22,7 +22,7 @@ const PostComponent = ({ posts }:PostComponentProps) => {
 
 
   return (
-    <div className="xl:maw-w-[1090px] py-11 xl:px-36 md:px-16 px-5 bg-white rounded-md">
+    <div className="xl:maw-w-[1090px] py-11  md:px-16 px-5 bg-white rounded-md">
       <div>
         <PostCard post={posts} />
       </div>
