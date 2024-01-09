@@ -43,7 +43,7 @@ module.exports = {
       md: ['28px', { lineHeight: '1.28' }],
       ml: ['30px', { lineHeight: '1.2' }],
       l: ['36px', { lineHeight: '1.28' }],
-      xl: ['40px', { lineHeight: '0.8' }],
+      xl: ['40px', { lineHeight: '1' }],
       xxl: ['60px', { lineHeight: '0.8' }],
       extra: ['95px', { lineHeight: '0.8' }],
     },

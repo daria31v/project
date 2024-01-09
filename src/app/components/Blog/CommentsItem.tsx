@@ -15,7 +15,7 @@ const CommentsItem = () => {
           </div>
           <div>
             <div className="  bg-peach_light text-base rounded-md px-5 py-3 text-primary shadow-md">
-              <p className="">This is really helpful, THANKS A LOT!</p>
+              <p className="text-base md:text-sm">This is really helpful, THANKS A LOT!</p>
             </div>
           </div>
         </li>
@@ -29,7 +29,7 @@ const CommentsItem = () => {
           </div>
           <div>
             <div className=" bg-peach_light text-base rounded-md px-5 py-3 text-primary shadow-md">
-              <p className="">Thanks for this! Super useful.  I will definitely check out this place. </p>
+              <p className="text-base md:text-sm">Thanks for this! Super useful.  I will definitely check out this place. </p>
             </div>
           </div>
         </li>
