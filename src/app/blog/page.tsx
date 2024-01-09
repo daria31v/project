@@ -1,7 +1,5 @@
 import { Metadata } from 'next'
-import Link from 'next/link'
 import { Container } from '../components/Container/container'
-import NewPost from '../../../public/icon/NewPostSVG'
 import BlogList from '../components/Blog/BlogList/BlogList'
 import LinkNewPost from '../components/Button/LinkNewPost'
 // SEO

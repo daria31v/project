@@ -12,7 +12,7 @@ const LinkNewPost = () => {
     if (!session) {
       toast.error('Please Log In or Join us😊')
       setTimeout(() => {
-        redirect('/login')
+        redirect('/blog')
       }, 3000)
     }
     return
@@ -20,7 +20,7 @@ const LinkNewPost = () => {
 
   return (
     <div>
-      <Toaster/>
+      {/* <Toaster/> */}
       <Link
         onClick={handleClick}
         href="/profile/posts/new"
