@@ -16,7 +16,6 @@ export default async function ProfilePostsPage() {
   }
 
   return (
-    <Container>
       <section className="py-16 xl:px-[100px] md:px-12 px-6 bg-section-texture bg-cover bg-center bg-no-repeat">
         <h1 className="text-md font-semibold text-start uppercase mb-4 text-secondary">My posts</h1>
         <div className="w-14 h-1 bg-secondary rounded-md mb-4"></div>
@@ -51,6 +50,5 @@ export default async function ProfilePostsPage() {
           </div>
         </div>
       </section>
-    </Container>
   )
 }

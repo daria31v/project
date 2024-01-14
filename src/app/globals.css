@@ -9,13 +9,13 @@
   
 }
 
-
-
 body {
   height: 100%;
+  max-width: 100vw;
   padding: 0;
   margin: 0;
   font-family: 'Mulish', sans-serif;
+  overflow-x: hidden;
   
 }
 html {
