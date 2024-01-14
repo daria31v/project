@@ -4,6 +4,7 @@ import Header from './components/Header/header'
 import './globals.css'
 import AuthProvider from '../utils/AuthProvider'
 import { getServerSession } from 'next-auth'
+import { Container } from './components/Container/container'
 
 export const metadata: Metadata = {
   title: 'A World in My Lens',
@@ -20,11 +21,11 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         <body>
           <AuthProvider session={session}>
           <div id="modal-root"></div>
-            <div>
+            <Container>
               <Header />
               <main id="app-container">{children}</main>
               <Footer />
-            </div>
+            </Container>
           </AuthProvider>
         </body>
       </html>

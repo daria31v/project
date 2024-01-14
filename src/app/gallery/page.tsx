@@ -32,31 +32,27 @@ export default function Gallery() {
   }
 
   return (
-    <Container>
-      <section className="xl:px-[100px] pt-16 pb-6 md:px-12 px-6 bg-section-texture bg-cover bg-center bg-no-repeat">
-        <div>
-          <h1 className="text-ml font-semibold text-start uppercase my-3 text-secondary ">
-            Gallery
-          </h1>
-          <div className="w-14 h-1 bg-secondary rounded-md "></div>
+    <section className="xl:px-[100px] pt-16 pb-6 md:px-12 px-6 bg-section-texture bg-cover bg-center bg-no-repeat">
+      <div>
+        <h1 className="text-ml font-semibold text-start uppercase my-3 text-secondary ">Gallery</h1>
+        <div className="w-14 h-1 bg-secondary rounded-md "></div>
 
-          <div className="md:flex md:justify-between md:items-center mb-4">
-            <p className="text-secondary uppercase text-medium md:mt-0 mt-4">
-              Dive into diverse visual gallery
-            </p>
-            <BtnNewPhoto openModal={openModal} />
-          </div>
-          {session && (
-            <div>
-              <Modal isOpen={isModalOpen} onClose={closeModal} className="w-10 h-10">
-                <AddPhoto onClose={closeModal} />
-              </Modal>
-            </div>
-          )}
-          <div className="md:flex md:items-end md:justify-between">{/* <FilterComponent /> */}</div>
-          <GallerySlider />
+        <div className="md:flex md:justify-between md:items-center mb-4">
+          <p className="text-secondary uppercase text-medium md:mt-0 mt-4">
+            Dive into diverse visual gallery
+          </p>
+          <BtnNewPhoto openModal={openModal} />
         </div>
-      </section>
-    </Container>
+        {session && (
+          <div>
+            <Modal isOpen={isModalOpen} onClose={closeModal} className="w-10 h-10">
+              <AddPhoto onClose={closeModal} />
+            </Modal>
+          </div>
+        )}
+        <div className="md:flex md:items-end md:justify-between">{/* <FilterComponent /> */}</div>
+        <GallerySlider />
+      </div>
+    </section>
   )
 }
