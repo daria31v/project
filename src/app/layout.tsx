@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 import Footer from './components/Footer/footer'
 import Header from './components/Header/header'
 import './globals.css'
-import AuthProvider from '../utils/AuthProvider'
+import AuthProvider from '../providers/AuthProvider'
 import { getServerSession } from 'next-auth'
 import { Container } from './components/Container/container'
 
