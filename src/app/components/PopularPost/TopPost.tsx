@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import motorhome from '../../../../public/images/motorhome.webp'
 import Image from 'next/image'
 import posts from '../../components/Blog/BlogList/posts.json'
 
@@ -32,7 +31,7 @@ export default function TopPost() {
 
         <div className="mt-6 md:mt-8 xl:mt-0 xl:w-[338px] 2xl:w-[550px] ">
           <p className="uppercase text-center text-secondary font-semibold mb-2">{topPost.title}</p>
-          <p className="text-justify font-extra indent-5 overflow-ellipsis overflow-hidden ... xl:w-[338px] 2xl:w-full xl:h-52">{topPost.tips}</p>
+          <p className="text-justify font-extra indent-5 overflow-ellipsis overflow-hidden ... xl:w-[338px] 2xl:w-full xl:h-52">{topPost.tip}</p>
           <div className="flex justify-end">
           <Link href='/blog/post/5' className="text-small uppercase mt-1 font-bold text-secondary">... more</Link>
 

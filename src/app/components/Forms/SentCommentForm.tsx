@@ -1,12 +1,12 @@
 'use client'
 import Image from 'next/image'
-import user from '../../../../public/images/user.webp'
+// import user from '../../../../public/images/user.webp'
 import Button from '../Button/Buttons'
 import { useSession } from 'next-auth/react'
 
 export default function SentCommentForm() {
   const {data:session} = useSession()
-
+  
 
   return (
     <div>

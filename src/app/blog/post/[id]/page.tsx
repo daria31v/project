@@ -1,6 +1,6 @@
 import { Container } from '@/app/components/Container/container'
 import Link from 'next/link'
-import PostComponent from '@/app/components/Blog/PostComponent'
+import PostComponent from '@/app/components/Blog/BlogItem/PostComponent'
 import postsData from '../../../components/Blog/BlogList/posts.json'
 
 interface PostProps {

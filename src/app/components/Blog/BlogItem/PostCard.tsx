@@ -1,13 +1,13 @@
 import Image from 'next/image'
-import mape from '../../../../public/images/mape2.png'
-import InfoBlock from './InfoBlock'
+import mape from '../../../../../public/images/mape2.png'
+import InfoBlock from '../../User/InfoBlock'
 
 
 interface Post {
   id: number,
   photo: string, 
   title: string,
-  tips:  string,
+  tip:  string,
   name: string,
   avatar: string,
   maps: string,
@@ -33,7 +33,7 @@ const PostCard = ({ post } : PostCardProps) => {
 
         <div className=" mt-8">
           <div className="bg-peach_light text-secondary p-4 rounded-md shadow-md text-justify">
-            <p className="text-medium xl:text-sm indent-8">{post.tips}</p>
+            <p className="text-medium xl:text-sm indent-8">{post.tip}</p>
           </div>
           <div className="rounded-md mt-8 flex justify-center items-center">
             <Image src={mape} alt="mape" width={258} height={274} className="object-cover xl:w-[400px] w-[300px]" />

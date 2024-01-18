@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Button from '../Button/Buttons'
-import CounterInfoBlock from './CounterInfoBlock'
+import CounterInfoBlock from '../Counters/CounterInfoBlock'
 import HeartSVG from '../../../../public/icon/HeartSVG'
 import user from '../../../../public/images/user.webp'
 

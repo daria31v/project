@@ -6,11 +6,11 @@ import 'lightgallery/css/lg-zoom.css'
 import lgThumbnail from 'lightgallery/plugins/thumbnail'
 import lgZoom from 'lightgallery/plugins/zoom'
 import Image from 'next/image'
-import Button from '../Button/Buttons'
-import ScrollSVG from '../../../../public/icon/Scroll'
+import Button from '../../Button/Buttons'
+import ScrollSVG from '../../../../../public/icon/Scroll'
 import { useEffect, useState } from 'react'
 import NewsApiService from '@/utils/new-api-service'
-import partners from '../../components/Partners/partnersData.json'
+import partners from '../../Partners/partnersData.json'
 
 export const GallerySlider = () => {
   const [photos, setPhotos] = useState([]);
