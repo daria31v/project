@@ -1,18 +1,18 @@
 'use client'
 import Image from 'next/image'
-// import user from '../../../../public/images/user.webp'
+import user from '../../../../public/images/user.webp'
 import Button from '../Button/Buttons'
 import { useSession } from 'next-auth/react'
 
 export default function SentCommentForm() {
   const {data:session} = useSession()
-  
+  const userImage = session?.user?.image || user;
 
   return (
     <div>
       <form className="md:flex items-center md:gap-6 ">
         <div className="text-center">
-          <Image src={session?.user?.image} alt="user photo" width={80} height={80} className="mx-auto rounded-full" />
+          <Image src={userImage} alt="user photo" width={80} height={80} className="mx-auto rounded-full" />
           <span className="mt-4 inline-block text-base text-primary">{session?.user?.name}</span>
         </div>
         <div className="w-full relative">
