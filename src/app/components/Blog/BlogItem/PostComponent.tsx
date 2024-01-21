@@ -1,15 +1,16 @@
 
-import CommentsComponent from './CommentsComponent'
+import CommentsComponent from '../../CommentsComponent/CommentsComponent'
 import PostCard from './PostCard'
 
 interface PostData {
   id: number,
   photo: string, 
   title: string,
-  tips:  string,
+  tip:  string,
   name: string,
   avatar: string,
-  maps: string,
+  google_tag: string,
+  tag: string,
   date: string,
   photo_path?: string
 }
