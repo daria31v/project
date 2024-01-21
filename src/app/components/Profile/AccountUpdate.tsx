@@ -1,6 +1,6 @@
 'use client'
 
-import ControlButtonMGroup from '../Button/ControlButtonMGroup'
+// import ControlButtonMGroup from '../Button/ControlButtonMGroup'
 // import { updateUser } from '@/actions/authActions'
 import FormComponent from '../Forms/FormComponent'
 import CounterLikes from './CounterAllLikes'
@@ -70,7 +70,7 @@ const ProfileUpdate = ({ userData }: any) => {
           />
         </label>
 
-        <ControlButtonMGroup />
+        {/* <ControlButtonMGroup /> */}
       </FormComponent>
     </div>
   )

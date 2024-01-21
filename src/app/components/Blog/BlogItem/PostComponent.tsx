@@ -9,7 +9,8 @@ interface PostData {
   tip:  string,
   name: string,
   avatar: string,
-  maps: string,
+  google_tag: string,
+  tag: string,
   date: string,
   photo_path?: string
 }

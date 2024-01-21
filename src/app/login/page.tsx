@@ -13,7 +13,7 @@ export default function LogInPage() {
   const router = useRouter()
 
   const { data: session, status } = useSession()
-  console.log(status)
+  // console.log(status)
 
   useEffect(() => {
     if (status === 'loading') {

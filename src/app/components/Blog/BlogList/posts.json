@@ -7,6 +7,7 @@
     "name": "Elbert Moon",
     "avatar": "/images/user-two.webp",
     "google_tag": "https://maps.google.com",
+    "tag": "Enchanted Woodland Retreat - 456 Forest Lane, Serenity Grove, Whispering Woods Region",
     "date": "07.01.2024",
     "photo_path": "/public/images"
   },
@@ -18,7 +19,9 @@
     "name": "Niki Huston",
     "avatar": "/images/user-one.webp",
     "google_tag": "https://maps.google.com",
-    "date": "12.11.2023"
+    "tag": "Starry Sky Campsite - 789 Celestial Lane, Galaxy Glade, Cosmic Campgrounds",
+    "date": "12.11.2023",
+    "photo_path": "../public/images"
   },
   {
     "id": 3,
@@ -28,6 +31,7 @@
     "name": "Kristina Li",
     "avatar": "/images/user-three.webp",
     "google_tag": "https://maps.google.com",
+    "tag": "Mountain River Sanctuary - 234 Cascading Trail, Summit Springs, Riverbend Region",
     "date": "08.05.2023",
     "photo_path": "../public/images"
   },
@@ -39,6 +43,7 @@
     "name": "John Reed",
     "avatar": "",
     "google_tag": "https://maps.google.com",
+    "tag": "Mountain Lake Odyssey - 345 Tranquil Cove, Summit Shores, Lakeside Majesty Region",
     "date": "01.04.2023",
     "photo_path": "../public/images"
   },
@@ -50,6 +55,7 @@
     "name": "Alice Folk",
     "avatar": "/images/user-one.webp",
     "google_tag": "https://maps.google.com",
+    "tag": "Mountain Haven Retreat - 123 Alpine Road, Summit Springs, Pine Peaks Region",
     "date": "28.02.2023",
     "photo_path": "../public/images"
   },
@@ -61,6 +67,7 @@
     "name": "Martina Dunkan",
     "avatar": "/images/user-three.webp",
     "google_tag": "https://maps.google.com",
+    "tag": "Majestic Canyon Expedition - 567 Grandeur Trail, Echo Ravine, Canyon Majesty Region",
     "date": "15.01.2023",
     "photo_path": "../public/images"
   }

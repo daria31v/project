@@ -62,14 +62,14 @@ const ProfileCard = ({ user }: any) => {
             )}
         </div>
 
-        <div className="flex justify-end gap-3 my-3 rounded-md">
+        {/* <div className="flex justify-end gap-3 my-3 rounded-md">
           <Button className=" h-7 shadow-md bg-peach border border-duna px-5 py-1 flex justify-center items-center rounded-[20px]">
           <PlusSVG/>
           </Button>
           <Button className=" h-7 shadow-md bg-peach border text-duna text-md border-duna px-5 py-1 flex justify-center items-center rounded-[20px]">
             <DoneSVG className=""/>
           </Button>
-        </div>
+        </div> */}
       </div>
       <ProfileNav/>
     </>

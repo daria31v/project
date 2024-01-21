@@ -14,7 +14,7 @@ type Props = {
   const handleClick = () => {
     if (!session) {
       toast.error('Please Log In or Join us😊')
-      console.log('click')
+      // console.log('click')
     }
     openModal()
   }

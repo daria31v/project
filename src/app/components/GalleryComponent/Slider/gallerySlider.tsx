@@ -6,8 +6,8 @@ import 'lightgallery/css/lg-zoom.css'
 import lgThumbnail from 'lightgallery/plugins/thumbnail'
 import lgZoom from 'lightgallery/plugins/zoom'
 import Image from 'next/image'
-import Button from '../../Button/Buttons'
-import ScrollSVG from '../../../../../public/icon/Scroll'
+// import Buttonnpm from '../../Button/Buttons'
+// import ScrollSVG from '../../../../../public/icon/Scroll'
 import { useEffect, useState } from 'react'
 import NewsApiService from '@/utils/new-api-service'
 import partners from '../../Partners/partnersData.json'
@@ -56,11 +56,11 @@ export const GallerySlider = () => {
           </a>
         ))}
       </LightGallery>
-      <div className="flex justify-center items-center my-6">
+      {/* <div className="flex justify-center items-center my-6">
         <Button className="border-2 border-orange opacity-80 animate-bounce md:w-14 md:h-14 flex justify-center items-center p-4 rounded-full shadow-xl bg-gradient-to-t to-[#22462CB2] via-transparent from-orange">
           <ScrollSVG className="hover:stroke-white"/>
         </Button>
-      </div>
+      </div> */}
     </>
   )
 }

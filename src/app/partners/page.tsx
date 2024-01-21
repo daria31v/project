@@ -24,7 +24,7 @@ export default function Partners() {
           </div>
           <p className="max-w-[469px] font-normal text-primary text-center text-medium mb-9">
             We appreciate your efforts and generosity in supporting our company on its journey to
-            create better community
+            create better community*
           </p>
         </div>
       </div>
